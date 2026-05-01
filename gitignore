@@ -1,0 +1,19 @@
+# Tokens and secrets
+.env
+
+# Databases
+players.json
+shop.json
+
+# Telegram sessions
+*.session
+*.session-journal
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# VS Code
+.vscode/
