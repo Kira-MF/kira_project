@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 import discord
 from discord import app_commands
 from discord.ext import commands
@@ -8,8 +8,8 @@ from stands import (STANDS, TIER_COLORS, TIER_EMOJI, TIER_WEIGHTS,
                     EVOLUTION_CHAINS, ABILITY_UPGRADES,
                     get_stand_by_tier, can_evolve, get_evolution)
 
-# в”Ђв”Ђв”Ђ CONFIG в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ
-TOKEN    = "����_�����_����"
+# РІвЂќР‚РІвЂќР‚РІвЂќР‚ CONFIG РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚
+TOKEN    = "ТВОЙ_ТОКЕН_СЮДА"
 DB_FILE  = "players.json"
 GUILD_ID = 1003592872098021396  
 
@@ -20,17 +20,17 @@ STAT_BAR = {
 STAT_UP = {"E": "D", "D": "C", "C": "B", "B": "A", "A": "Z"}
 
 ITEM_ICONS = {
-    "money": "рџ’°", "regular_arrow": "рџЏ№", "requiem_arrow": "вњЁ",
-    "overheaven_arrow": "вљЎ", "crystal": "рџ’Ћ", "rokakaka": "рџЌ€",
-    "common_crate": "рџ“¦", "rare_crate": "рџџ¦", "epic_crate": "рџџЈ",
-    "legendary_crate": "рџЊџ", "stone_mask": "рџЋ­",
+    "money": "СЂСџвЂ™В°", "regular_arrow": "СЂСџРЏв„–", "requiem_arrow": "РІСљРЃ",
+    "overheaven_arrow": "РІС™РЋ", "crystal": "СЂСџвЂ™Р‹", "rokakaka": "СЂСџРЊв‚¬",
+    "common_crate": "СЂСџвЂњВ¦", "rare_crate": "СЂСџСџВ¦", "epic_crate": "СЂСџСџР€",
+    "legendary_crate": "СЂСџРЉСџ", "stone_mask": "СЂСџР‹В­",
 }
 
 CRATE_CONFIG = {
-    "common":    {"name": "Common Crate",    "icon": "рџ“¦", "color": 0x95a5a6, "money_min": 100,  "money_max": 300,  "regular_arrow_chance": 20.0, "requiem_arrow_chance": 0.1,  "stone_mask_chance": 0.0, "rokakaka_chance": 0.0},
-    "rare":      {"name": "Rare Crate",      "icon": "рџџ¦", "color": 0x3498db, "money_min": 300,  "money_max": 700,  "regular_arrow_chance": 35.0, "requiem_arrow_chance": 0.3,  "stone_mask_chance": 0.0, "rokakaka_chance": 0.0},
-    "epic":      {"name": "Epic Crate",      "icon": "рџџЈ", "color": 0x9b59b6, "money_min": 700,  "money_max": 1500, "regular_arrow_chance": 49.0, "requiem_arrow_chance": 0.5,  "stone_mask_chance": 0.0, "rokakaka_chance": 5.0},
-    "legendary": {"name": "Legendary Crate", "icon": "рџЊџ", "color": 0xf1c40f, "money_min": 1500, "money_max": 3000, "regular_arrow_chance": 70.0, "requiem_arrow_chance": 1.5,  "stone_mask_chance": 1.5, "rokakaka_chance": 9.0},
+    "common":    {"name": "Common Crate",    "icon": "СЂСџвЂњВ¦", "color": 0x95a5a6, "money_min": 100,  "money_max": 300,  "regular_arrow_chance": 20.0, "requiem_arrow_chance": 0.1,  "stone_mask_chance": 0.0, "rokakaka_chance": 0.0},
+    "rare":      {"name": "Rare Crate",      "icon": "СЂСџСџВ¦", "color": 0x3498db, "money_min": 300,  "money_max": 700,  "regular_arrow_chance": 35.0, "requiem_arrow_chance": 0.3,  "stone_mask_chance": 0.0, "rokakaka_chance": 0.0},
+    "epic":      {"name": "Epic Crate",      "icon": "СЂСџСџР€", "color": 0x9b59b6, "money_min": 700,  "money_max": 1500, "regular_arrow_chance": 49.0, "requiem_arrow_chance": 0.5,  "stone_mask_chance": 0.0, "rokakaka_chance": 5.0},
+    "legendary": {"name": "Legendary Crate", "icon": "СЂСџРЉСџ", "color": 0xf1c40f, "money_min": 1500, "money_max": 3000, "regular_arrow_chance": 70.0, "requiem_arrow_chance": 1.5,  "stone_mask_chance": 1.5, "rokakaka_chance": 9.0},
 }
 
 EVOLVE_CHANCES = {"D": 15.0, "C": 12.0, "B": 10.0, "A": 8.0, "S": 5.0, "SS": 3.0}
@@ -47,45 +47,45 @@ ARROW_POOLS = {
 }
 
 JOBS = [
-    ("РїСЂРѕРґР°РІР°Р» РµРґСѓ РІРµСЃСЊ РґРµРЅСЊ",                   100,  250, 90, "easy"),
-    ("РґРѕСЃС‚Р°РІР»СЏР» РїРѕСЃС‹Р»РєРё",                         120,  280, 85, "easy"),
-    ("С‡РёСЃС‚РёР» СѓР»РёС†С‹ Morioh",                        80,  200, 95, "easy"),
-    ("РїРѕРјРѕРіР°Р» РІ РјР°СЃС‚РµСЂСЃРєРѕР№",                      100,  300, 85, "easy"),
-    ("РѕС…СЂР°РЅСЏР» СЃРєР»Р°Рґ РЅРѕС‡СЊСЋ",                       250,  500, 70, "medium"),
-    ("СЂР°Р±РѕС‚Р°Р» РЅР° СЃС‚СЂРѕР№РєРµ",                        300,  550, 65, "medium"),
-    ("РїРѕРјРѕРіР°Р» РІ СЂРµСЃС‚РѕСЂР°РЅРµ Trattoria Trussardi",   350,  600, 70, "medium"),
-    ("СЂР°Р±РѕС‚Р°Р» РІС‹С€РёР±Р°Р»РѕР№ РІ Р±Р°СЂРµ",                  280,  520, 65, "medium"),
-    ("РЅР°С€С‘Р» СЂР°Р±РѕС‚Сѓ РІ Passione",                   500, 1000, 50, "hard"),
-    ("РІС‹РїРѕР»РЅСЏР» Р·Р°РґР°РЅРёРµ РѕС‚ Speedwagon Foundation", 600, 1200, 45, "hard"),
-    ("РѕС…РѕС‚РёР»СЃСЏ РЅР° РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ СЃС‚РµРЅРґР°",           700, 1500, 40, "hard"),
-    ("СЂР°Р±РѕС‚Р°Р» РЅР° DIO",                            800, 1800, 35, "hard"),
+    ("Р С—РЎР‚Р С•Р Т‘Р В°Р Р†Р В°Р В» Р ВµР Т‘РЎС“ Р Р†Р ВµРЎРѓРЎРЉ Р Т‘Р ВµР Р…РЎРЉ",                   100,  250, 90, "easy"),
+    ("Р Т‘Р С•РЎРѓРЎвЂљР В°Р Р†Р В»РЎРЏР В» Р С—Р С•РЎРѓРЎвЂ№Р В»Р С”Р С‘",                         120,  280, 85, "easy"),
+    ("РЎвЂЎР С‘РЎРѓРЎвЂљР С‘Р В» РЎС“Р В»Р С‘РЎвЂ РЎвЂ№ Morioh",                        80,  200, 95, "easy"),
+    ("Р С—Р С•Р СР С•Р С–Р В°Р В» Р Р† Р СР В°РЎРѓРЎвЂљР ВµРЎР‚РЎРѓР С”Р С•Р в„–",                      100,  300, 85, "easy"),
+    ("Р С•РЎвЂ¦РЎР‚Р В°Р Р…РЎРЏР В» РЎРѓР С”Р В»Р В°Р Т‘ Р Р…Р С•РЎвЂЎРЎРЉРЎР‹",                       250,  500, 70, "medium"),
+    ("РЎР‚Р В°Р В±Р С•РЎвЂљР В°Р В» Р Р…Р В° РЎРѓРЎвЂљРЎР‚Р С•Р в„–Р С”Р Вµ",                        300,  550, 65, "medium"),
+    ("Р С—Р С•Р СР С•Р С–Р В°Р В» Р Р† РЎР‚Р ВµРЎРѓРЎвЂљР С•РЎР‚Р В°Р Р…Р Вµ Trattoria Trussardi",   350,  600, 70, "medium"),
+    ("РЎР‚Р В°Р В±Р С•РЎвЂљР В°Р В» Р Р†РЎвЂ№РЎв‚¬Р С‘Р В±Р В°Р В»Р С•Р в„– Р Р† Р В±Р В°РЎР‚Р Вµ",                  280,  520, 65, "medium"),
+    ("Р Р…Р В°РЎв‚¬РЎвЂР В» РЎР‚Р В°Р В±Р С•РЎвЂљРЎС“ Р Р† Passione",                   500, 1000, 50, "hard"),
+    ("Р Р†РЎвЂ№Р С—Р С•Р В»Р Р…РЎРЏР В» Р В·Р В°Р Т‘Р В°Р Р…Р С‘Р Вµ Р С•РЎвЂљ Speedwagon Foundation", 600, 1200, 45, "hard"),
+    ("Р С•РЎвЂ¦Р С•РЎвЂљР С‘Р В»РЎРѓРЎРЏ Р Р…Р В° Р С—Р С•Р В»РЎРЉР В·Р С•Р Р†Р В°РЎвЂљР ВµР В»РЎРЏ РЎРѓРЎвЂљР ВµР Р…Р Т‘Р В°",           700, 1500, 40, "hard"),
+    ("РЎР‚Р В°Р В±Р С•РЎвЂљР В°Р В» Р Р…Р В° DIO",                            800, 1800, 35, "hard"),
 ]
 JOB_FAIL = [
-    "РўРµР±СЏ РїРѕР№РјР°Р»Рё вЂ” РїСЂРёС€Р»РѕСЃСЊ СЃР±РµР¶Р°С‚СЊ!", "Р‘РѕСЃСЃ СѓРІРѕР»РёР» С‚РµР±СЏ Р·Р° Р»РµРЅСЊ...",
-    "РўС‹ РїСЂРѕРІР°Р»РёР» Р·Р°РґР°РЅРёРµ!", "РќРµ РїРѕРІРµР·Р»Рѕ вЂ” СЂР°Р±РѕС‚Сѓ РїРµСЂРµС…РІР°С‚РёР» РєС‚Рѕ-С‚Рѕ РґСЂСѓРіРѕР№.",
-    "Р’СЂР°Р¶РµСЃРєРёР№ СЃС‚РµРЅРґ РїРѕРјРµС€Р°Р» С‚РµР±Рµ!", "РљР»РёРµРЅС‚ РѕС‚РєР°Р·Р°Р»СЃСЏ РїР»Р°С‚РёС‚СЊ!",
-    "РџРѕР»РёС†РёСЏ СЂР°Р·РѕРіРЅР°Р»Р° РІСЃРµС… вЂ” С‚С‹ РЅРёС‡РµРіРѕ РЅРµ Р·Р°СЂР°Р±РѕС‚Р°Р».",
+    "Р СћР ВµР В±РЎРЏ Р С—Р С•Р в„–Р СР В°Р В»Р С‘ РІР‚вЂќ Р С—РЎР‚Р С‘РЎв‚¬Р В»Р С•РЎРѓРЎРЉ РЎРѓР В±Р ВµР В¶Р В°РЎвЂљРЎРЉ!", "Р вЂР С•РЎРѓРЎРѓ РЎС“Р Р†Р С•Р В»Р С‘Р В» РЎвЂљР ВµР В±РЎРЏ Р В·Р В° Р В»Р ВµР Р…РЎРЉ...",
+    "Р СћРЎвЂ№ Р С—РЎР‚Р С•Р Р†Р В°Р В»Р С‘Р В» Р В·Р В°Р Т‘Р В°Р Р…Р С‘Р Вµ!", "Р СњР Вµ Р С—Р С•Р Р†Р ВµР В·Р В»Р С• РІР‚вЂќ РЎР‚Р В°Р В±Р С•РЎвЂљРЎС“ Р С—Р ВµРЎР‚Р ВµРЎвЂ¦Р Р†Р В°РЎвЂљР С‘Р В» Р С”РЎвЂљР С•-РЎвЂљР С• Р Т‘РЎР‚РЎС“Р С–Р С•Р в„–.",
+    "Р вЂ™РЎР‚Р В°Р В¶Р ВµРЎРѓР С”Р С‘Р в„– РЎРѓРЎвЂљР ВµР Р…Р Т‘ Р С—Р С•Р СР ВµРЎв‚¬Р В°Р В» РЎвЂљР ВµР В±Р Вµ!", "Р С™Р В»Р С‘Р ВµР Р…РЎвЂљ Р С•РЎвЂљР С”Р В°Р В·Р В°Р В»РЎРѓРЎРЏ Р С—Р В»Р В°РЎвЂљР С‘РЎвЂљРЎРЉ!",
+    "Р СџР С•Р В»Р С‘РЎвЂ Р С‘РЎРЏ РЎР‚Р В°Р В·Р С•Р С–Р Р…Р В°Р В»Р В° Р Р†РЎРѓР ВµРЎвЂ¦ РІР‚вЂќ РЎвЂљРЎвЂ№ Р Р…Р С‘РЎвЂЎР ВµР С–Р С• Р Р…Р Вµ Р В·Р В°РЎР‚Р В°Р В±Р С•РЎвЂљР В°Р В».",
 ]
 JOBS_REQUIRED = 3
 
 SHOP_ITEMS = {
-    "arrow":   {"name": "Regular Arrow", "icon": "рџЏ№", "price": 500,  "type": "regular_arrow"},
-    "crystal": {"name": "Crystal",       "icon": "рџ’Ћ", "price": 800,  "type": "crystal"},
-    "common":  {"name": "Common Crate",  "icon": "рџ“¦", "price": 1000, "type": "common_crate"},
-    "rare":    {"name": "Rare Crate",    "icon": "рџџ¦", "price": 2500, "type": "rare_crate"},
+    "arrow":   {"name": "Regular Arrow", "icon": "СЂСџРЏв„–", "price": 500,  "type": "regular_arrow"},
+    "crystal": {"name": "Crystal",       "icon": "СЂСџвЂ™Р‹", "price": 800,  "type": "crystal"},
+    "common":  {"name": "Common Crate",  "icon": "СЂСџвЂњВ¦", "price": 1000, "type": "common_crate"},
+    "rare":    {"name": "Rare Crate",    "icon": "СЂСџСџВ¦", "price": 2500, "type": "rare_crate"},
 }
 
 QUESTS = [
-    {"id": "worker",     "name": "Р Р°Р±РѕС‚СЏРіР°",    "desc": "Р’С‹РїРѕР»РЅРё 5 СЂР°Р±РѕС‚",          "type": "jobs_done_total", "goal": 5,    "reward": {"crystals": 3},           "reward_text": "рџ’Ћ 3 РєСЂРёСЃС‚Р°Р»Р»Р°"},
-    {"id": "searcher",   "name": "Р�СЃРєР°С‚РµР»СЊ",    "desc": "Р�СЃРїРѕР»СЊР·СѓР№ /search 3 СЂР°Р·Р°", "type": "searches_done",  "goal": 3,    "reward": {"money": 500},            "reward_text": "рџ’° $500"},
-    {"id": "collector",  "name": "РљРѕР»Р»РµРєС†РёРѕРЅРµСЂ","desc": "Р’С‹РїРѕР»РЅРё 10 СЂР°Р±РѕС‚",         "type": "jobs_done_total", "goal": 10,   "reward": {"crystals": 8},           "reward_text": "рџ’Ћ 8 РєСЂРёСЃС‚Р°Р»Р»РѕРІ"},
-    {"id": "lucky",      "name": "РЈРґР°С‡Р°",       "desc": "РћС‚РєСЂРѕР№ 3 Р»СЋР±С‹С… РєРµР№СЃР°",     "type": "crates_opened",  "goal": 3,    "reward": {"money": 1500},           "reward_text": "рџ’° $1500"},
-    {"id": "rich",       "name": "Р‘РѕРіР°С‡",       "desc": "РќР°РєРѕРїРё $3000",             "type": "money_reach",    "goal": 3000, "reward": {"crates": {"common": 2}}, "reward_text": "рџ“¦ 2 Common Crate"},
-    {"id": "shooter",    "name": "РЎС‚СЂРµР»РѕРє",     "desc": "Р�СЃРїРѕР»СЊР·СѓР№ СЃС‚СЂРµР»Сѓ 3 СЂР°Р·Р°", "type": "arrows_used",    "goal": 3,    "reward": {"crystals": 5, "money": 1000}, "reward_text": "рџ’Ћ 5 + рџ’° $1000"},
-    {"id": "epic_hunter","name": "РћС…РѕС‚РЅРёРє",     "desc": "РћС‚РєСЂРѕР№ 1 Epic РєРµР№СЃ",       "type": "epic_opened",    "goal": 1,    "reward": {"crystals": 15},          "reward_text": "рџ’Ћ 15 РєСЂРёСЃС‚Р°Р»Р»РѕРІ"},
+    {"id": "worker",     "name": "Р В Р В°Р В±Р С•РЎвЂљРЎРЏР С–Р В°",    "desc": "Р вЂ™РЎвЂ№Р С—Р С•Р В»Р Р…Р С‘ 5 РЎР‚Р В°Р В±Р С•РЎвЂљ",          "type": "jobs_done_total", "goal": 5,    "reward": {"crystals": 3},           "reward_text": "СЂСџвЂ™Р‹ 3 Р С”РЎР‚Р С‘РЎРѓРЎвЂљР В°Р В»Р В»Р В°"},
+    {"id": "searcher",   "name": "Р пїЅРЎРѓР С”Р В°РЎвЂљР ВµР В»РЎРЉ",    "desc": "Р пїЅРЎРѓР С—Р С•Р В»РЎРЉР В·РЎС“Р в„– /search 3 РЎР‚Р В°Р В·Р В°", "type": "searches_done",  "goal": 3,    "reward": {"money": 500},            "reward_text": "СЂСџвЂ™В° $500"},
+    {"id": "collector",  "name": "Р С™Р С•Р В»Р В»Р ВµР С”РЎвЂ Р С‘Р С•Р Р…Р ВµРЎР‚","desc": "Р вЂ™РЎвЂ№Р С—Р С•Р В»Р Р…Р С‘ 10 РЎР‚Р В°Р В±Р С•РЎвЂљ",         "type": "jobs_done_total", "goal": 10,   "reward": {"crystals": 8},           "reward_text": "СЂСџвЂ™Р‹ 8 Р С”РЎР‚Р С‘РЎРѓРЎвЂљР В°Р В»Р В»Р С•Р Р†"},
+    {"id": "lucky",      "name": "Р Р€Р Т‘Р В°РЎвЂЎР В°",       "desc": "Р С›РЎвЂљР С”РЎР‚Р С•Р в„– 3 Р В»РЎР‹Р В±РЎвЂ№РЎвЂ¦ Р С”Р ВµР в„–РЎРѓР В°",     "type": "crates_opened",  "goal": 3,    "reward": {"money": 1500},           "reward_text": "СЂСџвЂ™В° $1500"},
+    {"id": "rich",       "name": "Р вЂР С•Р С–Р В°РЎвЂЎ",       "desc": "Р СњР В°Р С”Р С•Р С—Р С‘ $3000",             "type": "money_reach",    "goal": 3000, "reward": {"crates": {"common": 2}}, "reward_text": "СЂСџвЂњВ¦ 2 Common Crate"},
+    {"id": "shooter",    "name": "Р РЋРЎвЂљРЎР‚Р ВµР В»Р С•Р С”",     "desc": "Р пїЅРЎРѓР С—Р С•Р В»РЎРЉР В·РЎС“Р в„– РЎРѓРЎвЂљРЎР‚Р ВµР В»РЎС“ 3 РЎР‚Р В°Р В·Р В°", "type": "arrows_used",    "goal": 3,    "reward": {"crystals": 5, "money": 1000}, "reward_text": "СЂСџвЂ™Р‹ 5 + СЂСџвЂ™В° $1000"},
+    {"id": "epic_hunter","name": "Р С›РЎвЂ¦Р С•РЎвЂљР Р…Р С‘Р С”",     "desc": "Р С›РЎвЂљР С”РЎР‚Р С•Р в„– 1 Epic Р С”Р ВµР в„–РЎРѓ",       "type": "epic_opened",    "goal": 1,    "reward": {"crystals": 15},          "reward_text": "СЂСџвЂ™Р‹ 15 Р С”РЎР‚Р С‘РЎРѓРЎвЂљР В°Р В»Р В»Р С•Р Р†"},
 ]
 
-# в”Ђв”Ђв”Ђ DATABASE в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ
+# РІвЂќР‚РІвЂќР‚РІвЂќР‚ DATABASE РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚
 def load_db():
     if not os.path.exists(DB_FILE):
         return {}
@@ -131,7 +131,7 @@ def get_player(db, user_id):
     p.pop("last_search", None)
     return p
 
-# в”Ђв”Ђв”Ђ STAND OBJECT в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ
+# РІвЂќР‚РІвЂќР‚РІвЂќР‚ STAND OBJECT РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚
 def make_stand_obj(name, ability_tier=1, is_vampire=False, stand_stats=None, sub_ability=None):
     """Create a stand storage object."""
     return {
@@ -169,7 +169,7 @@ def set_active_stand(player, stand_obj):
         player["stand_stats"]  = stand_obj.get("stand_stats")
         player["sub_ability"]  = stand_obj.get("sub_ability")
 
-# в”Ђв”Ђв”Ђ HELPERS в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ
+# РІвЂќР‚РІвЂќР‚РІвЂќР‚ HELPERS РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚
 def get_stand_stats(player, stand_name):
     if player.get("stand_stats") and player.get("stand") == stand_name:
         return player["stand_stats"]
@@ -201,16 +201,16 @@ def stand_embed(stand_name, player=None, user_obj=None):
     atier    = player["ability_tier"] if player else 1
     upgrades = ABILITY_UPGRADES.get(stand_name, {})
     ability_text = upgrades.get(atier, stand["ability"])
-    embed.add_field(name=f"Ability {'в­ђ'*atier}", value=ability_text, inline=False)
+    embed.add_field(name=f"Ability {'РІВ­С’'*atier}", value=ability_text, inline=False)
 
     if stand.get("ability2"):
         embed.add_field(name="Ability 2", value=stand["ability2"], inline=False)
     if player and player.get("is_vampire"):
-        embed.add_field(name="рџ§› Vampire", value="Vampiric Freeze вЂ” Р·Р°РјРѕСЂР°Р¶РёРІР°РµС‚ РІСЂР°РіР° РїСЂРё РєР°СЃР°РЅРёРё", inline=False)
+        embed.add_field(name="СЂСџВ§вЂє Vampire", value="Vampiric Freeze РІР‚вЂќ Р В·Р В°Р СР С•РЎР‚Р В°Р В¶Р С‘Р Р†Р В°Р ВµРЎвЂљ Р Р†РЎР‚Р В°Р С–Р В° Р С—РЎР‚Р С‘ Р С”Р В°РЎРѓР В°Р Р…Р С‘Р С‘", inline=False)
     if player and player.get("sub_ability"):
-        embed.add_field(name="рџЌ€ Sub-Ability", value=player["sub_ability"], inline=False)
+        embed.add_field(name="СЂСџРЊв‚¬ Sub-Ability", value=player["sub_ability"], inline=False)
     if stand.get("evolves_to"):
-        embed.add_field(name="в¬†пёЏ Evolves to", value=f"**{stand['evolves_to']}**", inline=False)
+        embed.add_field(name="РІВ¬вЂ РїС‘РЏ Evolves to", value=f"**{stand['evolves_to']}**", inline=False)
     if stand.get("image"):
         embed.set_thumbnail(url=stand["image"])
     if user_obj:
@@ -252,7 +252,7 @@ def get_quest_progress(player, quest):
         return player.get("money", 0)
     return player.get(qtype, 0)
 
-# в”Ђв”Ђв”Ђ BOT SETUP в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ
+# РІвЂќР‚РІвЂќР‚РІвЂќР‚ BOT SETUP РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚
 intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
@@ -270,9 +270,9 @@ async def on_ready():
         await tree.sync()
         print("[+] Slash commands synced globally (may take up to 1 hour)")
 
-# в”Ђв”Ђв”Ђ SLASH COMMANDS в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ
+# РІвЂќР‚РІвЂќР‚РІвЂќР‚ SLASH COMMANDS РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚
 
-@tree.command(name="job", description="Р Р°Р±РѕС‚Р° вЂ” Р·Р°СЂР°Р±Р°С‚С‹РІР°Р№ РґРµРЅСЊРіРё (РєРґ: 30 РјРёРЅ)")
+@tree.command(name="job", description="Р В Р В°Р В±Р С•РЎвЂљР В° РІР‚вЂќ Р В·Р В°РЎР‚Р В°Р В±Р В°РЎвЂљРЎвЂ№Р Р†Р В°Р в„– Р Т‘Р ВµР Р…РЎРЉР С–Р С‘ (Р С”Р Т‘: 30 Р СР С‘Р Р…)")
 async def job(interaction: discord.Interaction):
     db = load_db(); player = get_player(db, interaction.user.id)
     now = datetime.utcnow()
@@ -282,13 +282,13 @@ async def job(interaction: discord.Interaction):
         if diff < timedelta(minutes=30):
             rem = timedelta(minutes=30) - diff
             await interaction.response.send_message(
-                f"вЏі РџРѕРґРѕР¶РґРё **{int(rem.total_seconds()//60)}Рј {int(rem.total_seconds()%60)}СЃ** РґРѕ СЃР»РµРґСѓСЋС‰РµР№ СЂР°Р±РѕС‚С‹.",
+                f"РІРЏС– Р СџР С•Р Т‘Р С•Р В¶Р Т‘Р С‘ **{int(rem.total_seconds()//60)}Р С {int(rem.total_seconds()%60)}РЎРѓ** Р Т‘Р С• РЎРѓР В»Р ВµР Т‘РЎС“РЎР‹РЎвЂ°Р ВµР в„– РЎР‚Р В°Р В±Р С•РЎвЂљРЎвЂ№.",
                 ephemeral=True
             ); return
 
     job_name, mn, mx, sc, diff = random.choice(JOBS)
-    de = {"easy":"рџџў","medium":"рџџЎ","hard":"рџ”ґ"}
-    dt = {"easy":"Р›С‘РіРєР°СЏ","medium":"РЎСЂРµРґРЅСЏСЏ","hard":"РЎР»РѕР¶РЅР°СЏ"}
+    de = {"easy":"СЂСџСџСћ","medium":"СЂСџСџРЋ","hard":"СЂСџвЂќТ‘"}
+    dt = {"easy":"Р вЂєРЎвЂР С–Р С”Р В°РЎРЏ","medium":"Р РЋРЎР‚Р ВµР Т‘Р Р…РЎРЏРЎРЏ","hard":"Р РЋР В»Р С•Р В¶Р Р…Р В°РЎРЏ"}
     player["last_job"] = now.isoformat()
 
     if random.randint(1,100) <= sc:
@@ -301,31 +301,31 @@ async def job(interaction: discord.Interaction):
             bonus_crate = random.choice(["epic","legendary"])
             player["crates"][bonus_crate] += 1
         save_db(db)
-        embed = discord.Embed(title="вњ… Р Р°Р±РѕС‚Р° РІС‹РїРѕР»РЅРµРЅР°!", color=0x2ecc71)
-        embed.add_field(name=f"{de[diff]} {dt[diff]}", value=f"РўС‹ **{job_name}** Рё Р·Р°СЂР°Р±РѕС‚Р°Р» **${earned}**!", inline=False)
-        embed.add_field(name="рџ’° Р‘Р°Р»Р°РЅСЃ", value=f"**${player['money']:,}**", inline=True)
-        embed.add_field(name="рџ”Ё Jobs",   value=f"**{player['jobs_done']}/{JOBS_REQUIRED}**", inline=True)
+        embed = discord.Embed(title="РІСљвЂ¦ Р В Р В°Р В±Р С•РЎвЂљР В° Р Р†РЎвЂ№Р С—Р С•Р В»Р Р…Р ВµР Р…Р В°!", color=0x2ecc71)
+        embed.add_field(name=f"{de[diff]} {dt[diff]}", value=f"Р СћРЎвЂ№ **{job_name}** Р С‘ Р В·Р В°РЎР‚Р В°Р В±Р С•РЎвЂљР В°Р В» **${earned}**!", inline=False)
+        embed.add_field(name="СЂСџвЂ™В° Р вЂР В°Р В»Р В°Р Р…РЎРѓ", value=f"**${player['money']:,}**", inline=True)
+        embed.add_field(name="СЂСџвЂќРЃ Jobs",   value=f"**{player['jobs_done']}/{JOBS_REQUIRED}**", inline=True)
         if bonus_crate:
             cfg = CRATE_CONFIG[bonus_crate]
-            embed.add_field(name="рџЋЃ Р‘РѕРЅСѓСЃ!", value=f"{cfg['icon']} **{cfg['name']}** РЅР°С€С‘Р» РІРѕ РІСЂРµРјСЏ СЂР°Р±РѕС‚С‹!", inline=False)
+            embed.add_field(name="СЂСџР‹Рѓ Р вЂР С•Р Р…РЎС“РЎРѓ!", value=f"{cfg['icon']} **{cfg['name']}** Р Р…Р В°РЎв‚¬РЎвЂР В» Р Р†Р С• Р Р†РЎР‚Р ВµР СРЎРЏ РЎР‚Р В°Р В±Р С•РЎвЂљРЎвЂ№!", inline=False)
         if player["jobs_done"] >= JOBS_REQUIRED:
-            embed.add_field(name="рџ”Ќ Search РіРѕС‚РѕРІ!", value="Р�СЃРїРѕР»СЊР·СѓР№ `/search`!", inline=False)
+            embed.add_field(name="СЂСџвЂќРЊ Search Р С–Р С•РЎвЂљР С•Р Р†!", value="Р пїЅРЎРѓР С—Р С•Р В»РЎРЉР В·РЎС“Р в„– `/search`!", inline=False)
         await interaction.response.send_message(embed=embed, ephemeral=True)
     else:
         save_db(db)
-        embed = discord.Embed(title="вќЊ Р Р°Р±РѕС‚Р° РїСЂРѕРІР°Р»РµРЅР°!", color=0xe74c3c)
+        embed = discord.Embed(title="РІСњРЉ Р В Р В°Р В±Р С•РЎвЂљР В° Р С—РЎР‚Р С•Р Р†Р В°Р В»Р ВµР Р…Р В°!", color=0xe74c3c)
         embed.add_field(name=f"{de[diff]} {dt[diff]}", value=f"**{job_name}**\n{random.choice(JOB_FAIL)}", inline=False)
-        embed.add_field(name="рџ”Ё Jobs", value=f"**{player['jobs_done']}/{JOBS_REQUIRED}**", inline=True)
-        embed.set_footer(text="РџСЂРѕРІР°Р» РЅРµ СЃС‡РёС‚Р°РµС‚СЃСЏ вЂ” РїРѕРїСЂРѕР±СѓР№ С‡РµСЂРµР· 30 РјРёРЅ")
+        embed.add_field(name="СЂСџвЂќРЃ Jobs", value=f"**{player['jobs_done']}/{JOBS_REQUIRED}**", inline=True)
+        embed.set_footer(text="Р СџРЎР‚Р С•Р Р†Р В°Р В» Р Р…Р Вµ РЎРѓРЎвЂЎР С‘РЎвЂљР В°Р ВµРЎвЂљРЎРѓРЎРЏ РІР‚вЂќ Р С—Р С•Р С—РЎР‚Р С•Р В±РЎС“Р в„– РЎвЂЎР ВµРЎР‚Р ВµР В· 30 Р СР С‘Р Р…")
         await interaction.response.send_message(embed=embed, ephemeral=True)
 
 
-@tree.command(name="search", description="РќР°Р№С‚Рё РєРµР№СЃ (РЅСѓР¶РЅРѕ 3 РІС‹РїРѕР»РЅРµРЅРЅС‹С… СЂР°Р±РѕС‚С‹)")
+@tree.command(name="search", description="Р СњР В°Р в„–РЎвЂљР С‘ Р С”Р ВµР в„–РЎРѓ (Р Р…РЎС“Р В¶Р Р…Р С• 3 Р Р†РЎвЂ№Р С—Р С•Р В»Р Р…Р ВµР Р…Р Р…РЎвЂ№РЎвЂ¦ РЎР‚Р В°Р В±Р С•РЎвЂљРЎвЂ№)")
 async def search(interaction: discord.Interaction):
     db = load_db(); player = get_player(db, interaction.user.id)
     if player["jobs_done"] < JOBS_REQUIRED:
         await interaction.response.send_message(
-            f"вќЊ РќСѓР¶РЅРѕ РµС‰С‘ **{JOBS_REQUIRED-player['jobs_done']}** СЂР°Р±РѕС‚!\nрџ”Ё **{player['jobs_done']}/{JOBS_REQUIRED}**",
+            f"РІСњРЉ Р СњРЎС“Р В¶Р Р…Р С• Р ВµРЎвЂ°РЎвЂ **{JOBS_REQUIRED-player['jobs_done']}** РЎР‚Р В°Р В±Р С•РЎвЂљ!\nСЂСџвЂќРЃ **{player['jobs_done']}/{JOBS_REQUIRED}**",
             ephemeral=True
         ); return
 
@@ -335,20 +335,20 @@ async def search(interaction: discord.Interaction):
     if not crate_type:
         save_db(db)
         await interaction.response.send_message(
-            embed=discord.Embed(title="рџ”Ќ РџРѕРёСЃРє", description="РќРёС‡РµРіРѕ РЅРµ РЅР°С€С‘Р»...", color=0x95a5a6),
+            embed=discord.Embed(title="СЂСџвЂќРЊ Р СџР С•Р С‘РЎРѓР С”", description="Р СњР С‘РЎвЂЎР ВµР С–Р С• Р Р…Р Вµ Р Р…Р В°РЎв‚¬РЎвЂР В»...", color=0x95a5a6),
             ephemeral=True
         ); return
 
     player["crates"][crate_type] += 1
     save_db(db)
     cfg = CRATE_CONFIG[crate_type]
-    embed = discord.Embed(title="рџ”Ќ РќР°С…РѕРґРєР°!", description=f"РўС‹ РЅР°С€С‘Р» {cfg['icon']} **{cfg['name']}**!", color=cfg["color"])
-    embed.set_footer(text="Р�СЃРїРѕР»СЊР·СѓР№ /crate open")
+    embed = discord.Embed(title="СЂСџвЂќРЊ Р СњР В°РЎвЂ¦Р С•Р Т‘Р С”Р В°!", description=f"Р СћРЎвЂ№ Р Р…Р В°РЎв‚¬РЎвЂР В» {cfg['icon']} **{cfg['name']}**!", color=cfg["color"])
+    embed.set_footer(text="Р пїЅРЎРѓР С—Р С•Р В»РЎРЉР В·РЎС“Р в„– /crate open")
     await interaction.response.send_message(embed=embed, ephemeral=True)
 
 
-@tree.command(name="arrow", description="Р�СЃРїРѕР»СЊР·РѕРІР°С‚СЊ СЃС‚СЂРµР»Сѓ РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ СЃС‚РµРЅРґР°")
-@app_commands.describe(arrow_type="РўРёРї СЃС‚СЂРµР»С‹: regular, requiem, overheaven")
+@tree.command(name="arrow", description="Р пїЅРЎРѓР С—Р С•Р В»РЎРЉР В·Р С•Р Р†Р В°РЎвЂљРЎРЉ РЎРѓРЎвЂљРЎР‚Р ВµР В»РЎС“ Р Т‘Р В»РЎРЏ Р С—Р С•Р В»РЎС“РЎвЂЎР ВµР Р…Р С‘РЎРЏ РЎРѓРЎвЂљР ВµР Р…Р Т‘Р В°")
+@app_commands.describe(arrow_type="Р СћР С‘Р С— РЎРѓРЎвЂљРЎР‚Р ВµР В»РЎвЂ№: regular, requiem, overheaven")
 @app_commands.choices(arrow_type=[
     app_commands.Choice(name="regular",    value="regular"),
     app_commands.Choice(name="requiem",    value="requiem"),
@@ -358,7 +358,7 @@ async def arrow(interaction: discord.Interaction, arrow_type: str = "regular"):
     db = load_db(); player = get_player(db, interaction.user.id)
     if player["arrows"][arrow_type] <= 0:
         await interaction.response.send_message(
-            f"вќЊ РЈ С‚РµР±СЏ РЅРµС‚ **{arrow_type}** СЃС‚СЂРµР»С‹! РљСѓРїРё РІ `/shop` РёР»Рё РЅР°Р№РґРё С‡РµСЂРµР· `/search`.",
+            f"РІСњРЉ Р Р€ РЎвЂљР ВµР В±РЎРЏ Р Р…Р ВµРЎвЂљ **{arrow_type}** РЎРѓРЎвЂљРЎР‚Р ВµР В»РЎвЂ№! Р С™РЎС“Р С—Р С‘ Р Р† `/shop` Р С‘Р В»Р С‘ Р Р…Р В°Р в„–Р Т‘Р С‘ РЎвЂЎР ВµРЎР‚Р ВµР В· `/search`.",
             ephemeral=True
         ); return
 
@@ -376,19 +376,19 @@ async def arrow(interaction: discord.Interaction, arrow_type: str = "regular"):
         storage = player.get("storage", [])
         old_stand_obj = get_active_stand_obj(player)
         new_embed = stand_embed(stand_name)
-        new_embed.set_author(name=f"РќРѕРІС‹Р№ СЃС‚РµРЅРґ!")
+        new_embed.set_author(name=f"Р СњР С•Р Р†РЎвЂ№Р в„– РЎРѓРЎвЂљР ВµР Р…Р Т‘!")
 
         if len(storage) < 2:
-            new_embed.set_footer(text=f"РЈ С‚РµР±СЏ СѓР¶Рµ РµСЃС‚СЊ СЃС‚РµРЅРґ. РќР°Р¶РјРё вњ… СЃРјРµРЅРёС‚СЊ | рџ“¦ СЃРѕС…СЂР°РЅРёС‚СЊ СЃС‚Р°СЂС‹Р№ РІ storage")
+            new_embed.set_footer(text=f"Р Р€ РЎвЂљР ВµР В±РЎРЏ РЎС“Р В¶Р Вµ Р ВµРЎРѓРЎвЂљРЎРЉ РЎРѓРЎвЂљР ВµР Р…Р Т‘. Р СњР В°Р В¶Р СР С‘ РІСљвЂ¦ РЎРѓР СР ВµР Р…Р С‘РЎвЂљРЎРЉ | СЂСџвЂњВ¦ РЎРѓР С•РЎвЂ¦РЎР‚Р В°Р Р…Р С‘РЎвЂљРЎРЉ РЎРѓРЎвЂљР В°РЎР‚РЎвЂ№Р в„– Р Р† storage")
             await interaction.response.send_message(embed=new_embed, ephemeral=True)
             msg = await interaction.original_response()
-            await msg.add_reaction("вњ…")
-            await msg.add_reaction("рџ“¦")
+            await msg.add_reaction("РІСљвЂ¦")
+            await msg.add_reaction("СЂСџвЂњВ¦")
 
-            def check(r, u): return u == interaction.user and str(r.emoji) in ["вњ…","рџ“¦"] and r.message.id == msg.id
+            def check(r, u): return u == interaction.user and str(r.emoji) in ["РІСљвЂ¦","СЂСџвЂњВ¦"] and r.message.id == msg.id
             try:
                 reaction, _ = await bot.wait_for("reaction_add", timeout=30.0, check=check)
-                if str(reaction.emoji) == "рџ“¦":
+                if str(reaction.emoji) == "СЂСџвЂњВ¦":
                     storage.append(old_stand_obj)
                     player["storage"] = storage
                 player["stand"] = stand_name
@@ -397,17 +397,17 @@ async def arrow(interaction: discord.Interaction, arrow_type: str = "regular"):
                 player["stand_stats"] = None
                 player["sub_ability"] = None
                 save_db(db)
-                action = "СЃРѕС…СЂР°РЅС‘РЅ РІ storage, СЃС‚РµРЅРґ СЃРјРµРЅС‘РЅ" if str(reaction.emoji) == "рџ“¦" else "СЃРјРµРЅС‘РЅ"
-                await msg.edit(content=f"вњ… РЎС‚РµРЅРґ {action}: **{stand_name}**!")
+                action = "РЎРѓР С•РЎвЂ¦РЎР‚Р В°Р Р…РЎвЂР Р… Р Р† storage, РЎРѓРЎвЂљР ВµР Р…Р Т‘ РЎРѓР СР ВµР Р…РЎвЂР Р…" if str(reaction.emoji) == "СЂСџвЂњВ¦" else "РЎРѓР СР ВµР Р…РЎвЂР Р…"
+                await msg.edit(content=f"РІСљвЂ¦ Р РЋРЎвЂљР ВµР Р…Р Т‘ {action}: **{stand_name}**!")
             except asyncio.TimeoutError:
                 save_db(db)
-                await msg.edit(content="вќЊ Р’СЂРµРјСЏ РІС‹С€Р»Рѕ вЂ” СЃС‚РµРЅРґ РЅРµ СЃРјРµРЅС‘РЅ.")
+                await msg.edit(content="РІСњРЉ Р вЂ™РЎР‚Р ВµР СРЎРЏ Р Р†РЎвЂ№РЎв‚¬Р В»Р С• РІР‚вЂќ РЎРѓРЎвЂљР ВµР Р…Р Т‘ Р Р…Р Вµ РЎРѓР СР ВµР Р…РЎвЂР Р….")
         else:
-            new_embed.set_footer(text="РЈ С‚РµР±СЏ СѓР¶Рµ РµСЃС‚СЊ СЃС‚РµРЅРґ. РќР°Р¶РјРё вњ… С‡С‚РѕР±С‹ СЃРјРµРЅРёС‚СЊ (storage РїРѕР»РѕРЅ)")
+            new_embed.set_footer(text="Р Р€ РЎвЂљР ВµР В±РЎРЏ РЎС“Р В¶Р Вµ Р ВµРЎРѓРЎвЂљРЎРЉ РЎРѓРЎвЂљР ВµР Р…Р Т‘. Р СњР В°Р В¶Р СР С‘ РІСљвЂ¦ РЎвЂЎРЎвЂљР С•Р В±РЎвЂ№ РЎРѓР СР ВµР Р…Р С‘РЎвЂљРЎРЉ (storage Р С—Р С•Р В»Р С•Р Р…)")
             await interaction.response.send_message(embed=new_embed, ephemeral=True)
             msg = await interaction.original_response()
-            await msg.add_reaction("вњ…")
-            def check(r, u): return u == interaction.user and str(r.emoji) == "вњ…" and r.message.id == msg.id
+            await msg.add_reaction("РІСљвЂ¦")
+            def check(r, u): return u == interaction.user and str(r.emoji) == "РІСљвЂ¦" and r.message.id == msg.id
             try:
                 await bot.wait_for("reaction_add", timeout=30.0, check=check)
                 player["stand"] = stand_name
@@ -416,10 +416,10 @@ async def arrow(interaction: discord.Interaction, arrow_type: str = "regular"):
                 player["stand_stats"] = None
                 player["sub_ability"] = None
                 save_db(db)
-                await msg.edit(content=f"вњ… РЎС‚РµРЅРґ СЃРјРµРЅС‘РЅ РЅР° **{stand_name}**!")
+                await msg.edit(content=f"РІСљвЂ¦ Р РЋРЎвЂљР ВµР Р…Р Т‘ РЎРѓР СР ВµР Р…РЎвЂР Р… Р Р…Р В° **{stand_name}**!")
             except asyncio.TimeoutError:
                 save_db(db)
-                await msg.edit(content="вќЊ Р’СЂРµРјСЏ РІС‹С€Р»Рѕ.")
+                await msg.edit(content="РІСњРЉ Р вЂ™РЎР‚Р ВµР СРЎРЏ Р Р†РЎвЂ№РЎв‚¬Р В»Р С•.")
         return
 
     player["stand"] = stand_name
@@ -429,43 +429,43 @@ async def arrow(interaction: discord.Interaction, arrow_type: str = "regular"):
     player["sub_ability"] = None
     save_db(db)
     embed = stand_embed(stand_name, player, interaction.user)
-    embed.set_author(name=f"{interaction.user.display_name} РїРѕР»СѓС‡РёР» СЃС‚РµРЅРґ!")
+    embed.set_author(name=f"{interaction.user.display_name} Р С—Р С•Р В»РЎС“РЎвЂЎР С‘Р В» РЎРѓРЎвЂљР ВµР Р…Р Т‘!")
     await interaction.response.send_message(embed=embed, ephemeral=True)
 
 
-@tree.command(name="stand", description="РџРѕСЃРјРѕС‚СЂРµС‚СЊ СЃРІРѕР№ СЃС‚РµРЅРґ РёР»Рё СЃС‚РµРЅРґ РґСЂСѓРіРѕРіРѕ РёРіСЂРѕРєР°")
-@app_commands.describe(user="Р�РіСЂРѕРє (РЅРµРѕР±СЏР·Р°С‚РµР»СЊРЅРѕ)")
+@tree.command(name="stand", description="Р СџР С•РЎРѓР СР С•РЎвЂљРЎР‚Р ВµРЎвЂљРЎРЉ РЎРѓР Р†Р С•Р в„– РЎРѓРЎвЂљР ВµР Р…Р Т‘ Р С‘Р В»Р С‘ РЎРѓРЎвЂљР ВµР Р…Р Т‘ Р Т‘РЎР‚РЎС“Р С–Р С•Р С–Р С• Р С‘Р С–РЎР‚Р С•Р С”Р В°")
+@app_commands.describe(user="Р пїЅР С–РЎР‚Р С•Р С” (Р Р…Р ВµР С•Р В±РЎРЏР В·Р В°РЎвЂљР ВµР В»РЎРЉР Р…Р С•)")
 async def stand(interaction: discord.Interaction, user: discord.Member = None):
     target = user or interaction.user
     db = load_db(); player = get_player(db, target.id)
     if not player["stand"]:
-        await interaction.response.send_message(f"вќЊ РЈ **{target.display_name}** РЅРµС‚ СЃС‚РµРЅРґР°!", ephemeral=True); return
+        await interaction.response.send_message(f"РІСњРЉ Р Р€ **{target.display_name}** Р Р…Р ВµРЎвЂљ РЎРѓРЎвЂљР ВµР Р…Р Т‘Р В°!", ephemeral=True); return
     embed = stand_embed(player["stand"], player, target)
     await interaction.response.send_message(embed=embed, ephemeral=True)
 
 
-@tree.command(name="inv", description="Р�РЅРІРµРЅС‚Р°СЂСЊ")
-@app_commands.describe(user="Р�РіСЂРѕРє (РЅРµРѕР±СЏР·Р°С‚РµР»СЊРЅРѕ)")
+@tree.command(name="inv", description="Р пїЅР Р…Р Р†Р ВµР Р…РЎвЂљР В°РЎР‚РЎРЉ")
+@app_commands.describe(user="Р пїЅР С–РЎР‚Р С•Р С” (Р Р…Р ВµР С•Р В±РЎРЏР В·Р В°РЎвЂљР ВµР В»РЎРЉР Р…Р С•)")
 async def inv(interaction: discord.Interaction, user: discord.Member = None):
     target = user or interaction.user
     db = load_db(); player = get_player(db, target.id)
 
-    embed = discord.Embed(title=f"рџЋ’ {target.display_name}", color=0x2c2f33)
-    embed.add_field(name="рџЏ№ Arrows", value=(
-        f"рџЏ№ **{player['arrows']['regular']}** Regular\n"
-        f"вњЁ **{player['arrows']['requiem']}** Requiem\n"
-        f"вљЎ **{player['arrows']['overheaven']}** Overheaven"
+    embed = discord.Embed(title=f"СЂСџР‹вЂ™ {target.display_name}", color=0x2c2f33)
+    embed.add_field(name="СЂСџРЏв„– Arrows", value=(
+        f"СЂСџРЏв„– **{player['arrows']['regular']}** Regular\n"
+        f"РІСљРЃ **{player['arrows']['requiem']}** Requiem\n"
+        f"РІС™РЋ **{player['arrows']['overheaven']}** Overheaven"
     ), inline=True)
-    embed.add_field(name="рџ“¦ Crates", value=(
-        f"рџ“¦ **{player['crates']['common']}** Common\n"
-        f"рџџ¦ **{player['crates']['rare']}** Rare\n"
-        f"рџџЈ **{player['crates']['epic']}** Epic\n"
-        f"рџЊџ **{player['crates']['legendary']}** Legendary"
+    embed.add_field(name="СЂСџвЂњВ¦ Crates", value=(
+        f"СЂСџвЂњВ¦ **{player['crates']['common']}** Common\n"
+        f"СЂСџСџВ¦ **{player['crates']['rare']}** Rare\n"
+        f"СЂСџСџР€ **{player['crates']['epic']}** Epic\n"
+        f"СЂСџРЉСџ **{player['crates']['legendary']}** Legendary"
     ), inline=True)
-    embed.add_field(name="рџ’Ћ Other", value=(
-        f"рџ’Ћ **{player['crystals']}** Crystals\n"
-        f"рџЌ€ **{player['fruits']}** Rokakaka\n"
-        f"рџЋ­ **{player.get('stone_masks',0)}** Stone Mask"
+    embed.add_field(name="СЂСџвЂ™Р‹ Other", value=(
+        f"СЂСџвЂ™Р‹ **{player['crystals']}** Crystals\n"
+        f"СЂСџРЊв‚¬ **{player['fruits']}** Rokakaka\n"
+        f"СЂСџР‹В­ **{player.get('stone_masks',0)}** Stone Mask"
     ), inline=True)
 
     stand_text = "None"
@@ -473,14 +473,14 @@ async def inv(interaction: discord.Interaction, user: discord.Member = None):
         sn = player["stand"]
         tier = STANDS[sn]["tier"]
         emoji = TIER_EMOJI.get(tier,"")
-        vamp = " рџ§›" if player.get("is_vampire") else ""
-        stand_text = f"{emoji} **{sn}**{vamp}\nAbility Tier: {'в­ђ'*player['ability_tier']}"
+        vamp = " СЂСџВ§вЂє" if player.get("is_vampire") else ""
+        stand_text = f"{emoji} **{sn}**{vamp}\nAbility Tier: {'РІВ­С’'*player['ability_tier']}"
         if can_evolve(sn):
             evo = get_evolution(sn)
             chance = EVOLVE_CHANCES.get(tier, 5.0)
-            stand_text += f"\nв¬†пёЏ в†’ **{evo}** ({chance}%)"
+            stand_text += f"\nРІВ¬вЂ РїС‘РЏ РІвЂ вЂ™ **{evo}** ({chance}%)"
 
-    embed.add_field(name="вљ”пёЏ Stand", value=stand_text, inline=False)
+    embed.add_field(name="РІС™вЂќРїС‘РЏ Stand", value=stand_text, inline=False)
 
     storage = player.get("storage", [])
     if storage:
@@ -488,51 +488,51 @@ async def inv(interaction: discord.Interaction, user: discord.Member = None):
         for i, s in enumerate(storage, 1):
             st = STANDS[s["name"]]["tier"]
             em = TIER_EMOJI.get(st,"")
-            vamp = " рџ§›" if s.get("is_vampire") else ""
-            storage_text += f"{i}. {em} **{s['name']}**{vamp} (Tier {'в­ђ'*s.get('ability_tier',1)})\n"
-        embed.add_field(name="рџ—„пёЏ Storage", value=storage_text, inline=False)
+            vamp = " СЂСџВ§вЂє" if s.get("is_vampire") else ""
+            storage_text += f"{i}. {em} **{s['name']}**{vamp} (Tier {'РІВ­С’'*s.get('ability_tier',1)})\n"
+        embed.add_field(name="СЂСџвЂ”вЂћРїС‘РЏ Storage", value=storage_text, inline=False)
     else:
-        embed.add_field(name="рџ—„пёЏ Storage", value="РџСѓСЃС‚Рѕ (РјР°РєСЃ. 2 СЃС‚РµРЅРґР°)", inline=False)
+        embed.add_field(name="СЂСџвЂ”вЂћРїС‘РЏ Storage", value="Р СџРЎС“РЎРѓРЎвЂљР С• (Р СР В°Р С”РЎРѓ. 2 РЎРѓРЎвЂљР ВµР Р…Р Т‘Р В°)", inline=False)
 
-    embed.add_field(name="рџ’° Money", value=f"**${player['money']:,}**", inline=True)
-    embed.add_field(name="рџ”Ё Jobs",  value=f"**{player['jobs_done']}/{JOBS_REQUIRED}** РґР»СЏ search", inline=True)
+    embed.add_field(name="СЂСџвЂ™В° Money", value=f"**${player['money']:,}**", inline=True)
+    embed.add_field(name="СЂСџвЂќРЃ Jobs",  value=f"**{player['jobs_done']}/{JOBS_REQUIRED}** Р Т‘Р В»РЎРЏ search", inline=True)
     await interaction.response.send_message(embed=embed, ephemeral=True)
 
 
-@tree.command(name="storage", description="РЈРїСЂР°РІР»РµРЅРёРµ С…СЂР°РЅРёР»РёС‰РµРј СЃС‚РµРЅРґРѕРІ")
-@app_commands.describe(action="store/swap/drop", slot="РЎР»РѕС‚ 1 РёР»Рё 2 (РґР»СЏ swap)")
+@tree.command(name="storage", description="Р Р€Р С—РЎР‚Р В°Р Р†Р В»Р ВµР Р…Р С‘Р Вµ РЎвЂ¦РЎР‚Р В°Р Р…Р С‘Р В»Р С‘РЎвЂ°Р ВµР С РЎРѓРЎвЂљР ВµР Р…Р Т‘Р С•Р Р†")
+@app_commands.describe(action="store/swap/drop", slot="Р РЋР В»Р С•РЎвЂљ 1 Р С‘Р В»Р С‘ 2 (Р Т‘Р В»РЎРЏ swap)")
 @app_commands.choices(action=[
-    app_commands.Choice(name="store вЂ” РїРѕР»РѕР¶РёС‚СЊ Р°РєС‚РёРІРЅС‹Р№ СЃС‚РµРЅРґ", value="store"),
-    app_commands.Choice(name="swap  вЂ” РїРѕРјРµРЅСЏС‚СЊ СЃ Р°РєС‚РёРІРЅС‹Рј",     value="swap"),
-    app_commands.Choice(name="drop  вЂ” РІС‹Р±СЂРѕСЃРёС‚СЊ Р°РєС‚РёРІРЅС‹Р№ СЃС‚РµРЅРґ", value="drop"),
+    app_commands.Choice(name="store РІР‚вЂќ Р С—Р С•Р В»Р С•Р В¶Р С‘РЎвЂљРЎРЉ Р В°Р С”РЎвЂљР С‘Р Р†Р Р…РЎвЂ№Р в„– РЎРѓРЎвЂљР ВµР Р…Р Т‘", value="store"),
+    app_commands.Choice(name="swap  РІР‚вЂќ Р С—Р С•Р СР ВµР Р…РЎРЏРЎвЂљРЎРЉ РЎРѓ Р В°Р С”РЎвЂљР С‘Р Р†Р Р…РЎвЂ№Р С",     value="swap"),
+    app_commands.Choice(name="drop  РІР‚вЂќ Р Р†РЎвЂ№Р В±РЎР‚Р С•РЎРѓР С‘РЎвЂљРЎРЉ Р В°Р С”РЎвЂљР С‘Р Р†Р Р…РЎвЂ№Р в„– РЎРѓРЎвЂљР ВµР Р…Р Т‘", value="drop"),
 ])
 async def storage(interaction: discord.Interaction, action: str, slot: int = 1):
     db = load_db(); player = get_player(db, interaction.user.id)
     store = player.get("storage", [])
 
-    # в”Ђв”Ђ STORE в”Ђв”Ђ
+    # РІвЂќР‚РІвЂќР‚ STORE РІвЂќР‚РІвЂќР‚
     if action == "store":
         if not player["stand"]:
-            await interaction.response.send_message("вќЊ РЈ С‚РµР±СЏ РЅРµС‚ Р°РєС‚РёРІРЅРѕРіРѕ СЃС‚РµРЅРґР°!", ephemeral=True); return
+            await interaction.response.send_message("РІСњРЉ Р Р€ РЎвЂљР ВµР В±РЎРЏ Р Р…Р ВµРЎвЂљ Р В°Р С”РЎвЂљР С‘Р Р†Р Р…Р С•Р С–Р С• РЎРѓРЎвЂљР ВµР Р…Р Т‘Р В°!", ephemeral=True); return
         if len(store) >= 2:
-            await interaction.response.send_message("вќЊ Storage РїРѕР»РѕРЅ (РјР°РєСЃ. 2 СЃС‚РµРЅРґР°)! Р�СЃРїРѕР»СЊР·СѓР№ `/storage swap`.", ephemeral=True); return
+            await interaction.response.send_message("РІСњРЉ Storage Р С—Р С•Р В»Р С•Р Р… (Р СР В°Р С”РЎРѓ. 2 РЎРѓРЎвЂљР ВµР Р…Р Т‘Р В°)! Р пїЅРЎРѓР С—Р С•Р В»РЎРЉР В·РЎС“Р в„– `/storage swap`.", ephemeral=True); return
         obj = get_active_stand_obj(player)
         store.append(obj)
         player["storage"] = store
         set_active_stand(player, None)
         save_db(db)
         await interaction.response.send_message(
-            f"рџ“¦ **{obj['name']}** СЃРѕС…СЂР°РЅС‘РЅ РІ storage (СЃР»РѕС‚ {len(store)}).",
+            f"СЂСџвЂњВ¦ **{obj['name']}** РЎРѓР С•РЎвЂ¦РЎР‚Р В°Р Р…РЎвЂР Р… Р Р† storage (РЎРѓР В»Р С•РЎвЂљ {len(store)}).",
             ephemeral=True
         ); return
 
-    # в”Ђв”Ђ SWAP в”Ђв”Ђ
+    # РІвЂќР‚РІвЂќР‚ SWAP РІвЂќР‚РІвЂќР‚
     if action == "swap":
         if not store:
-            await interaction.response.send_message("вќЊ Storage РїСѓСЃС‚!", ephemeral=True); return
+            await interaction.response.send_message("РІСњРЉ Storage Р С—РЎС“РЎРѓРЎвЂљ!", ephemeral=True); return
         idx = slot - 1
         if idx < 0 or idx >= len(store):
-            await interaction.response.send_message(f"вќЊ РЎР»РѕС‚ {slot} РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚. Р’ storage {len(store)} СЃС‚РµРЅРґ(Р°).", ephemeral=True); return
+            await interaction.response.send_message(f"РІСњРЉ Р РЋР В»Р С•РЎвЂљ {slot} Р Р…Р Вµ РЎРѓРЎС“РЎвЂ°Р ВµРЎРѓРЎвЂљР Р†РЎС“Р ВµРЎвЂљ. Р вЂ™ storage {len(store)} РЎРѓРЎвЂљР ВµР Р…Р Т‘(Р В°).", ephemeral=True); return
 
         stored_obj = store[idx]
         active_obj = get_active_stand_obj(player)
@@ -545,50 +545,50 @@ async def storage(interaction: discord.Interaction, action: str, slot: int = 1):
         player["storage"] = store
         save_db(db)
 
-        embed = discord.Embed(title="рџ”„ РЎС‚РµРЅРґС‹ РїРѕРјРµРЅСЏРЅС‹!", color=0x3498db)
-        embed.add_field(name="вљ”пёЏ РђРєС‚РёРІРЅС‹Р№ С‚РµРїРµСЂСЊ", value=f"**{stored_obj['name']}**", inline=True)
+        embed = discord.Embed(title="СЂСџвЂќвЂћ Р РЋРЎвЂљР ВµР Р…Р Т‘РЎвЂ№ Р С—Р С•Р СР ВµР Р…РЎРЏР Р…РЎвЂ№!", color=0x3498db)
+        embed.add_field(name="РІС™вЂќРїС‘РЏ Р С’Р С”РЎвЂљР С‘Р Р†Р Р…РЎвЂ№Р в„– РЎвЂљР ВµР С—Р ВµРЎР‚РЎРЉ", value=f"**{stored_obj['name']}**", inline=True)
         if active_obj:
-            embed.add_field(name="рџ“¦ Р’ storage С‚РµРїРµСЂСЊ", value=f"**{active_obj['name']}**", inline=True)
+            embed.add_field(name="СЂСџвЂњВ¦ Р вЂ™ storage РЎвЂљР ВµР С—Р ВµРЎР‚РЎРЉ", value=f"**{active_obj['name']}**", inline=True)
         await interaction.response.send_message(embed=embed, ephemeral=True)
         return
 
-    # в”Ђв”Ђ DROP в”Ђв”Ђ
+    # РІвЂќР‚РІвЂќР‚ DROP РІвЂќР‚РІвЂќР‚
     if action == "drop":
         if not player["stand"]:
-            await interaction.response.send_message("вќЊ РЈ С‚РµР±СЏ РЅРµС‚ Р°РєС‚РёРІРЅРѕРіРѕ СЃС‚РµРЅРґР°!", ephemeral=True); return
+            await interaction.response.send_message("РІСњРЉ Р Р€ РЎвЂљР ВµР В±РЎРЏ Р Р…Р ВµРЎвЂљ Р В°Р С”РЎвЂљР С‘Р Р†Р Р…Р С•Р С–Р С• РЎРѓРЎвЂљР ВµР Р…Р Т‘Р В°!", ephemeral=True); return
         sn = player["stand"]
         await interaction.response.send_message(
-            f"вљ пёЏ РўС‹ СѓРІРµСЂРµРЅ С‡С‚Рѕ С…РѕС‡РµС€СЊ РІС‹Р±СЂРѕСЃРёС‚СЊ **{sn}**? Р­С‚Рѕ РґРµР№СЃС‚РІРёРµ РЅРµРѕР±СЂР°С‚РёРјРѕ!\nРќР°Р¶РјРё вњ… РґР»СЏ РїРѕРґС‚РІРµСЂР¶РґРµРЅРёСЏ.",
+            f"РІС™В РїС‘РЏ Р СћРЎвЂ№ РЎС“Р Р†Р ВµРЎР‚Р ВµР Р… РЎвЂЎРЎвЂљР С• РЎвЂ¦Р С•РЎвЂЎР ВµРЎв‚¬РЎРЉ Р Р†РЎвЂ№Р В±РЎР‚Р С•РЎРѓР С‘РЎвЂљРЎРЉ **{sn}**? Р В­РЎвЂљР С• Р Т‘Р ВµР в„–РЎРѓРЎвЂљР Р†Р С‘Р Вµ Р Р…Р ВµР С•Р В±РЎР‚Р В°РЎвЂљР С‘Р СР С•!\nР СњР В°Р В¶Р СР С‘ РІСљвЂ¦ Р Т‘Р В»РЎРЏ Р С—Р С•Р Т‘РЎвЂљР Р†Р ВµРЎР‚Р В¶Р Т‘Р ВµР Р…Р С‘РЎРЏ.",
             ephemeral=True
         )
         msg = await interaction.original_response()
-        await msg.add_reaction("вњ…")
-        def check(r, u): return u == interaction.user and str(r.emoji) == "вњ…" and r.message.id == msg.id
+        await msg.add_reaction("РІСљвЂ¦")
+        def check(r, u): return u == interaction.user and str(r.emoji) == "РІСљвЂ¦" and r.message.id == msg.id
         try:
             await bot.wait_for("reaction_add", timeout=20.0, check=check)
             set_active_stand(player, None)
             save_db(db)
-            await msg.edit(content=f"рџ—‘пёЏ РЎС‚РµРЅРґ **{sn}** РІС‹Р±СЂРѕС€РµРЅ.")
+            await msg.edit(content=f"СЂСџвЂ”вЂРїС‘РЏ Р РЋРЎвЂљР ВµР Р…Р Т‘ **{sn}** Р Р†РЎвЂ№Р В±РЎР‚Р С•РЎв‚¬Р ВµР Р….")
         except asyncio.TimeoutError:
-            await msg.edit(content="вќЊ РћС‚РјРµРЅРµРЅРѕ.")
+            await msg.edit(content="РІСњРЉ Р С›РЎвЂљР СР ВµР Р…Р ВµР Р…Р С•.")
 
 
-@tree.command(name="evolve", description="Р­РІРѕР»СЋС†РёСЏ СЃС‚РµРЅРґР°")
-@app_commands.describe(evo_type="requiem (С‡РµСЂРµР· Requiem Arrow) РёР»Рё vampire (С‡РµСЂРµР· Stone Mask)")
+@tree.command(name="evolve", description="Р В­Р Р†Р С•Р В»РЎР‹РЎвЂ Р С‘РЎРЏ РЎРѓРЎвЂљР ВµР Р…Р Т‘Р В°")
+@app_commands.describe(evo_type="requiem (РЎвЂЎР ВµРЎР‚Р ВµР В· Requiem Arrow) Р С‘Р В»Р С‘ vampire (РЎвЂЎР ВµРЎР‚Р ВµР В· Stone Mask)")
 @app_commands.choices(evo_type=[
-    app_commands.Choice(name="requiem вЂ” СЌРІРѕР»СЋС†РёСЏ С‡РµСЂРµР· Requiem Arrow", value="requiem"),
-    app_commands.Choice(name="vampire вЂ” РІР°РјРїРёСЂ С‡РµСЂРµР· Stone Mask",       value="vampire"),
+    app_commands.Choice(name="requiem РІР‚вЂќ РЎРЊР Р†Р С•Р В»РЎР‹РЎвЂ Р С‘РЎРЏ РЎвЂЎР ВµРЎР‚Р ВµР В· Requiem Arrow", value="requiem"),
+    app_commands.Choice(name="vampire РІР‚вЂќ Р Р†Р В°Р СР С—Р С‘РЎР‚ РЎвЂЎР ВµРЎР‚Р ВµР В· Stone Mask",       value="vampire"),
 ])
 async def evolve(interaction: discord.Interaction, evo_type: str = "requiem"):
     db = load_db(); player = get_player(db, interaction.user.id)
     if not player["stand"]:
-        await interaction.response.send_message("вќЊ РЈ С‚РµР±СЏ РЅРµС‚ СЃС‚РµРЅРґР°!", ephemeral=True); return
+        await interaction.response.send_message("РІСњРЉ Р Р€ РЎвЂљР ВµР В±РЎРЏ Р Р…Р ВµРЎвЂљ РЎРѓРЎвЂљР ВµР Р…Р Т‘Р В°!", ephemeral=True); return
 
     if evo_type == "vampire":
         if player.get("is_vampire"):
-            await interaction.response.send_message("вќЊ РЎС‚РµРЅРґ СѓР¶Рµ СЏРІР»СЏРµС‚СЃСЏ РІР°РјРїРёСЂРѕРј!", ephemeral=True); return
+            await interaction.response.send_message("РІСњРЉ Р РЋРЎвЂљР ВµР Р…Р Т‘ РЎС“Р В¶Р Вµ РЎРЏР Р†Р В»РЎРЏР ВµРЎвЂљРЎРѓРЎРЏ Р Р†Р В°Р СР С—Р С‘РЎР‚Р С•Р С!", ephemeral=True); return
         if player.get("stone_masks", 0) <= 0:
-            await interaction.response.send_message("вќЊ РќСѓР¶РЅР° рџЋ­ **Stone Mask**! Р’С‹Р±РёРІР°РµС‚СЃСЏ РёР· Legendary Crate (1.5%).", ephemeral=True); return
+            await interaction.response.send_message("РІСњРЉ Р СњРЎС“Р В¶Р Р…Р В° СЂСџР‹В­ **Stone Mask**! Р вЂ™РЎвЂ№Р В±Р С‘Р Р†Р В°Р ВµРЎвЂљРЎРѓРЎРЏ Р С‘Р В· Legendary Crate (1.5%).", ephemeral=True); return
 
         player["stone_masks"] -= 1
         stand_name = player["stand"]
@@ -599,21 +599,21 @@ async def evolve(interaction: discord.Interaction, evo_type: str = "requiem"):
         player["is_vampire"] = True
         save_db(db)
 
-        embed = discord.Embed(title="рџ§› Vampire Evolution!", description=f"**{stand_name}** РїСЂРѕРЅР·С‘РЅ РљР°РјРµРЅРЅРѕР№ РњР°СЃРєРѕР№!", color=0x8e0000)
-        stats_text = "\n".join([f"{k.replace('_',' ').title()}: **{base_stats[k]}** в†’ **{new_stats[k]}**" for k in new_stats])
-        embed.add_field(name="рџ“Љ Р�Р·РјРµРЅРµРЅРёРµ СЃС‚Р°С‚РѕРІ", value=stats_text, inline=False)
-        embed.add_field(name="рџ§› РќРѕРІР°СЏ СЃРїРѕСЃРѕР±РЅРѕСЃС‚СЊ", value="Vampiric Freeze вЂ” Р·Р°РјРѕСЂР°Р¶РёРІР°РµС‚ РІСЂР°РіР°", inline=False)
+        embed = discord.Embed(title="СЂСџВ§вЂє Vampire Evolution!", description=f"**{stand_name}** Р С—РЎР‚Р С•Р Р…Р В·РЎвЂР Р… Р С™Р В°Р СР ВµР Р…Р Р…Р С•Р в„– Р СљР В°РЎРѓР С”Р С•Р в„–!", color=0x8e0000)
+        stats_text = "\n".join([f"{k.replace('_',' ').title()}: **{base_stats[k]}** РІвЂ вЂ™ **{new_stats[k]}**" for k in new_stats])
+        embed.add_field(name="СЂСџвЂњР‰ Р пїЅР В·Р СР ВµР Р…Р ВµР Р…Р С‘Р Вµ РЎРѓРЎвЂљР В°РЎвЂљР С•Р Р†", value=stats_text, inline=False)
+        embed.add_field(name="СЂСџВ§вЂє Р СњР С•Р Р†Р В°РЎРЏ РЎРѓР С—Р С•РЎРѓР С•Р В±Р Р…Р С•РЎРѓРЎвЂљРЎРЉ", value="Vampiric Freeze РІР‚вЂќ Р В·Р В°Р СР С•РЎР‚Р В°Р В¶Р С‘Р Р†Р В°Р ВµРЎвЂљ Р Р†РЎР‚Р В°Р С–Р В°", inline=False)
         if all_z:
-            embed.add_field(name="рџ’Ђ GODLIKE", value="Р’СЃРµ СЃС‚Р°С‚С‹ **Z**!", inline=False)
+            embed.add_field(name="СЂСџвЂ™Р‚ GODLIKE", value="Р вЂ™РЎРѓР Вµ РЎРѓРЎвЂљР В°РЎвЂљРЎвЂ№ **Z**!", inline=False)
         await interaction.response.send_message(embed=embed, ephemeral=True)
         return
 
     # requiem
     stand_name = player["stand"]
     if not can_evolve(stand_name):
-        await interaction.response.send_message(f"вќЊ **{stand_name}** РЅРµ РјРѕР¶РµС‚ СЌРІРѕР»СЋС†РёРѕРЅРёСЂРѕРІР°С‚СЊ С‡РµСЂРµР· Requiem.", ephemeral=True); return
+        await interaction.response.send_message(f"РІСњРЉ **{stand_name}** Р Р…Р Вµ Р СР С•Р В¶Р ВµРЎвЂљ РЎРЊР Р†Р С•Р В»РЎР‹РЎвЂ Р С‘Р С•Р Р…Р С‘РЎР‚Р С•Р Р†Р В°РЎвЂљРЎРЉ РЎвЂЎР ВµРЎР‚Р ВµР В· Requiem.", ephemeral=True); return
     if player["arrows"]["requiem"] <= 0:
-        await interaction.response.send_message("вќЊ РќСѓР¶РЅР° вњЁ **Requiem Arrow**!", ephemeral=True); return
+        await interaction.response.send_message("РІСњРЉ Р СњРЎС“Р В¶Р Р…Р В° РІСљРЃ **Requiem Arrow**!", ephemeral=True); return
 
     evolution_name = get_evolution(stand_name)
     current_tier   = STANDS[stand_name]["tier"]
@@ -628,30 +628,30 @@ async def evolve(interaction: discord.Interaction, evo_type: str = "requiem"):
         player["sub_ability"] = None
         save_db(db)
         embed = stand_embed(evolution_name, player, interaction.user)
-        embed.set_author(name=f"вњЁ {interaction.user.display_name} СЌРІРѕР»СЋС†РёРѕРЅРёСЂРѕРІР°Р» СЃС‚РµРЅРґ!")
+        embed.set_author(name=f"РІСљРЃ {interaction.user.display_name} РЎРЊР Р†Р С•Р В»РЎР‹РЎвЂ Р С‘Р С•Р Р…Р С‘РЎР‚Р С•Р Р†Р В°Р В» РЎРѓРЎвЂљР ВµР Р…Р Т‘!")
         await interaction.response.send_message(embed=embed, ephemeral=True)
     else:
         save_db(db)
         embed = discord.Embed(
-            title="рџ’” Р­РІРѕР»СЋС†РёСЏ РїСЂРѕРІР°Р»РёР»Р°СЃСЊ!",
-            description=f"**{stand_name}** РЅРµ РїСЂРёРЅСЏР» СЃС‚СЂРµР»Сѓ...\nРЁР°РЅСЃ Р±С‹Р» **{chance}%**\nРЎС‚СЂРµР»Р° РїРѕС‚СЂР°С‡РµРЅР°.",
+            title="СЂСџвЂ™вЂќ Р В­Р Р†Р С•Р В»РЎР‹РЎвЂ Р С‘РЎРЏ Р С—РЎР‚Р С•Р Р†Р В°Р В»Р С‘Р В»Р В°РЎРѓРЎРЉ!",
+            description=f"**{stand_name}** Р Р…Р Вµ Р С—РЎР‚Р С‘Р Р…РЎРЏР В» РЎРѓРЎвЂљРЎР‚Р ВµР В»РЎС“...\nР РЃР В°Р Р…РЎРѓ Р В±РЎвЂ№Р В» **{chance}%**\nР РЋРЎвЂљРЎР‚Р ВµР В»Р В° Р С—Р С•РЎвЂљРЎР‚Р В°РЎвЂЎР ВµР Р…Р В°.",
             color=0xe74c3c
         )
-        embed.add_field(name="в¬†пёЏ Р¦РµР»СЊ",        value=f"**{evolution_name}**",              inline=True)
-        embed.add_field(name="вњЁ РћСЃС‚Р°Р»РѕСЃСЊ",    value=f"**{player['arrows']['requiem']}**", inline=True)
+        embed.add_field(name="РІВ¬вЂ РїС‘РЏ Р В¦Р ВµР В»РЎРЉ",        value=f"**{evolution_name}**",              inline=True)
+        embed.add_field(name="РІСљРЃ Р С›РЎРѓРЎвЂљР В°Р В»Р С•РЎРѓРЎРЉ",    value=f"**{player['arrows']['requiem']}**", inline=True)
         await interaction.response.send_message(embed=embed, ephemeral=True)
 
 
-@tree.command(name="upgrade", description="РџСЂРѕРєР°С‡Р°С‚СЊ СЃРїРѕСЃРѕР±РЅРѕСЃС‚СЊ СЃС‚РµРЅРґР° (Tier 1в†’2в†’3)")
+@tree.command(name="upgrade", description="Р СџРЎР‚Р С•Р С”Р В°РЎвЂЎР В°РЎвЂљРЎРЉ РЎРѓР С—Р С•РЎРѓР С•Р В±Р Р…Р С•РЎРѓРЎвЂљРЎРЉ РЎРѓРЎвЂљР ВµР Р…Р Т‘Р В° (Tier 1РІвЂ вЂ™2РІвЂ вЂ™3)")
 async def upgrade(interaction: discord.Interaction):
     db = load_db(); player = get_player(db, interaction.user.id)
     if not player["stand"]:
-        await interaction.response.send_message("вќЊ РЈ С‚РµР±СЏ РЅРµС‚ СЃС‚РµРЅРґР°!", ephemeral=True); return
+        await interaction.response.send_message("РІСњРЉ Р Р€ РЎвЂљР ВµР В±РЎРЏ Р Р…Р ВµРЎвЂљ РЎРѓРЎвЂљР ВµР Р…Р Т‘Р В°!", ephemeral=True); return
 
     stand_name = player["stand"]
     cur_tier   = player["ability_tier"]
     if cur_tier >= 3:
-        await interaction.response.send_message("вњ… РЎРїРѕСЃРѕР±РЅРѕСЃС‚СЊ СѓР¶Рµ РЅР° РјР°РєСЃРёРјСѓРјРµ (Tier 3)!", ephemeral=True); return
+        await interaction.response.send_message("РІСљвЂ¦ Р РЋР С—Р С•РЎРѓР С•Р В±Р Р…Р С•РЎРѓРЎвЂљРЎРЉ РЎС“Р В¶Р Вµ Р Р…Р В° Р СР В°Р С”РЎРѓР С‘Р СРЎС“Р СР Вµ (Tier 3)!", ephemeral=True); return
 
     next_tier = cur_tier + 1
     cost      = UPGRADE_COST[next_tier]
@@ -661,39 +661,39 @@ async def upgrade(interaction: discord.Interaction):
 
     if player["crystals"] < cost["crystals"] or player["money"] < cost["money"]:
         await interaction.response.send_message(
-            f"вќЊ РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЂРµСЃСѓСЂСЃРѕРІ!\nРќСѓР¶РЅРѕ: рџ’Ћ **{cost['crystals']}** + рџ’° **${cost['money']:,}**\nРЈ С‚РµР±СЏ: рџ’Ћ **{player['crystals']}** + рџ’° **${player['money']:,}**",
+            f"РІСњРЉ Р СњР ВµР Т‘Р С•РЎРѓРЎвЂљР В°РЎвЂљР С•РЎвЂЎР Р…Р С• РЎР‚Р ВµРЎРѓРЎС“РЎР‚РЎРѓР С•Р Р†!\nР СњРЎС“Р В¶Р Р…Р С•: СЂСџвЂ™Р‹ **{cost['crystals']}** + СЂСџвЂ™В° **${cost['money']:,}**\nР Р€ РЎвЂљР ВµР В±РЎРЏ: СЂСџвЂ™Р‹ **{player['crystals']}** + СЂСџвЂ™В° **${player['money']:,}**",
             ephemeral=True
         ); return
 
-    embed = discord.Embed(title=f"в¬†пёЏ РђРїРіСЂРµР№Рґ вЂ” {stand_name}", color=TIER_COLORS.get(STANDS[stand_name]["tier"], 0xffffff))
-    embed.add_field(name=f"{'в­ђ'*cur_tier} РЎРµР№С‡Р°СЃ", value=current_ability, inline=False)
-    embed.add_field(name=f"{'в­ђ'*next_tier} РџРѕСЃР»Рµ",  value=next_ability,   inline=False)
-    embed.add_field(name="рџ’° РЎС‚РѕРёРјРѕСЃС‚СЊ", value=f"рџ’Ћ **{cost['crystals']}** + рџ’° **${cost['money']:,}**", inline=False)
-    embed.set_footer(text="РќР°Р¶РјРё вњ… РґР»СЏ РїРѕРґС‚РІРµСЂР¶РґРµРЅРёСЏ")
+    embed = discord.Embed(title=f"РІВ¬вЂ РїС‘РЏ Р С’Р С—Р С–РЎР‚Р ВµР в„–Р Т‘ РІР‚вЂќ {stand_name}", color=TIER_COLORS.get(STANDS[stand_name]["tier"], 0xffffff))
+    embed.add_field(name=f"{'РІВ­С’'*cur_tier} Р РЋР ВµР в„–РЎвЂЎР В°РЎРѓ", value=current_ability, inline=False)
+    embed.add_field(name=f"{'РІВ­С’'*next_tier} Р СџР С•РЎРѓР В»Р Вµ",  value=next_ability,   inline=False)
+    embed.add_field(name="СЂСџвЂ™В° Р РЋРЎвЂљР С•Р С‘Р СР С•РЎРѓРЎвЂљРЎРЉ", value=f"СЂСџвЂ™Р‹ **{cost['crystals']}** + СЂСџвЂ™В° **${cost['money']:,}**", inline=False)
+    embed.set_footer(text="Р СњР В°Р В¶Р СР С‘ РІСљвЂ¦ Р Т‘Р В»РЎРЏ Р С—Р С•Р Т‘РЎвЂљР Р†Р ВµРЎР‚Р В¶Р Т‘Р ВµР Р…Р С‘РЎРЏ")
     await interaction.response.send_message(embed=embed, ephemeral=True)
     msg = await interaction.original_response()
-    await msg.add_reaction("вњ…")
+    await msg.add_reaction("РІСљвЂ¦")
 
-    def check(r, u): return u == interaction.user and str(r.emoji) == "вњ…" and r.message.id == msg.id
+    def check(r, u): return u == interaction.user and str(r.emoji) == "РІСљвЂ¦" and r.message.id == msg.id
     try:
         await bot.wait_for("reaction_add", timeout=30.0, check=check)
         player["crystals"] -= cost["crystals"]
         player["money"]    -= cost["money"]
         player["ability_tier"] = next_tier
         save_db(db)
-        await msg.edit(content=f"вњ… РЎРїРѕСЃРѕР±РЅРѕСЃС‚СЊ РїСЂРѕРєР°С‡Р°РЅР° РґРѕ Tier {next_tier}! {'в­ђ'*next_tier}\n{next_ability}")
+        await msg.edit(content=f"РІСљвЂ¦ Р РЋР С—Р С•РЎРѓР С•Р В±Р Р…Р С•РЎРѓРЎвЂљРЎРЉ Р С—РЎР‚Р С•Р С”Р В°РЎвЂЎР В°Р Р…Р В° Р Т‘Р С• Tier {next_tier}! {'РІВ­С’'*next_tier}\n{next_ability}")
     except asyncio.TimeoutError:
-        await msg.edit(content="вќЊ Р’СЂРµРјСЏ РІС‹С€Р»Рѕ.")
+        await msg.edit(content="РІСњРЉ Р вЂ™РЎР‚Р ВµР СРЎРЏ Р Р†РЎвЂ№РЎв‚¬Р В»Р С•.")
 
 
-@tree.command(name="rokakaka", description="РЎРєСЂРµСЃС‚РёС‚СЊ СЃС‚РµРЅРґ СЃ РґСЂСѓРіРёРј Рё СѓРєСЂР°СЃС‚СЊ СЃРїРѕСЃРѕР±РЅРѕСЃС‚СЊ")
-@app_commands.describe(stand_name="РќР°Р·РІР°РЅРёРµ СЃС‚РµРЅРґР° РґР»СЏ СЃРєСЂРµС‰РёРІР°РЅРёСЏ")
+@tree.command(name="rokakaka", description="Р РЋР С”РЎР‚Р ВµРЎРѓРЎвЂљР С‘РЎвЂљРЎРЉ РЎРѓРЎвЂљР ВµР Р…Р Т‘ РЎРѓ Р Т‘РЎР‚РЎС“Р С–Р С‘Р С Р С‘ РЎС“Р С”РЎР‚Р В°РЎРѓРЎвЂљРЎРЉ РЎРѓР С—Р С•РЎРѓР С•Р В±Р Р…Р С•РЎРѓРЎвЂљРЎРЉ")
+@app_commands.describe(stand_name="Р СњР В°Р В·Р Р†Р В°Р Р…Р С‘Р Вµ РЎРѓРЎвЂљР ВµР Р…Р Т‘Р В° Р Т‘Р В»РЎРЏ РЎРѓР С”РЎР‚Р ВµРЎвЂ°Р С‘Р Р†Р В°Р Р…Р С‘РЎРЏ")
 async def rokakaka(interaction: discord.Interaction, stand_name: str):
     db = load_db(); player = get_player(db, interaction.user.id)
     if not player["stand"]:
-        await interaction.response.send_message("вќЊ РЈ С‚РµР±СЏ РЅРµС‚ СЃС‚РµРЅРґР°!", ephemeral=True); return
+        await interaction.response.send_message("РІСњРЉ Р Р€ РЎвЂљР ВµР В±РЎРЏ Р Р…Р ВµРЎвЂљ РЎРѓРЎвЂљР ВµР Р…Р Т‘Р В°!", ephemeral=True); return
     if player.get("fruits", 0) <= 0:
-        await interaction.response.send_message("вќЊ РќРµС‚ рџЌ€ Rokakaka! Р”СЂРѕРї: рџџЈ Epic 5% | рџЊџ Legendary 9%", ephemeral=True); return
+        await interaction.response.send_message("РІСњРЉ Р СњР ВµРЎвЂљ СЂСџРЊв‚¬ Rokakaka! Р вЂќРЎР‚Р С•Р С—: СЂСџСџР€ Epic 5% | СЂСџРЉСџ Legendary 9%", ephemeral=True); return
 
     target_stand = None
     for name in STANDS:
@@ -703,12 +703,12 @@ async def rokakaka(interaction: discord.Interaction, stand_name: str):
         matches = [n for n in STANDS if stand_name.lower() in n.lower()]
         if len(matches) == 1: target_stand = matches[0]
         elif len(matches) > 1:
-            await interaction.response.send_message(f"вќЊ РќРµСЃРєРѕР»СЊРєРѕ СЃРѕРІРїР°РґРµРЅРёР№: {', '.join(matches[:5])}", ephemeral=True); return
+            await interaction.response.send_message(f"РІСњРЉ Р СњР ВµРЎРѓР С”Р С•Р В»РЎРЉР С”Р С• РЎРѓР С•Р Р†Р С—Р В°Р Т‘Р ВµР Р…Р С‘Р в„–: {', '.join(matches[:5])}", ephemeral=True); return
         else:
-            await interaction.response.send_message(f"вќЊ РЎС‚РµРЅРґ **{stand_name}** РЅРµ РЅР°Р№РґРµРЅ.", ephemeral=True); return
+            await interaction.response.send_message(f"РІСњРЉ Р РЋРЎвЂљР ВµР Р…Р Т‘ **{stand_name}** Р Р…Р Вµ Р Р…Р В°Р в„–Р Т‘Р ВµР Р….", ephemeral=True); return
 
     if target_stand == player["stand"]:
-        await interaction.response.send_message("вќЊ РќРµР»СЊР·СЏ СЃРєСЂРµС‰РёРІР°С‚СЊ СЃ СЃРѕР±РѕР№!", ephemeral=True); return
+        await interaction.response.send_message("РІСњРЉ Р СњР ВµР В»РЎРЉР В·РЎРЏ РЎРѓР С”РЎР‚Р ВµРЎвЂ°Р С‘Р Р†Р В°РЎвЂљРЎРЉ РЎРѓ РЎРѓР С•Р В±Р С•Р в„–!", ephemeral=True); return
 
     target_data    = STANDS[target_stand]
     stolen_ability = target_data["ability"]
@@ -716,56 +716,56 @@ async def rokakaka(interaction: discord.Interaction, stand_name: str):
     chance         = 10.0 if is_evo else 40.0
     has_sub        = player.get("sub_ability") is not None
 
-    embed = discord.Embed(title="рџЌ€ Rokakaka вЂ” РЎРєСЂРµС‰РёРІР°РЅРёРµ", color=0x2ecc71)
-    embed.add_field(name="вљ”пёЏ РўРІРѕР№ СЃС‚РµРЅРґ", value=f"**{player['stand']}**",    inline=True)
-    embed.add_field(name="рџЋЇ Р¦РµР»СЊ",        value=f"**{target_stand}**",        inline=True)
-    embed.add_field(name="рџ“Љ РЁР°РЅСЃ",        value=f"**{chance}%**",             inline=True)
-    embed.add_field(name="рџ’« РЎРїРѕСЃРѕР±РЅРѕСЃС‚СЊ", value=stolen_ability,               inline=False)
+    embed = discord.Embed(title="СЂСџРЊв‚¬ Rokakaka РІР‚вЂќ Р РЋР С”РЎР‚Р ВµРЎвЂ°Р С‘Р Р†Р В°Р Р…Р С‘Р Вµ", color=0x2ecc71)
+    embed.add_field(name="РІС™вЂќРїС‘РЏ Р СћР Р†Р С•Р в„– РЎРѓРЎвЂљР ВµР Р…Р Т‘", value=f"**{player['stand']}**",    inline=True)
+    embed.add_field(name="СЂСџР‹Р‡ Р В¦Р ВµР В»РЎРЉ",        value=f"**{target_stand}**",        inline=True)
+    embed.add_field(name="СЂСџвЂњР‰ Р РЃР В°Р Р…РЎРѓ",        value=f"**{chance}%**",             inline=True)
+    embed.add_field(name="СЂСџвЂ™В« Р РЋР С—Р С•РЎРѓР С•Р В±Р Р…Р С•РЎРѓРЎвЂљРЎРЉ", value=stolen_ability,               inline=False)
     if has_sub:
-        embed.add_field(name="вљ пёЏ Р—Р°РјРµРЅР°", value=f"~~{player['sub_ability']}~~", inline=False)
-    embed.set_footer(text="РќР°Р¶РјРё вњ… С‡С‚РѕР±С‹ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ Rokakaka")
+        embed.add_field(name="РІС™В РїС‘РЏ Р вЂ”Р В°Р СР ВµР Р…Р В°", value=f"~~{player['sub_ability']}~~", inline=False)
+    embed.set_footer(text="Р СњР В°Р В¶Р СР С‘ РІСљвЂ¦ РЎвЂЎРЎвЂљР С•Р В±РЎвЂ№ Р С‘РЎРѓР С—Р С•Р В»РЎРЉР В·Р С•Р Р†Р В°РЎвЂљРЎРЉ Rokakaka")
     await interaction.response.send_message(embed=embed, ephemeral=True)
     msg = await interaction.original_response()
-    await msg.add_reaction("вњ…")
+    await msg.add_reaction("РІСљвЂ¦")
 
-    def check(r, u): return u == interaction.user and str(r.emoji) == "вњ…" and r.message.id == msg.id
+    def check(r, u): return u == interaction.user and str(r.emoji) == "РІСљвЂ¦" and r.message.id == msg.id
     try:
         await bot.wait_for("reaction_add", timeout=30.0, check=check)
     except asyncio.TimeoutError:
-        await msg.edit(content="вќЊ Р’СЂРµРјСЏ РІС‹С€Р»Рѕ."); return
+        await msg.edit(content="РІСњРЉ Р вЂ™РЎР‚Р ВµР СРЎРЏ Р Р†РЎвЂ№РЎв‚¬Р В»Р С•."); return
 
     player["fruits"] -= 1
     if random.uniform(0, 100) < chance:
         player["sub_ability"] = stolen_ability
         save_db(db)
-        await msg.edit(content=f"вњ… РЎРєСЂРµС‰РёРІР°РЅРёРµ СѓСЃРїРµС€РЅРѕ! **{player['stand']}** РїРѕР»СѓС‡РёР»: {stolen_ability}")
+        await msg.edit(content=f"РІСљвЂ¦ Р РЋР С”РЎР‚Р ВµРЎвЂ°Р С‘Р Р†Р В°Р Р…Р С‘Р Вµ РЎС“РЎРѓР С—Р ВµРЎв‚¬Р Р…Р С•! **{player['stand']}** Р С—Р С•Р В»РЎС“РЎвЂЎР С‘Р В»: {stolen_ability}")
     else:
         save_db(db)
-        await msg.edit(content=f"рџ’” РџСЂРѕРІР°Р»! РЁР°РЅСЃ Р±С‹Р» {chance}%. Р¤СЂСѓРєС‚ РїРѕС‚СЂР°С‡РµРЅ. РћСЃС‚Р°Р»РѕСЃСЊ: **{player['fruits']}** рџЌ€")
+        await msg.edit(content=f"СЂСџвЂ™вЂќ Р СџРЎР‚Р С•Р Р†Р В°Р В»! Р РЃР В°Р Р…РЎРѓ Р В±РЎвЂ№Р В» {chance}%. Р В¤РЎР‚РЎС“Р С”РЎвЂљ Р С—Р С•РЎвЂљРЎР‚Р В°РЎвЂЎР ВµР Р…. Р С›РЎРѓРЎвЂљР В°Р В»Р С•РЎРѓРЎРЉ: **{player['fruits']}** СЂСџРЊв‚¬")
 
 
-@tree.command(name="shop", description="РњР°РіР°Р·РёРЅ вЂ” РєСѓРїРёС‚СЊ СЃС‚СЂРµР»С‹, РєСЂРёСЃС‚Р°Р»Р»С‹, РєРµР№СЃС‹")
-@app_commands.describe(item="Р§С‚Рѕ РєСѓРїРёС‚СЊ: arrow, crystal, common, rare")
+@tree.command(name="shop", description="Р СљР В°Р С–Р В°Р В·Р С‘Р Р… РІР‚вЂќ Р С”РЎС“Р С—Р С‘РЎвЂљРЎРЉ РЎРѓРЎвЂљРЎР‚Р ВµР В»РЎвЂ№, Р С”РЎР‚Р С‘РЎРѓРЎвЂљР В°Р В»Р В»РЎвЂ№, Р С”Р ВµР в„–РЎРѓРЎвЂ№")
+@app_commands.describe(item="Р В§РЎвЂљР С• Р С”РЎС“Р С—Р С‘РЎвЂљРЎРЉ: arrow, crystal, common, rare")
 @app_commands.choices(item=[
-    app_commands.Choice(name="рџЏ№ Regular Arrow вЂ” $500",  value="arrow"),
-    app_commands.Choice(name="рџ’Ћ Crystal вЂ” $800",        value="crystal"),
-    app_commands.Choice(name="рџ“¦ Common Crate вЂ” $1000",  value="common"),
-    app_commands.Choice(name="рџџ¦ Rare Crate вЂ” $2500",   value="rare"),
+    app_commands.Choice(name="СЂСџРЏв„– Regular Arrow РІР‚вЂќ $500",  value="arrow"),
+    app_commands.Choice(name="СЂСџвЂ™Р‹ Crystal РІР‚вЂќ $800",        value="crystal"),
+    app_commands.Choice(name="СЂСџвЂњВ¦ Common Crate РІР‚вЂќ $1000",  value="common"),
+    app_commands.Choice(name="СЂСџСџВ¦ Rare Crate РІР‚вЂќ $2500",   value="rare"),
 ])
 async def shop(interaction: discord.Interaction, item: str = None):
     db = load_db(); player = get_player(db, interaction.user.id)
 
     if not item:
-        embed = discord.Embed(title="рџЏЄ JoJo Shop", color=0xe67e22)
+        embed = discord.Embed(title="СЂСџРЏР„ JoJo Shop", color=0xe67e22)
         for key, d in SHOP_ITEMS.items():
-            embed.add_field(name=f"{d['icon']} {d['name']}", value=f"рџ’° **${d['price']:,}**\n`/shop {key}`", inline=True)
-        embed.add_field(name="вљ пёЏ РќРµ РїСЂРѕРґР°С‘С‚СЃСЏ", value="вњЁ Requiem Arrow\nрџЌ€ Rokakaka\nрџџЈ Epic / рџЊџ Legendary Crate", inline=False)
-        embed.set_footer(text=f"РўРІРѕР№ Р±Р°Р»Р°РЅСЃ: ${player['money']:,}")
+            embed.add_field(name=f"{d['icon']} {d['name']}", value=f"СЂСџвЂ™В° **${d['price']:,}**\n`/shop {key}`", inline=True)
+        embed.add_field(name="РІС™В РїС‘РЏ Р СњР Вµ Р С—РЎР‚Р С•Р Т‘Р В°РЎвЂРЎвЂљРЎРѓРЎРЏ", value="РІСљРЃ Requiem Arrow\nСЂСџРЊв‚¬ Rokakaka\nСЂСџСџР€ Epic / СЂСџРЉСџ Legendary Crate", inline=False)
+        embed.set_footer(text=f"Р СћР Р†Р С•Р в„– Р В±Р В°Р В»Р В°Р Р…РЎРѓ: ${player['money']:,}")
         await interaction.response.send_message(embed=embed, ephemeral=True); return
 
     d = SHOP_ITEMS[item]
     if player["money"] < d["price"]:
-        await interaction.response.send_message(f"вќЊ РќСѓР¶РЅРѕ рџ’° **${d['price']:,}**, Сѓ С‚РµР±СЏ **${player['money']:,}**", ephemeral=True); return
+        await interaction.response.send_message(f"РІСњРЉ Р СњРЎС“Р В¶Р Р…Р С• СЂСџвЂ™В° **${d['price']:,}**, РЎС“ РЎвЂљР ВµР В±РЎРЏ **${player['money']:,}**", ephemeral=True); return
 
     player["money"] -= d["price"]
     itype = d["type"]
@@ -776,37 +776,37 @@ async def shop(interaction: discord.Interaction, item: str = None):
     save_db(db)
 
     await interaction.response.send_message(
-        f"вњ… РљСѓРїР»РµРЅРѕ: {d['icon']} **{d['name']}**!\nрџ’° РџРѕС‚СЂР°С‡РµРЅРѕ: **${d['price']:,}** | Р‘Р°Р»Р°РЅСЃ: **${player['money']:,}**",
+        f"РІСљвЂ¦ Р С™РЎС“Р С—Р В»Р ВµР Р…Р С•: {d['icon']} **{d['name']}**!\nСЂСџвЂ™В° Р СџР С•РЎвЂљРЎР‚Р В°РЎвЂЎР ВµР Р…Р С•: **${d['price']:,}** | Р вЂР В°Р В»Р В°Р Р…РЎРѓ: **${player['money']:,}**",
         ephemeral=True
     )
 
 
-@tree.command(name="crate", description="РћС‚РєСЂС‹С‚СЊ РєРµР№СЃ РёР»Рё РїРѕСЃРјРѕС‚СЂРµС‚СЊ СЃРѕРґРµСЂР¶РёРјРѕРµ")
-@app_commands.describe(crate_type="РўРёРї РєРµР№СЃР°: common, rare, epic, legendary")
+@tree.command(name="crate", description="Р С›РЎвЂљР С”РЎР‚РЎвЂ№РЎвЂљРЎРЉ Р С”Р ВµР в„–РЎРѓ Р С‘Р В»Р С‘ Р С—Р С•РЎРѓР СР С•РЎвЂљРЎР‚Р ВµРЎвЂљРЎРЉ РЎРѓР С•Р Т‘Р ВµРЎР‚Р В¶Р С‘Р СР С•Р Вµ")
+@app_commands.describe(crate_type="Р СћР С‘Р С— Р С”Р ВµР в„–РЎРѓР В°: common, rare, epic, legendary")
 @app_commands.choices(crate_type=[
-    app_commands.Choice(name="рџ“¦ Common",    value="common"),
-    app_commands.Choice(name="рџџ¦ Rare",      value="rare"),
-    app_commands.Choice(name="рџџЈ Epic",      value="epic"),
-    app_commands.Choice(name="рџЊџ Legendary", value="legendary"),
+    app_commands.Choice(name="СЂСџвЂњВ¦ Common",    value="common"),
+    app_commands.Choice(name="СЂСџСџВ¦ Rare",      value="rare"),
+    app_commands.Choice(name="СЂСџСџР€ Epic",      value="epic"),
+    app_commands.Choice(name="СЂСџРЉСџ Legendary", value="legendary"),
 ])
 async def crate(interaction: discord.Interaction, crate_type: str = None):
     db = load_db(); player = get_player(db, interaction.user.id)
 
     if not crate_type:
-        embed = discord.Embed(title="рџ“¦ РўРІРѕРё РєРµР№СЃС‹", color=0x2c2f33)
+        embed = discord.Embed(title="СЂСџвЂњВ¦ Р СћР Р†Р С•Р С‘ Р С”Р ВµР в„–РЎРѓРЎвЂ№", color=0x2c2f33)
         ct_text = "\n".join([f"{c['icon']} **{player['crates'].get(k,0)}** {c['name']}" for k,c in CRATE_CONFIG.items()])
-        embed.add_field(name="РљРµР№СЃС‹", value=ct_text, inline=False)
+        embed.add_field(name="Р С™Р ВµР в„–РЎРѓРЎвЂ№", value=ct_text, inline=False)
         ch_text = ""
         for k, c in CRATE_CONFIG.items():
-            ch_text += f"{c['icon']} **{c['name']}**: рџ’°${c['money_min']}-${c['money_max']} | рџЏ№{c['regular_arrow_chance']}% | вњЁ{c['requiem_arrow_chance']}%"
-            if c.get("stone_mask_chance",0) > 0: ch_text += f" | рџЋ­{c['stone_mask_chance']}%"
-            if c.get("rokakaka_chance",0) > 0:   ch_text += f" | рџЌ€{c['rokakaka_chance']}%"
+            ch_text += f"{c['icon']} **{c['name']}**: СЂСџвЂ™В°${c['money_min']}-${c['money_max']} | СЂСџРЏв„–{c['regular_arrow_chance']}% | РІСљРЃ{c['requiem_arrow_chance']}%"
+            if c.get("stone_mask_chance",0) > 0: ch_text += f" | СЂСџР‹В­{c['stone_mask_chance']}%"
+            if c.get("rokakaka_chance",0) > 0:   ch_text += f" | СЂСџРЊв‚¬{c['rokakaka_chance']}%"
             ch_text += "\n"
-        embed.add_field(name="рџ“Љ РЁР°РЅСЃС‹", value=ch_text, inline=False)
+        embed.add_field(name="СЂСџвЂњР‰ Р РЃР В°Р Р…РЎРѓРЎвЂ№", value=ch_text, inline=False)
         await interaction.response.send_message(embed=embed, ephemeral=True); return
 
     if player["crates"].get(crate_type, 0) <= 0:
-        await interaction.response.send_message(f"вќЊ РќРµС‚ **{CRATE_CONFIG[crate_type]['name']}**!", ephemeral=True); return
+        await interaction.response.send_message(f"РІСњРЉ Р СњР ВµРЎвЂљ **{CRATE_CONFIG[crate_type]['name']}**!", ephemeral=True); return
 
     player["crates"][crate_type] -= 1
     player["crates_opened"] = player.get("crates_opened",0) + 1
@@ -815,39 +815,39 @@ async def crate(interaction: discord.Interaction, crate_type: str = None):
     rewards_text = ""
     for r in rewards:
         if r["type"] == "money":
-            player["money"] += r["amount"]; rewards_text += f"рџ’° **${r['amount']:,}**\n"
+            player["money"] += r["amount"]; rewards_text += f"СЂСџвЂ™В° **${r['amount']:,}**\n"
         elif r["type"] == "regular_arrow":
-            player["arrows"]["regular"] += r["amount"]; rewards_text += f"рџЏ№ **Regular Arrow** x{r['amount']}\n"
+            player["arrows"]["regular"] += r["amount"]; rewards_text += f"СЂСџРЏв„– **Regular Arrow** x{r['amount']}\n"
         elif r["type"] == "requiem_arrow":
-            player["arrows"]["requiem"] += r["amount"]; rewards_text += f"вњЁ **Requiem Arrow** x{r['amount']} вљ пёЏ Р Р•Р”РљР�Р™!\n"
+            player["arrows"]["requiem"] += r["amount"]; rewards_text += f"РІСљРЃ **Requiem Arrow** x{r['amount']} РІС™В РїС‘РЏ Р В Р вЂўР вЂќР С™Р пїЅР в„ў!\n"
         elif r["type"] == "stone_mask":
-            player["stone_masks"] = player.get("stone_masks",0) + r["amount"]; rewards_text += f"рџЋ­ **Stone Mask** x{r['amount']} рџ’Ђ РЈР›Р¬РўР Рђ Р Р•Р”РљР�Р™!\n"
+            player["stone_masks"] = player.get("stone_masks",0) + r["amount"]; rewards_text += f"СЂСџР‹В­ **Stone Mask** x{r['amount']} СЂСџвЂ™Р‚ Р Р€Р вЂєР В¬Р СћР В Р С’ Р В Р вЂўР вЂќР С™Р пїЅР в„ў!\n"
         elif r["type"] == "rokakaka":
-            player["fruits"] = player.get("fruits",0) + r["amount"]; rewards_text += f"рџЌ€ **Rokakaka** x{r['amount']} Р Р•Р”РљР�Р™!\n"
+            player["fruits"] = player.get("fruits",0) + r["amount"]; rewards_text += f"СЂСџРЊв‚¬ **Rokakaka** x{r['amount']} Р В Р вЂўР вЂќР С™Р пїЅР в„ў!\n"
     save_db(db)
 
     cfg = CRATE_CONFIG[crate_type]
     embed = discord.Embed(title=f"{cfg['icon']} {cfg['name']}!", color=cfg["color"])
-    embed.add_field(name="рџЋЃ РќР°РіСЂР°РґС‹", value=rewards_text, inline=False)
-    embed.add_field(name="рџ’° Р‘Р°Р»Р°РЅСЃ",  value=f"**${player['money']:,}**", inline=True)
-    embed.set_footer(text=f"РћСЃС‚Р°Р»РѕСЃСЊ {player['crates'][crate_type]} {cfg['name']}")
+    embed.add_field(name="СЂСџР‹Рѓ Р СњР В°Р С–РЎР‚Р В°Р Т‘РЎвЂ№", value=rewards_text, inline=False)
+    embed.add_field(name="СЂСџвЂ™В° Р вЂР В°Р В»Р В°Р Р…РЎРѓ",  value=f"**${player['money']:,}**", inline=True)
+    embed.set_footer(text=f"Р С›РЎРѓРЎвЂљР В°Р В»Р С•РЎРѓРЎРЉ {player['crates'][crate_type]} {cfg['name']}")
     await interaction.response.send_message(embed=embed, ephemeral=True)
 
 
-@tree.command(name="money", description="РџРѕСЃРјРѕС‚СЂРµС‚СЊ Р±Р°Р»Р°РЅСЃ")
+@tree.command(name="money", description="Р СџР С•РЎРѓР СР С•РЎвЂљРЎР‚Р ВµРЎвЂљРЎРЉ Р В±Р В°Р В»Р В°Р Р…РЎРѓ")
 async def money(interaction: discord.Interaction):
     db = load_db(); player = get_player(db, interaction.user.id)
-    embed = discord.Embed(title="рџ’° Balance", color=0xf1c40f)
+    embed = discord.Embed(title="СЂСџвЂ™В° Balance", color=0xf1c40f)
     embed.add_field(name="Money", value=f"**${player['money']:,}**", inline=False)
     embed.set_footer(text=interaction.user.display_name)
     await interaction.response.send_message(embed=embed, ephemeral=True)
 
 
-@tree.command(name="quest", description="РџРѕСЃРјРѕС‚СЂРµС‚СЊ РєРІРµСЃС‚ РёР»Рё Р·Р°Р±СЂР°С‚СЊ РЅР°РіСЂР°РґСѓ")
-@app_commands.describe(action="claim вЂ” Р·Р°Р±СЂР°С‚СЊ РЅР°РіСЂР°РґСѓ")
+@tree.command(name="quest", description="Р СџР С•РЎРѓР СР С•РЎвЂљРЎР‚Р ВµРЎвЂљРЎРЉ Р С”Р Р†Р ВµРЎРѓРЎвЂљ Р С‘Р В»Р С‘ Р В·Р В°Р В±РЎР‚Р В°РЎвЂљРЎРЉ Р Р…Р В°Р С–РЎР‚Р В°Р Т‘РЎС“")
+@app_commands.describe(action="claim РІР‚вЂќ Р В·Р В°Р В±РЎР‚Р В°РЎвЂљРЎРЉ Р Р…Р В°Р С–РЎР‚Р В°Р Т‘РЎС“")
 @app_commands.choices(action=[
-    app_commands.Choice(name="show  вЂ” РїРѕСЃРјРѕС‚СЂРµС‚СЊ РїСЂРѕРіСЂРµСЃСЃ", value="show"),
-    app_commands.Choice(name="claim вЂ” Р·Р°Р±СЂР°С‚СЊ РЅР°РіСЂР°РґСѓ",     value="claim"),
+    app_commands.Choice(name="show  РІР‚вЂќ Р С—Р С•РЎРѓР СР С•РЎвЂљРЎР‚Р ВµРЎвЂљРЎРЉ Р С—РЎР‚Р С•Р С–РЎР‚Р ВµРЎРѓРЎРѓ", value="show"),
+    app_commands.Choice(name="claim РІР‚вЂќ Р В·Р В°Р В±РЎР‚Р В°РЎвЂљРЎРЉ Р Р…Р В°Р С–РЎР‚Р В°Р Т‘РЎС“",     value="claim"),
 ])
 async def quest_cmd(interaction: discord.Interaction, action: str = "show"):
     db = load_db(); player = get_player(db, interaction.user.id)
@@ -865,7 +865,7 @@ async def quest_cmd(interaction: discord.Interaction, action: str = "show"):
 
     if action == "claim":
         if not done:
-            await interaction.response.send_message(f"вќЊ РљРІРµСЃС‚ РЅРµ РІС‹РїРѕР»РЅРµРЅ! **{min(progress,goal)}/{goal}**", ephemeral=True); return
+            await interaction.response.send_message(f"РІСњРЉ Р С™Р Р†Р ВµРЎРѓРЎвЂљ Р Р…Р Вµ Р Р†РЎвЂ№Р С—Р С•Р В»Р Р…Р ВµР Р…! **{min(progress,goal)}/{goal}**", ephemeral=True); return
         reward = quest_data["reward"]
         if "money"    in reward: player["money"]    += reward["money"]
         if "crystals" in reward: player["crystals"] += reward["crystals"]
@@ -874,39 +874,40 @@ async def quest_cmd(interaction: discord.Interaction, action: str = "show"):
         assign_quest(player)
         new_quest = next(q for q in QUESTS if q["id"] == player["quest"])
         save_db(db)
-        embed = discord.Embed(title=f"рџЋ‰ РљРІРµСЃС‚ РІС‹РїРѕР»РЅРµРЅ: {quest_data['name']}!", color=0xf1c40f)
-        embed.add_field(name="рџЋЃ РќР°РіСЂР°РґР°",     value=quest_data["reward_text"],             inline=False)
-        embed.add_field(name="рџ“‹ РќРѕРІС‹Р№ РєРІРµСЃС‚", value=f"**{new_quest['name']}** вЂ” {new_quest['desc']}", inline=False)
+        embed = discord.Embed(title=f"СЂСџР‹вЂ° Р С™Р Р†Р ВµРЎРѓРЎвЂљ Р Р†РЎвЂ№Р С—Р С•Р В»Р Р…Р ВµР Р…: {quest_data['name']}!", color=0xf1c40f)
+        embed.add_field(name="СЂСџР‹Рѓ Р СњР В°Р С–РЎР‚Р В°Р Т‘Р В°",     value=quest_data["reward_text"],             inline=False)
+        embed.add_field(name="СЂСџвЂњвЂ№ Р СњР С•Р Р†РЎвЂ№Р в„– Р С”Р Р†Р ВµРЎРѓРЎвЂљ", value=f"**{new_quest['name']}** РІР‚вЂќ {new_quest['desc']}", inline=False)
         await interaction.response.send_message(embed=embed, ephemeral=True); return
 
     bar_filled = int((min(progress,goal)/goal)*10)
-    bar    = "в–€"*bar_filled + "в–‘"*(10-bar_filled)
-    status = "вњ… Р’Р«РџРћР›РќР•Рќ вЂ” `/quest claim`!" if done else f"[{bar}] {min(progress,goal)}/{goal}"
-    embed  = discord.Embed(title="рџ“‹ РўРµРєСѓС‰РёР№ РєРІРµСЃС‚", color=0xf1c40f if done else 0x3498db)
-    embed.add_field(name=f"рџЋЇ {quest_data['name']}", value=quest_data["desc"],       inline=False)
-    embed.add_field(name="рџ“Љ РџСЂРѕРіСЂРµСЃСЃ",              value=status,                    inline=False)
-    embed.add_field(name="рџЏ† РќР°РіСЂР°РґР°",               value=quest_data["reward_text"], inline=True)
+    bar    = "РІвЂ“в‚¬"*bar_filled + "РІвЂ“вЂ"*(10-bar_filled)
+    status = "РІСљвЂ¦ Р вЂ™Р В«Р СџР С›Р вЂєР СњР вЂўР Сњ РІР‚вЂќ `/quest claim`!" if done else f"[{bar}] {min(progress,goal)}/{goal}"
+    embed  = discord.Embed(title="СЂСџвЂњвЂ№ Р СћР ВµР С”РЎС“РЎвЂ°Р С‘Р в„– Р С”Р Р†Р ВµРЎРѓРЎвЂљ", color=0xf1c40f if done else 0x3498db)
+    embed.add_field(name=f"СЂСџР‹Р‡ {quest_data['name']}", value=quest_data["desc"],       inline=False)
+    embed.add_field(name="СЂСџвЂњР‰ Р СџРЎР‚Р С•Р С–РЎР‚Р ВµРЎРѓРЎРѓ",              value=status,                    inline=False)
+    embed.add_field(name="СЂСџРЏвЂ  Р СњР В°Р С–РЎР‚Р В°Р Т‘Р В°",               value=quest_data["reward_text"], inline=True)
     await interaction.response.send_message(embed=embed, ephemeral=True)
 
 
-@tree.command(name="help", description="РЎРїРёСЃРѕРє РІСЃРµС… РєРѕРјР°РЅРґ")
+@tree.command(name="help", description="Р РЋР С—Р С‘РЎРѓР С•Р С” Р Р†РЎРѓР ВµРЎвЂ¦ Р С”Р С•Р СР В°Р Р…Р Т‘")
 async def help_cmd(interaction: discord.Interaction):
-    embed = discord.Embed(title="рџ“– JoJo Bot вЂ” РљРѕРјР°РЅРґС‹", color=0x9b59b6)
-    embed.add_field(name="/job",              value="Р Р°Р±РѕС‚Р° (РєРґ:30РјРёРЅ) рџџўрџџЎрџ”ґ", inline=False)
-    embed.add_field(name="/search",           value=f"РќР°Р№С‚Рё РєРµР№СЃ (РЅСѓР¶РЅРѕ {JOBS_REQUIRED} СЂР°Р±РѕС‚С‹)", inline=False)
-    embed.add_field(name="/crate [С‚РёРї]",      value="РћС‚РєСЂС‹С‚СЊ РєРµР№СЃ", inline=False)
-    embed.add_field(name="/arrow [С‚РёРї]",      value="Р�СЃРїРѕР»СЊР·РѕРІР°С‚СЊ СЃС‚СЂРµР»Сѓ", inline=False)
-    embed.add_field(name="/evolve [С‚РёРї]",     value="Р­РІРѕР»СЋС†РёСЏ СЃС‚РµРЅРґР° (requiem/vampire)", inline=False)
-    embed.add_field(name="/upgrade",          value="РџСЂРѕРєР°С‡Р°С‚СЊ СЃРїРѕСЃРѕР±РЅРѕСЃС‚СЊ (Tier 1в†’2в†’3)", inline=False)
-    embed.add_field(name="/rokakaka [СЃС‚РµРЅРґ]", value="РЎРєСЂРµСЃС‚РёС‚СЊ СЃС‚РµРЅРґ (РЅСѓР¶РЅР° рџЌ€ Rokakaka)", inline=False)
-    embed.add_field(name="/storage [action]", value="РҐСЂР°РЅРёР»РёС‰Рµ СЃС‚РµРЅРґРѕРІ (store/swap/drop)", inline=False)
-    embed.add_field(name="/shop [РїСЂРµРґРјРµС‚]",   value="РњР°РіР°Р·РёРЅ", inline=False)
-    embed.add_field(name="/quest [action]",   value="РљРІРµСЃС‚С‹ (show/claim)", inline=False)
-    embed.add_field(name="/stand [@user]",    value="РџРѕСЃРјРѕС‚СЂРµС‚СЊ СЃС‚РµРЅРґ", inline=False)
-    embed.add_field(name="/inv [@user]",      value="Р�РЅРІРµРЅС‚Р°СЂСЊ", inline=False)
-    embed.add_field(name="/money",            value="Р‘Р°Р»Р°РЅСЃ", inline=False)
+    embed = discord.Embed(title="СЂСџвЂњвЂ“ JoJo Bot РІР‚вЂќ Р С™Р С•Р СР В°Р Р…Р Т‘РЎвЂ№", color=0x9b59b6)
+    embed.add_field(name="/job",              value="Р В Р В°Р В±Р С•РЎвЂљР В° (Р С”Р Т‘:30Р СР С‘Р Р…) СЂСџСџСћСЂСџСџРЋСЂСџвЂќТ‘", inline=False)
+    embed.add_field(name="/search",           value=f"Р СњР В°Р в„–РЎвЂљР С‘ Р С”Р ВµР в„–РЎРѓ (Р Р…РЎС“Р В¶Р Р…Р С• {JOBS_REQUIRED} РЎР‚Р В°Р В±Р С•РЎвЂљРЎвЂ№)", inline=False)
+    embed.add_field(name="/crate [РЎвЂљР С‘Р С—]",      value="Р С›РЎвЂљР С”РЎР‚РЎвЂ№РЎвЂљРЎРЉ Р С”Р ВµР в„–РЎРѓ", inline=False)
+    embed.add_field(name="/arrow [РЎвЂљР С‘Р С—]",      value="Р пїЅРЎРѓР С—Р С•Р В»РЎРЉР В·Р С•Р Р†Р В°РЎвЂљРЎРЉ РЎРѓРЎвЂљРЎР‚Р ВµР В»РЎС“", inline=False)
+    embed.add_field(name="/evolve [РЎвЂљР С‘Р С—]",     value="Р В­Р Р†Р С•Р В»РЎР‹РЎвЂ Р С‘РЎРЏ РЎРѓРЎвЂљР ВµР Р…Р Т‘Р В° (requiem/vampire)", inline=False)
+    embed.add_field(name="/upgrade",          value="Р СџРЎР‚Р С•Р С”Р В°РЎвЂЎР В°РЎвЂљРЎРЉ РЎРѓР С—Р С•РЎРѓР С•Р В±Р Р…Р С•РЎРѓРЎвЂљРЎРЉ (Tier 1РІвЂ вЂ™2РІвЂ вЂ™3)", inline=False)
+    embed.add_field(name="/rokakaka [РЎРѓРЎвЂљР ВµР Р…Р Т‘]", value="Р РЋР С”РЎР‚Р ВµРЎРѓРЎвЂљР С‘РЎвЂљРЎРЉ РЎРѓРЎвЂљР ВµР Р…Р Т‘ (Р Р…РЎС“Р В¶Р Р…Р В° СЂСџРЊв‚¬ Rokakaka)", inline=False)
+    embed.add_field(name="/storage [action]", value="Р ТђРЎР‚Р В°Р Р…Р С‘Р В»Р С‘РЎвЂ°Р Вµ РЎРѓРЎвЂљР ВµР Р…Р Т‘Р С•Р Р† (store/swap/drop)", inline=False)
+    embed.add_field(name="/shop [Р С—РЎР‚Р ВµР Т‘Р СР ВµРЎвЂљ]",   value="Р СљР В°Р С–Р В°Р В·Р С‘Р Р…", inline=False)
+    embed.add_field(name="/quest [action]",   value="Р С™Р Р†Р ВµРЎРѓРЎвЂљРЎвЂ№ (show/claim)", inline=False)
+    embed.add_field(name="/stand [@user]",    value="Р СџР С•РЎРѓР СР С•РЎвЂљРЎР‚Р ВµРЎвЂљРЎРЉ РЎРѓРЎвЂљР ВµР Р…Р Т‘", inline=False)
+    embed.add_field(name="/inv [@user]",      value="Р пїЅР Р…Р Р†Р ВµР Р…РЎвЂљР В°РЎР‚РЎРЉ", inline=False)
+    embed.add_field(name="/money",            value="Р вЂР В°Р В»Р В°Р Р…РЎРѓ", inline=False)
     await interaction.response.send_message(embed=embed, ephemeral=True)
 
 
-# в”Ђв”Ђв”Ђ RUN в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ
+# РІвЂќР‚РІвЂќР‚РІвЂќР‚ RUN РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚РІвЂќР‚
 bot.run(TOKEN)
+
