@@ -11,7 +11,7 @@ from stands import (STANDS, TIER_COLORS, TIER_EMOJI, TIER_WEIGHTS,
 # ─── CONFIG ───────────────────────────────────────────────────────
 TOKEN    = "ТВОЙ_ТОКЕН_СЮДА"
 DB_FILE  = "players.json"
-GUILD_ID = None  # Set to your server ID (int) for instant sync, or None for global
+GUILD_ID = None 
 
 STAT_BAR = {
     "A": "[A]", "B": "[B]", "C": "[C]",
