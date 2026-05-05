@@ -3,13 +3,15 @@ import discord
 from discord import app_commands
 from discord.ext import commands
 import json, os, random, asyncio
+from dotenv import load_dotenv
+load_dotenv()
 from datetime import datetime, timedelta
 from stands import (STANDS, TIER_COLORS, TIER_EMOJI, TIER_WEIGHTS,
                     EVOLUTION_CHAINS, ABILITY_UPGRADES,
                     get_stand_by_tier, can_evolve, get_evolution)
 
 # ─── CONFIG ───────────────────────────────────────────────────────
-TOKEN    = "ТВОЙ_ТОКЕН_СЮДА"
+TOKEN    = os.getenv("TOKEN")
 DB_FILE  = "players.json"
 GUILD_ID = None 
 

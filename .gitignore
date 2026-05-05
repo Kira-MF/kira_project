@@ -1,5 +1,5 @@
-# Tokens and secrets
 .env
+.venv/
 
 # Databases
 players.json
