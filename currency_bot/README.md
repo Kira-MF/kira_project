@@ -1,4 +1,4 @@
-# Currency Bot
+﻿# Currency Bot
 
 Telegram бот для отслеживания курсов валют и криптовалют с конвертером.
 
@@ -33,5 +33,5 @@ py currency_bot.py
 
 ## API
 
-- [ExchangeRate-API](https://exchangerate-api.com) — фиат (бесплатный план)
-- [CoinGecko](https://coingecko.com) — крипта (бесплатно без ключа)
+- [ExchangeRate-API](https://exchangerate-api.com) - фиат (бесплатный план)
+- [CoinGecko](https://coingecko.com) - крипта (бесплатно без ключа)

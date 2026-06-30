@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 import logging
 import os
 import requests
@@ -185,10 +185,10 @@ async def show_fiat(callback: types.CallbackQuery):
         )
         return
 
-    def r(c): return f"{rates[c]:.4f}" if c in rates else "—"
+    def r(c): return f"{rates[c]:.4f}" if c in rates else "-"
 
     text = (
-        f"💱 **{currency}** — курс к основным валютам:\n\n"
+        f"💱 **{currency}** - курс к основным валютам:\n\n"
         f"🇺🇸 USD: `{r('USD')}`\n"
         f"🇪🇺 EUR: `{r('EUR')}`\n"
         f"🇷🇺 RUB: `{r('RUB')}`\n"
@@ -230,9 +230,9 @@ async def show_crypto(callback: types.CallbackQuery):
         r = requests.get(url, timeout=10)
         data = r.json().get(coin_id, {})
 
-        usd = data.get("usd", "—")
-        rub = data.get("rub", "—")
-        eur = data.get("eur", "—")
+        usd = data.get("usd", "-")
+        rub = data.get("rub", "-")
+        eur = data.get("eur", "-")
 
         def fmt(v):
             if isinstance(v, float):
@@ -240,7 +240,7 @@ async def show_crypto(callback: types.CallbackQuery):
             return str(v)
 
         text = (
-            f"🪙 **{symbol}** — текущий курс:\n\n"
+            f"🪙 **{symbol}** - текущий курс:\n\n"
             f"🇺🇸 USD: `{fmt(usd)}`\n"
             f"🇷🇺 RUB: `{fmt(rub)}`\n"
             f"🇪🇺 EUR: `{fmt(eur)}`\n"
@@ -330,15 +330,15 @@ async def convert_amount(message: types.Message, state: FSMContext):
         def fmt(v):
             if isinstance(v, float):
                 return f"{v:,.2f}" if v > 0.01 else f"{v:.8f}"
-            return "—"
+            return "-"
 
         results = {
-            "RUB": fmt(usd_value * rub_rate) if rub_rate else "—",
+            "RUB": fmt(usd_value * rub_rate) if rub_rate else "-",
             "USD": fmt(usd_value),
-            "EUR": fmt(usd_value * eur_rate) if eur_rate else "—",
+            "EUR": fmt(usd_value * eur_rate) if eur_rate else "-",
             "USDT": fmt(usd_value),
-            "BTC": fmt(usd_value / btc_price) if btc_price else "—",
-            "TON": fmt(usd_value / ton_price) if ton_price else "—",
+            "BTC": fmt(usd_value / btc_price) if btc_price else "-",
+            "TON": fmt(usd_value / ton_price) if ton_price else "-",
         }
 
         lines = "\n".join(

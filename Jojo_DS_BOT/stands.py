@@ -1,12 +1,12 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 # JoJo Bizarre Adventure - Complete Stands Database (Parts 3-8)
 # Tier System: D / C / B / A / S / SS / SSS
-# Evolution stands have "obtainable": False — only through evolution
+# Evolution stands have "obtainable": False - only through evolution
 
 STANDS = {
 
     # ???????????????????????????????????????????????
-    # PART 3 — STARDUST CRUSADERS
+    # PART 3 - STARDUST CRUSADERS
     # ???????????????????????????????????????????????
 
     "Star Platinum": {
@@ -15,7 +15,7 @@ STANDS = {
         "tier": "S",
         "stats": {"destructive_power": "A", "speed": "A", "range": "C", "durability": "A", "precision": "A", "potential": "A"},
         "power": 51,
-        "ability": "Ora Ora Rush — мощнейшая серия ударов",
+        "ability": "Ora Ora Rush - мощнейшая серия ударов",
         "ability2": None,
         "evolves_to": "Star Platinum: The World",
         "obtainable": True,
@@ -27,7 +27,7 @@ STANDS = {
         "tier": "S",
         "stats": {"destructive_power": "A", "speed": "A", "range": "C", "durability": "A", "precision": "C", "potential": "A"},
         "power": 50,
-        "ability": "Za Warudo — остановка времени до 9 секунд",
+        "ability": "Za Warudo - остановка времени до 9 секунд",
         "ability2": None,
         "evolves_to": "The World Over Heaven",
         "obtainable": True,
@@ -39,7 +39,7 @@ STANDS = {
         "tier": "A",
         "stats": {"destructive_power": "B", "speed": "B", "range": "C", "durability": "B", "precision": "C", "potential": "C"},
         "power": 32,
-        "ability": "Crossfire Hurricane — огненные атаки",
+        "ability": "Crossfire Hurricane - огненные атаки",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -51,7 +51,7 @@ STANDS = {
         "tier": "C",
         "stats": {"destructive_power": "D", "speed": "C", "range": "B", "durability": "B", "precision": "C", "potential": "D"},
         "power": 20,
-        "ability": "Психофотография — получение информации через фото",
+        "ability": "Психофотография - получение информации через фото",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -63,7 +63,7 @@ STANDS = {
         "tier": "A",
         "stats": {"destructive_power": "C", "speed": "C", "range": "A", "durability": "C", "precision": "B", "potential": "C"},
         "power": 28,
-        "ability": "Emerald Splash — изумрудные снаряды",
+        "ability": "Emerald Splash - изумрудные снаряды",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -75,7 +75,7 @@ STANDS = {
         "tier": "A",
         "stats": {"destructive_power": "C", "speed": "A", "range": "C", "durability": "C", "precision": "B", "potential": "C"},
         "power": 29,
-        "ability": "Рапира — сверхскоростные уколы",
+        "ability": "Рапира - сверхскоростные уколы",
         "ability2": None,
         "evolves_to": "Silver Chariot Requiem",
         "obtainable": True,
@@ -87,7 +87,7 @@ STANDS = {
         "tier": "C",
         "stats": {"destructive_power": "C", "speed": "C", "range": "C", "durability": "B", "precision": "C", "potential": "C"},
         "power": 22,
-        "ability": "Управление песком — создание любых форм",
+        "ability": "Управление песком - создание любых форм",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -99,7 +99,7 @@ STANDS = {
         "tier": "D",
         "stats": {"destructive_power": "E", "speed": "A", "range": "C", "durability": "C", "precision": "B", "potential": "E"},
         "power": 18,
-        "ability": "Сверхскоростное насекомое — разрывает языки",
+        "ability": "Сверхскоростное насекомое - разрывает языки",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -123,7 +123,7 @@ STANDS = {
         "tier": "C",
         "stats": {"destructive_power": "A", "speed": "E", "range": "A", "durability": "A", "precision": "E", "potential": "E"},
         "power": 22,
-        "ability": "Управление кораблём — размер зависит от хозяина",
+        "ability": "Управление кораблём - размер зависит от хозяина",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -135,7 +135,7 @@ STANDS = {
         "tier": "D",
         "stats": {"destructive_power": "C", "speed": "C", "range": "D", "durability": "B", "precision": "D", "potential": "E"},
         "power": 16,
-        "ability": "Кукла-мститель — сила от ненависти",
+        "ability": "Кукла-мститель - сила от ненависти",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -183,7 +183,7 @@ STANDS = {
         "tier": "D",
         "stats": {"destructive_power": "C", "speed": "C", "range": "D", "durability": "B", "precision": "D", "potential": "E"},
         "power": 15,
-        "ability": "Паразит — растёт поглощая кровь",
+        "ability": "Паразит - растёт поглощая кровь",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -219,7 +219,7 @@ STANDS = {
         "tier": "D",
         "stats": {"destructive_power": "E", "speed": "A", "range": "C", "durability": "D", "precision": "A", "potential": "E"},
         "power": 16,
-        "ability": "Микроскопический стенд — проникает в мозг",
+        "ability": "Микроскопический стенд - проникает в мозг",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -231,7 +231,7 @@ STANDS = {
         "tier": "D",
         "stats": {"destructive_power": "B", "speed": "C", "range": "A", "durability": "B", "precision": "D", "potential": "E"},
         "power": 19,
-        "ability": "Искусственное солнце — жара и свет",
+        "ability": "Искусственное солнце - жара и свет",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -243,7 +243,7 @@ STANDS = {
         "tier": "B",
         "stats": {"destructive_power": "B", "speed": "B", "range": "A", "durability": "B", "precision": "B", "potential": "E"},
         "power": 26,
-        "ability": "Убивает во сне — мир снов",
+        "ability": "Убивает во сне - мир снов",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -315,7 +315,7 @@ STANDS = {
         "tier": "B",
         "stats": {"destructive_power": "B", "speed": "A", "range": "D", "durability": "B", "precision": "A", "potential": "A"},
         "power": 28,
-        "ability": "Меч — учится у каждого противника",
+        "ability": "Меч - учится у каждого противника",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -327,7 +327,7 @@ STANDS = {
         "tier": "C",
         "stats": {"destructive_power": "D", "speed": "C", "range": "D", "durability": "B", "precision": "D", "potential": "E"},
         "power": 16,
-        "ability": "Тень — омолаживает до ребёнка",
+        "ability": "Тень - омолаживает до ребёнка",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -375,7 +375,7 @@ STANDS = {
         "tier": "S",
         "stats": {"destructive_power": "A", "speed": "A", "range": "C", "durability": "A", "precision": "C", "potential": "E"},
         "power": 40,
-        "ability": "Пустота — поглощает всё что касается",
+        "ability": "Пустота - поглощает всё что касается",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -383,7 +383,7 @@ STANDS = {
     },
 
     # ???????????????????????????????????????????????
-    # PART 4 — DIAMOND IS UNBREAKABLE
+    # PART 4 - DIAMOND IS UNBREAKABLE
     # ???????????????????????????????????????????????
 
     "Crazy Diamond": {
@@ -404,7 +404,7 @@ STANDS = {
         "tier": "A",
         "stats": {"destructive_power": "C", "speed": "B", "range": "C", "durability": "C", "precision": "A", "potential": "A"},
         "power": 30,
-        "ability": "Превращение в книгу — чтение и запись команд",
+        "ability": "Превращение в книгу - чтение и запись команд",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -416,7 +416,7 @@ STANDS = {
         "tier": "S",
         "stats": {"destructive_power": "A", "speed": "A", "range": "D", "durability": "A", "precision": "A", "potential": "A"},
         "power": 48,
-        "ability": "Всё к чему прикасается — бомба",
+        "ability": "Всё к чему прикасается - бомба",
         "ability2": None,
         "evolves_to": "Killer Queen: Bites the Dust",
         "obtainable": True,
@@ -440,7 +440,7 @@ STANDS = {
         "tier": "C",
         "stats": {"destructive_power": "D", "speed": "C", "range": "B", "durability": "C", "precision": "B", "potential": "A"},
         "power": 18,
-        "ability": "Записывает звуки — воспроизводит при касании",
+        "ability": "Записывает звуки - воспроизводит при касании",
         "ability2": None,
         "evolves_to": "Echoes Act 2",
         "obtainable": True,
@@ -452,7 +452,7 @@ STANDS = {
         "tier": "B",
         "stats": {"destructive_power": "C", "speed": "B", "range": "C", "durability": "C", "precision": "B", "potential": "A"},
         "power": 26,
-        "ability": "Звуковые атаки — звук становится реальным",
+        "ability": "Звуковые атаки - звук становится реальным",
         "ability2": None,
         "evolves_to": "Echoes Act 3",
         "obtainable": False,
@@ -464,7 +464,7 @@ STANDS = {
         "tier": "A",
         "stats": {"destructive_power": "B", "speed": "B", "range": "C", "durability": "B", "precision": "B", "potential": "A"},
         "power": 30,
-        "ability": "3 Freeze — многократное увеличение тяжести",
+        "ability": "3 Freeze - многократное увеличение тяжести",
         "ability2": None,
         "evolves_to": None,
         "obtainable": False,
@@ -476,7 +476,7 @@ STANDS = {
         "tier": "A",
         "stats": {"destructive_power": "B", "speed": "A", "range": "A", "durability": "C", "precision": "B", "potential": "C"},
         "power": 32,
-        "ability": "Управление электричеством — путешествие по сети",
+        "ability": "Управление электричеством - путешествие по сети",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -500,7 +500,7 @@ STANDS = {
         "tier": "C",
         "stats": {"destructive_power": "D", "speed": "C", "range": "A", "durability": "C", "precision": "A", "potential": "C"},
         "power": 22,
-        "ability": "500 маленьких стендов — сбор предметов",
+        "ability": "500 маленьких стендов - сбор предметов",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -548,7 +548,7 @@ STANDS = {
         "tier": "C",
         "stats": {"destructive_power": "A", "speed": "A", "range": "D", "durability": "A", "precision": "E", "potential": "E"},
         "power": 22,
-        "ability": "Стальная башня — отражает атаки",
+        "ability": "Стальная башня - отражает атаки",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -568,7 +568,7 @@ STANDS = {
     },
 
     # ???????????????????????????????????????????????
-    # PART 5 — GOLDEN WIND
+    # PART 5 - GOLDEN WIND
     # ???????????????????????????????????????????????
 
     "Gold Experience": {
@@ -577,7 +577,7 @@ STANDS = {
         "tier": "S",
         "stats": {"destructive_power": "B", "speed": "B", "range": "C", "durability": "B", "precision": "B", "potential": "A"},
         "power": 35,
-        "ability": "Life Giver — создание жизни, исцеление союзников",
+        "ability": "Life Giver - создание жизни, исцеление союзников",
         "ability2": None,
         "evolves_to": "Gold Experience Requiem",
         "obtainable": True,
@@ -589,7 +589,7 @@ STANDS = {
         "tier": "A",
         "stats": {"destructive_power": "A", "speed": "A", "range": "C", "durability": "A", "precision": "B", "potential": "C"},
         "power": 38,
-        "ability": "Молнии — создание молний на любой поверхности",
+        "ability": "Молнии - создание молний на любой поверхности",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -625,7 +625,7 @@ STANDS = {
         "tier": "A",
         "stats": {"destructive_power": "A", "speed": "A", "range": "C", "durability": "C", "precision": "E", "potential": "C"},
         "power": 30,
-        "ability": "Капсулы с вирусом — мгновенное разложение",
+        "ability": "Капсулы с вирусом - мгновенное разложение",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -637,7 +637,7 @@ STANDS = {
         "tier": "A",
         "stats": {"destructive_power": "C", "speed": "A", "range": "B", "durability": "C", "precision": "A", "potential": "C"},
         "power": 28,
-        "ability": "6 миниатюрных стендов — наводят пули",
+        "ability": "6 миниатюрных стендов - наводят пули",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -649,7 +649,7 @@ STANDS = {
         "tier": "B",
         "stats": {"destructive_power": "B", "speed": "B", "range": "B", "durability": "B", "precision": "C", "potential": "C"},
         "power": 28,
-        "ability": "Миниатюрный самолёт — радар и атаки",
+        "ability": "Миниатюрный самолёт - радар и атаки",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -661,7 +661,7 @@ STANDS = {
         "tier": "B",
         "stats": {"destructive_power": "C", "speed": "C", "range": "A", "durability": "B", "precision": "A", "potential": "C"},
         "power": 24,
-        "ability": "Удочка — проходит сквозь поверхности",
+        "ability": "Удочка - проходит сквозь поверхности",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -685,7 +685,7 @@ STANDS = {
         "tier": "A",
         "stats": {"destructive_power": "B", "speed": "C", "range": "C", "durability": "A", "precision": "B", "potential": "E"},
         "power": 28,
-        "ability": "Броня из льда — заморозка всего вокруг",
+        "ability": "Броня из льда - заморозка всего вокруг",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -709,7 +709,7 @@ STANDS = {
         "tier": "S",
         "stats": {"destructive_power": "A", "speed": "C", "range": "B", "durability": "A", "precision": "E", "potential": "A"},
         "power": 36,
-        "ability": "Активируется после смерти — неуязвим",
+        "ability": "Активируется после смерти - неуязвим",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -753,7 +753,7 @@ STANDS = {
     },
 
     # ???????????????????????????????????????????????
-    # PART 6 — STONE OCEAN
+    # PART 6 - STONE OCEAN
     # ???????????????????????????????????????????????
 
     "Stone Free": {
@@ -774,7 +774,7 @@ STANDS = {
         "tier": "B",
         "stats": {"destructive_power": "B", "speed": "B", "range": "D", "durability": "B", "precision": "B", "potential": "C"},
         "power": 28,
-        "ability": "Наклейки — дублирование объектов",
+        "ability": "Наклейки - дублирование объектов",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -786,7 +786,7 @@ STANDS = {
         "tier": "C",
         "stats": {"destructive_power": "C", "speed": "C", "range": "B", "durability": "D", "precision": "B", "potential": "C"},
         "power": 22,
-        "ability": "Планктон — управление водой и телом",
+        "ability": "Планктон - управление водой и телом",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -810,7 +810,7 @@ STANDS = {
         "tier": "SS",
         "stats": {"destructive_power": "A", "speed": "A", "range": "C", "durability": "A", "precision": "B", "potential": "A"},
         "power": 44,
-        "ability": "Управление гравитацией — выворачивание наизнанку",
+        "ability": "Управление гравитацией - выворачивание наизнанку",
         "ability2": None,
         "evolves_to": "Made in Heaven",
         "obtainable": False,
@@ -822,7 +822,7 @@ STANDS = {
         "tier": "A",
         "stats": {"destructive_power": "A", "speed": "B", "range": "D", "durability": "C", "precision": "A", "potential": "C"},
         "power": 28,
-        "ability": "Проникновение в объекты — хранение и взрывы",
+        "ability": "Проникновение в объекты - хранение и взрывы",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -878,7 +878,7 @@ STANDS = {
     },
 
     # ???????????????????????????????????????????????
-    # PART 7 — STEEL BALL RUN
+    # PART 7 - STEEL BALL RUN
     # ???????????????????????????????????????????????
 
     "Tusk Act 1": {
@@ -887,7 +887,7 @@ STANDS = {
         "tier": "C",
         "stats": {"destructive_power": "C", "speed": "C", "range": "C", "durability": "C", "precision": "B", "potential": "A"},
         "power": 20,
-        "ability": "Вращающиеся ногти — выстрелы",
+        "ability": "Вращающиеся ногти - выстрелы",
         "ability2": None,
         "evolves_to": "Tusk Act 2",
         "obtainable": True,
@@ -899,7 +899,7 @@ STANDS = {
         "tier": "A",
         "stats": {"destructive_power": "B", "speed": "C", "range": "C", "durability": "C", "precision": "B", "potential": "A"},
         "power": 26,
-        "ability": "Ногти восстанавливаются — мощнее",
+        "ability": "Ногти восстанавливаются - мощнее",
         "ability2": None,
         "evolves_to": "Tusk Act 3",
         "obtainable": False,
@@ -911,7 +911,7 @@ STANDS = {
         "tier": "S",
         "stats": {"destructive_power": "C", "speed": "E", "range": "C", "durability": "C", "precision": "E", "potential": "A"},
         "power": 22,
-        "ability": "Снаряды входят в дыры — бесконечная спираль",
+        "ability": "Снаряды входят в дыры - бесконечная спираль",
         "ability2": None,
         "evolves_to": "Tusk Act 4",
         "obtainable": False,
@@ -935,7 +935,7 @@ STANDS = {
         "tier": "S",
         "stats": {"destructive_power": "A", "speed": "A", "range": "C", "durability": "A", "precision": "A", "potential": "A"},
         "power": 42,
-        "ability": "Бесконечное вращение — ускоренное старение",
+        "ability": "Бесконечное вращение - ускоренное старение",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -971,7 +971,7 @@ STANDS = {
         "tier": "B",
         "stats": {"destructive_power": "B", "speed": "C", "range": "B", "durability": "B", "precision": "C", "potential": "E"},
         "power": 22,
-        "ability": "Замораживание дождя — ходьба по дождю",
+        "ability": "Замораживание дождя - ходьба по дождю",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -1031,7 +1031,7 @@ STANDS = {
         "tier": "SS",
         "stats": {"destructive_power": "A", "speed": "A", "range": "C", "durability": "A", "precision": "A", "potential": "A"},
         "power": 52,
-        "ability": "Dirty Deeds Done Dirt Cheap — перемещение между мирами",
+        "ability": "Dirty Deeds Done Dirt Cheap - перемещение между мирами",
         "ability2": None,
         "evolves_to": "D4C Love Train",
         "obtainable": True,
@@ -1039,7 +1039,7 @@ STANDS = {
     },
 
     # ???????????????????????????????????????????????
-    # PART 8 — JOJOLION
+    # PART 8 - JOJOLION
     # ???????????????????????????????????????????????
 
     "Soft & Wet": {
@@ -1048,7 +1048,7 @@ STANDS = {
         "tier": "S",
         "stats": {"destructive_power": "B", "speed": "B", "range": "C", "durability": "B", "precision": "A", "potential": "A"},
         "power": 36,
-        "ability": "Мыльные пузыри — кража свойств объектов",
+        "ability": "Мыльные пузыри - кража свойств объектов",
         "ability2": None,
         "evolves_to": "Soft & Wet Go Beyond",
         "obtainable": True,
@@ -1060,7 +1060,7 @@ STANDS = {
         "tier": "B",
         "stats": {"destructive_power": "D", "speed": "B", "range": "A", "durability": "C", "precision": "A", "potential": "A"},
         "power": 26,
-        "ability": "Навигация — ведёт хозяина к цели",
+        "ability": "Навигация - ведёт хозяина к цели",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -1072,7 +1072,7 @@ STANDS = {
         "tier": "SS",
         "stats": {"destructive_power": "A", "speed": "A", "range": "A", "durability": "A", "precision": "A", "potential": "A"},
         "power": 60,
-        "ability": "Причинность — преследование карает преследующего",
+        "ability": "Причинность - преследование карает преследующего",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -1084,7 +1084,7 @@ STANDS = {
         "tier": "C",
         "stats": {"destructive_power": "C", "speed": "C", "range": "C", "durability": "B", "precision": "A", "potential": "C"},
         "power": 20,
-        "ability": "Гайки и болты — разбирает предметы на части",
+        "ability": "Гайки и болты - разбирает предметы на части",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -1096,7 +1096,7 @@ STANDS = {
         "tier": "B",
         "stats": {"destructive_power": "B", "speed": "B", "range": "C", "durability": "C", "precision": "A", "potential": "C"},
         "power": 26,
-        "ability": "Следование запаху — ловушки",
+        "ability": "Следование запаху - ловушки",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -1108,7 +1108,7 @@ STANDS = {
         "tier": "A",
         "stats": {"destructive_power": "A", "speed": "D", "range": "C", "durability": "C", "precision": "B", "potential": "E"},
         "power": 24,
-        "ability": "Нагрев прикосновением — разрушение изнутри",
+        "ability": "Нагрев прикосновением - разрушение изнутри",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -1132,7 +1132,7 @@ STANDS = {
         "tier": "C",
         "stats": {"destructive_power": "B", "speed": "B", "range": "C", "durability": "C", "precision": "C", "potential": "E"},
         "power": 22,
-        "ability": "Мотоцикл — резкий ветер при открывании",
+        "ability": "Мотоцикл - резкий ветер при открывании",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -1144,7 +1144,7 @@ STANDS = {
         "tier": "B",
         "stats": {"destructive_power": "B", "speed": "B", "range": "A", "durability": "C", "precision": "C", "potential": "E"},
         "power": 22,
-        "ability": "Торнадо-вихрь — преследует дыхание",
+        "ability": "Торнадо-вихрь - преследует дыхание",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -1156,7 +1156,7 @@ STANDS = {
         "tier": "C",
         "stats": {"destructive_power": "D", "speed": "C", "range": "C", "durability": "C", "precision": "A", "potential": "C"},
         "power": 18,
-        "ability": "Оригами — всё выглядит одинаково",
+        "ability": "Оригами - всё выглядит одинаково",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -1192,7 +1192,7 @@ STANDS = {
         "tier": "B",
         "stats": {"destructive_power": "B", "speed": "B", "range": "C", "durability": "C", "precision": "B", "potential": "E"},
         "power": 20,
-        "ability": "Разматывание тела — верёвки из кожи",
+        "ability": "Разматывание тела - верёвки из кожи",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -1216,7 +1216,7 @@ STANDS = {
         "tier": "A",
         "stats": {"destructive_power": "B", "speed": "B", "range": "B", "durability": "C", "precision": "B", "potential": "E"},
         "power": 24,
-        "ability": "Автоматическое преследование — зомби-контроль",
+        "ability": "Автоматическое преследование - зомби-контроль",
         "ability2": None,
         "evolves_to": None,
         "obtainable": True,
@@ -1233,8 +1233,8 @@ STANDS = {
         "tier": "SSS",
         "stats": {"destructive_power": "A", "speed": "A", "range": "C", "durability": "A", "precision": "A", "potential": "A"},
         "power": 55,
-        "ability": "Star Finger — дальнобойный удар",
-        "ability2": "Za Warudo — остановка времени на 5 секунд",
+        "ability": "Star Finger - дальнобойный удар",
+        "ability2": "Za Warudo - остановка времени на 5 секунд",
         "evolves_to": None,
         "obtainable": False,
         "image": ""
@@ -1245,8 +1245,8 @@ STANDS = {
         "tier": "SSS",
         "stats": {"destructive_power": "A", "speed": "A", "range": "A", "durability": "A", "precision": "A", "potential": "A"},
         "power": 60,
-        "ability": "Za Warudo Over Heaven — бесконечная остановка времени",
-        "ability2": "Reality Overwrite — переписывание реальности",
+        "ability": "Za Warudo Over Heaven - бесконечная остановка времени",
+        "ability2": "Reality Overwrite - переписывание реальности",
         "evolves_to": None,
         "obtainable": False,
         "image": ""
@@ -1257,8 +1257,8 @@ STANDS = {
         "tier": "SSS",
         "stats": {"destructive_power": "A", "speed": "A", "range": "C", "durability": "A", "precision": "A", "potential": "A"},
         "power": 60,
-        "ability": "Return to Zero — обнуление действий врага",
-        "ability2": "Life Giver Requiem — усиленное исцеление, полный хил",
+        "ability": "Return to Zero - обнуление действий врага",
+        "ability2": "Life Giver Requiem - усиленное исцеление, полный хил",
         "evolves_to": None,
         "obtainable": False,
         "image": ""
@@ -1269,8 +1269,8 @@ STANDS = {
         "tier": "SS",
         "stats": {"destructive_power": "E", "speed": "E", "range": "A", "durability": "A", "precision": "E", "potential": "A"},
         "power": 40,
-        "ability": "Shadow Control — контроль над душами всех в радиусе",
-        "ability2": "Soul Swap — обмен телами",
+        "ability": "Shadow Control - контроль над душами всех в радиусе",
+        "ability2": "Soul Swap - обмен телами",
         "evolves_to": None,
         "obtainable": False,
         "image": ""
@@ -1281,8 +1281,8 @@ STANDS = {
         "tier": "SSS",
         "stats": {"destructive_power": "A", "speed": "A", "range": "D", "durability": "A", "precision": "A", "potential": "A"},
         "power": 55,
-        "ability": "Sheer Heart Attack — автономная тепловая бомба",
-        "ability2": "Bites the Dust — петля времени, возврат на час",
+        "ability": "Sheer Heart Attack - автономная тепловая бомба",
+        "ability2": "Bites the Dust - петля времени, возврат на час",
         "evolves_to": None,
         "obtainable": False,
         "image": ""
@@ -1293,8 +1293,8 @@ STANDS = {
         "tier": "SSS",
         "stats": {"destructive_power": "A", "speed": "A", "range": "C", "durability": "A", "precision": "A", "potential": "A"},
         "power": 58,
-        "ability": "Epitaph — предвидение на 10 секунд",
-        "ability2": "Time Erasure Requiem — усиленное стирание времени",
+        "ability": "Epitaph - предвидение на 10 секунд",
+        "ability2": "Time Erasure Requiem - усиленное стирание времени",
         "evolves_to": None,
         "obtainable": False,
         "image": ""
@@ -1305,8 +1305,8 @@ STANDS = {
         "tier": "SSS",
         "stats": {"destructive_power": "A", "speed": "A", "range": "A", "durability": "A", "precision": "A", "potential": "A"},
         "power": 58,
-        "ability": "Dirty Deeds — перемещение между мирами",
-        "ability2": "Love Train — перенаправление всего урона",
+        "ability": "Dirty Deeds - перемещение между мирами",
+        "ability2": "Love Train - перенаправление всего урона",
         "evolves_to": None,
         "obtainable": False,
         "image": ""
@@ -1317,8 +1317,8 @@ STANDS = {
         "tier": "SSS",
         "stats": {"destructive_power": "A", "speed": "A", "range": "C", "durability": "B", "precision": "A", "potential": "A"},
         "power": 55,
-        "ability": "Infinite Rotation — бесконечное вращение",
-        "ability2": "Dimensional Nails — ногти пробивают измерения",
+        "ability": "Infinite Rotation - бесконечное вращение",
+        "ability2": "Dimensional Nails - ногти пробивают измерения",
         "evolves_to": None,
         "obtainable": False,
         "image": ""
@@ -1329,8 +1329,8 @@ STANDS = {
         "tier": "SSS",
         "stats": {"destructive_power": "A", "speed": "A", "range": "C", "durability": "A", "precision": "A", "potential": "A"},
         "power": 58,
-        "ability": "Bubble Steal — кража свойств объектов",
-        "ability2": "Go Beyond — невидимые пузыри вне логики",
+        "ability": "Bubble Steal - кража свойств объектов",
+        "ability2": "Go Beyond - невидимые пузыри вне логики",
         "evolves_to": None,
         "obtainable": False,
         "image": ""
@@ -1341,8 +1341,8 @@ STANDS = {
         "tier": "SSS",
         "stats": {"destructive_power": "A", "speed": "A", "range": "A", "durability": "A", "precision": "A", "potential": "A"},
         "power": 60,
-        "ability": "Time Acceleration — ускорение времени вселенной",
-        "ability2": "Universe Reset — перезапуск вселенной",
+        "ability": "Time Acceleration - ускорение времени вселенной",
+        "ability2": "Universe Reset - перезапуск вселенной",
         "evolves_to": None,
         "obtainable": False,
         "image": ""
@@ -1357,7 +1357,7 @@ TIER_WEIGHTS = {
     "A": 13,
     "S": 6,
     "SS": 2.5,
-    # SSS — not obtainable from arrows, only evolution
+    # SSS - not obtainable from arrows, only evolution
 }
 
 TIER_COLORS = {
@@ -1468,529 +1468,529 @@ if __name__ == "__main__":
 
 ABILITY_UPGRADES = {
     "Star Platinum": {
-        1: "Ora Ora Rush — мощнейшая серия ударов",
-        2: "Ora Ora Rush EX — скорость удвоена, пробивает защиту",
-        3: "Infinite Ora — бесконечная серия, останавливает врага на месте"
+        1: "Ora Ora Rush - мощнейшая серия ударов",
+        2: "Ora Ora Rush EX - скорость удвоена, пробивает защиту",
+        3: "Infinite Ora - бесконечная серия, останавливает врага на месте"
     },
     "The World": {
-        1: "Za Warudo — остановка времени до 9 секунд",
-        2: "Za Warudo — остановка времени до 15 секунд",
-        3: "Za Warudo Absolute — остановка времени до 30 секунд"
+        1: "Za Warudo - остановка времени до 9 секунд",
+        2: "Za Warudo - остановка времени до 15 секунд",
+        3: "Za Warudo Absolute - остановка времени до 30 секунд"
     },
     "Magician's Red": {
-        1: "Crossfire Hurricane — огненные атаки",
-        2: "Crossfire Hurricane Special — огненный крест удваивается",
-        3: "Red Bind — огненные цепи сжигают всё в радиусе"
+        1: "Crossfire Hurricane - огненные атаки",
+        2: "Crossfire Hurricane Special - огненный крест удваивается",
+        3: "Red Bind - огненные цепи сжигают всё в радиусе"
     },
     "Hermit Purple": {
-        1: "Психофотография — получение информации через фото",
-        2: "Расширенная сеть — отслеживание на большие расстояния",
-        3: "Пурпурная ловушка — шипы из фиолетовой ауры наносят урон"
+        1: "Психофотография - получение информации через фото",
+        2: "Расширенная сеть - отслеживание на большие расстояния",
+        3: "Пурпурная ловушка - шипы из фиолетовой ауры наносят урон"
     },
     "Hierophant Green": {
-        1: "Emerald Splash — изумрудные снаряды",
-        2: "Emerald Splash EX — снаряды множатся и наводятся",
-        3: "20 Meter Radius Barrier — барьер из нитей с Emerald Splash внутри"
+        1: "Emerald Splash - изумрудные снаряды",
+        2: "Emerald Splash EX - снаряды множатся и наводятся",
+        3: "20 Meter Radius Barrier - барьер из нитей с Emerald Splash внутри"
     },
     "Silver Chariot": {
-        1: "Рапира — сверхскоростные уколы",
-        2: "Рапира без доспеха — скорость x3, создаёт afterimage",
-        3: "Rapier Barrage — тысяча уколов в секунду"
+        1: "Рапира - сверхскоростные уколы",
+        2: "Рапира без доспеха - скорость x3, создаёт afterimage",
+        3: "Rapier Barrage - тысяча уколов в секунду"
     },
     "The Fool": {
-        1: "Управление песком — создание любых форм",
-        2: "Песчаный шторм — слепит и режет противника",
-        3: "Quicksand Trap — поглощает врага в песчаную ловушку"
+        1: "Управление песком - создание любых форм",
+        2: "Песчаный шторм - слепит и режет противника",
+        3: "Quicksand Trap - поглощает врага в песчаную ловушку"
     },
     "Tower of Gray": {
-        1: "Сверхскоростное насекомое — разрывает языки",
-        2: "Невидимый полёт — нельзя отследить взглядом",
-        3: "Mass Destruction — разрывает сразу несколько целей"
+        1: "Сверхскоростное насекомое - разрывает языки",
+        2: "Невидимый полёт - нельзя отследить взглядом",
+        3: "Mass Destruction - разрывает сразу несколько целей"
     },
     "Dark Blue Moon": {
         1: "Управление водой и ракушками",
-        2: "Whirlpool — водоворот затягивает врага",
-        3: "Deep Sea Prison — заключает в водяную тюрьму"
+        2: "Whirlpool - водоворот затягивает врага",
+        3: "Deep Sea Prison - заключает в водяную тюрьму"
     },
     "Strength": {
-        1: "Управление кораблём — размер зависит от хозяина",
-        2: "Стальной захват — корабль сжимает пространство вокруг врага",
-        3: "Titanic Crush — полное поглощение врага корпусом корабля"
+        1: "Управление кораблём - размер зависит от хозяина",
+        2: "Стальной захват - корабль сжимает пространство вокруг врага",
+        3: "Titanic Crush - полное поглощение врага корпусом корабля"
     },
     "Ebony Devil": {
-        1: "Кукла-мститель — сила от ненависти",
-        2: "Одержимость — кукла действует быстрее при большей ненависти",
-        3: "Dark Possession — одновременное управление несколькими куклами"
+        1: "Кукла-мститель - сила от ненависти",
+        2: "Одержимость - кукла действует быстрее при большей ненависти",
+        3: "Dark Possession - одновременное управление несколькими куклами"
     },
     "Yellow Temperance": {
         1: "Неразрушимая желеобразная субстанция",
-        2: "Поглощение — копирует внешность противника",
-        3: "Total Assimilation — полностью поглощает тело врага"
+        2: "Поглощение - копирует внешность противника",
+        3: "Total Assimilation - полностью поглощает тело врага"
     },
     "Emperor": {
         1: "Самонаводящийся пистолет",
-        2: "Рикошет — пуля отскакивает от поверхностей",
-        3: "Homing Barrage — очередь из 10 самонаводящихся пуль"
+        2: "Рикошет - пуля отскакивает от поверхностей",
+        3: "Homing Barrage - очередь из 10 самонаводящихся пуль"
     },
     "Hanged Man": {
         1: "Путешествие через отражения",
         2: "Молниеносный удар из отражения",
-        3: "Mirror Prison — ловушка в мире отражений"
+        3: "Mirror Prison - ловушка в мире отражений"
     },
     "Empress": {
-        1: "Паразит — растёт поглощая кровь",
-        2: "Быстрый рост — поглощает вдвое быстрее",
-        3: "Full Control — полное управление носителем"
+        1: "Паразит - растёт поглощая кровь",
+        2: "Быстрый рост - поглощает вдвое быстрее",
+        3: "Full Control - полное управление носителем"
     },
     "Wheel of Fortune": {
         1: "Сверхмощный автомобиль",
-        2: "Нефтяной огонь — выпускает горящее топливо",
-        3: "Road Crusher — превращается в неостановимый таран"
+        2: "Нефтяной огонь - выпускает горящее топливо",
+        3: "Road Crusher - превращается в неостановимый таран"
     },
     "Justice": {
         1: "Управление трупами через туман",
-        2: "Армия мертвецов — контролирует сразу несколько трупов",
-        3: "Fog of Death — туман убивает всех внутри"
+        2: "Армия мертвецов - контролирует сразу несколько трупов",
+        3: "Fog of Death - туман убивает всех внутри"
     },
     "Lovers": {
-        1: "Микроскопический стенд — проникает в мозг",
-        2: "Нейронный контроль — управление рефлексами врага",
-        3: "Mind Collapse — разрушение сознания врага изнутри"
+        1: "Микроскопический стенд - проникает в мозг",
+        2: "Нейронный контроль - управление рефлексами врага",
+        3: "Mind Collapse - разрушение сознания врага изнутри"
     },
     "Sun": {
-        1: "Искусственное солнце — жара и свет",
-        2: "Solar Beam — концентрированный луч тепла",
-        3: "Supernova — взрыв энергии выжигает всё вокруг"
+        1: "Искусственное солнце - жара и свет",
+        2: "Solar Beam - концентрированный луч тепла",
+        3: "Supernova - взрыв энергии выжигает всё вокруг"
     },
     "Death Thirteen": {
-        1: "Убивает во сне — мир снов",
-        2: "Nightmare — трансформирует страхи врага в оружие",
-        3: "Eternal Sleep — жертва не может проснуться никогда"
+        1: "Убивает во сне - мир снов",
+        2: "Nightmare - трансформирует страхи врага в оружие",
+        3: "Eternal Sleep - жертва не может проснуться никогда"
     },
     "Judgement": {
         1: "Создание существ из земли по желаниям",
-        2: "Совершенные копии — существа идентичны оригиналу",
-        3: "Wish Army — создаёт целую армию существ из земли"
+        2: "Совершенные копии - существа идентичны оригиналу",
+        3: "Wish Army - создаёт целую армию существ из земли"
     },
     "High Priestess": {
         1: "Превращение в любой неорганический предмет",
-        2: "Молекулярное слияние — мгновенное слияние с металлом",
-        3: "Iron Maiden — поглощает врага изнутри"
+        2: "Молекулярное слияние - мгновенное слияние с металлом",
+        3: "Iron Maiden - поглощает врага изнутри"
     },
     "Geb": {
         1: "Управление водой на дальних расстояниях",
-        2: "Water Blade — режущий поток воды",
-        3: "Flood — затапливает всё пространство"
+        2: "Water Blade - режущий поток воды",
+        3: "Flood - затапливает всё пространство"
     },
     "Tohth": {
         1: "Предсказание будущего через комикс",
-        2: "Точное предсказание — видит на 1 час вперёд",
-        3: "Fate Lock — предсказанное событие становится неизбежным"
+        2: "Точное предсказание - видит на 1 час вперёд",
+        3: "Fate Lock - предсказанное событие становится неизбежным"
     },
     "Khnum": {
         1: "Изменение внешности",
-        2: "Полное копирование — копирует голос и запах",
-        3: "Perfect Clone — невозможно отличить от оригинала"
+        2: "Полное копирование - копирует голос и запах",
+        3: "Perfect Clone - невозможно отличить от оригинала"
     },
     "Anubis": {
-        1: "Меч — учится у каждого противника",
-        2: "Perfect Memory — помнит все техники всех врагов",
-        3: "Counter God — автоматически контрит любую атаку"
+        1: "Меч - учится у каждого противника",
+        2: "Perfect Memory - помнит все техники всех врагов",
+        3: "Counter God - автоматически контрит любую атаку"
     },
     "Sethan": {
-        1: "Тень — омолаживает до ребёнка",
-        2: "Rapid Regression — омолаживание в несколько секунд",
-        3: "Infant Touch — одного касания достаточно для полного омоложения"
+        1: "Тень - омолаживает до ребёнка",
+        2: "Rapid Regression - омолаживание в несколько секунд",
+        3: "Infant Touch - одного касания достаточно для полного омоложения"
     },
     "Atum": {
         1: "Кража душ + чтение мыслей",
-        2: "Принудительное признание — враг говорит правду",
-        3: "Soul Harvest — одновременная кража нескольких душ"
+        2: "Принудительное признание - враг говорит правду",
+        3: "Soul Harvest - одновременная кража нескольких душ"
     },
     "Osiris": {
         1: "Кража душ через азартные игры",
-        2: "Loaded Dice — манипуляция удачей в свою пользу",
-        3: "Soul Jackpot — мгновенная кража всех душ в игре"
+        2: "Loaded Dice - манипуляция удачей в свою пользу",
+        3: "Soul Jackpot - мгновенная кража всех душ в игре"
     },
     "Horus": {
         1: "Создание льда и управление им",
-        2: "Ice Prison — мгновенная заморозка врага",
-        3: "Absolute Zero — заморозка до абсолютного нуля"
+        2: "Ice Prison - мгновенная заморозка врага",
+        3: "Absolute Zero - заморозка до абсолютного нуля"
     },
     "Cream": {
-        1: "Пустота — поглощает всё что касается",
-        2: "Void Expansion — пустота расширяется вдвое быстрее",
-        3: "Dimensional Void — пустота поглощает целое измерение"
+        1: "Пустота - поглощает всё что касается",
+        2: "Void Expansion - пустота расширяется вдвое быстрее",
+        3: "Dimensional Void - пустота поглощает целое измерение"
     },
     "Crazy Diamond": {
         1: "Восстановление и ремонт любых объектов",
-        2: "Dora Dora Rush — ремонт во время удара",
-        3: "Reconstruction — полное восстановление + изменение формы объекта"
+        2: "Dora Dora Rush - ремонт во время удара",
+        3: "Reconstruction - полное восстановление + изменение формы объекта"
     },
     "Heaven's Door": {
-        1: "Превращение в книгу — чтение и запись команд",
-        2: "Forced Writing — команды работают мгновенно",
-        3: "Rewrite Reality — переписывает физические законы врага"
+        1: "Превращение в книгу - чтение и запись команд",
+        2: "Forced Writing - команды работают мгновенно",
+        3: "Rewrite Reality - переписывает физические законы врага"
     },
     "Killer Queen": {
-        1: "Всё к чему прикасается — бомба",
-        2: "Remote Detonation — подрыв на расстоянии",
-        3: "Plague Bomb — бомба заражает всех в радиусе"
+        1: "Всё к чему прикасается - бомба",
+        2: "Remote Detonation - подрыв на расстоянии",
+        3: "Plague Bomb - бомба заражает всех в радиусе"
     },
     "The Hand": {
         1: "Стирание пространства правой рукой",
-        2: "Rapid Erase — стирает быстрее, без задержки",
-        3: "Dimension Cut — стирает целый слой реальности"
+        2: "Rapid Erase - стирает быстрее, без задержки",
+        3: "Dimension Cut - стирает целый слой реальности"
     },
     "Echoes Act 1": {
-        1: "Записывает звуки — воспроизводит при касании",
-        2: "Amplified Echo — звук усиливается вдвое",
-        3: "Sound Bomb — накопленный звук взрывается"
+        1: "Записывает звуки - воспроизводит при касании",
+        2: "Amplified Echo - звук усиливается вдвое",
+        3: "Sound Bomb - накопленный звук взрывается"
     },
     "Red Hot Chili Pepper": {
-        1: "Управление электричеством — путешествие по сети",
-        2: "Thunder Strike — мощный разряд молнии",
-        3: "Overload — электрический взрыв поражает всё вокруг"
+        1: "Управление электричеством - путешествие по сети",
+        2: "Thunder Strike - мощный разряд молнии",
+        3: "Overload - электрический взрыв поражает всё вокруг"
     },
     "Bad Company": {
         1: "Армия миниатюрных солдат",
-        2: "Air Support — вертолёты и авиабомбы",
-        3: "Full Battalion — танки, артиллерия и спецназ"
+        2: "Air Support - вертолёты и авиабомбы",
+        3: "Full Battalion - танки, артиллерия и спецназ"
     },
     "Harvest": {
-        1: "500 маленьких стендов — сбор предметов",
-        2: "Needle Army — все 500 атакуют одновременно",
-        3: "Swarm Death — невозможно защититься от тысяч игл"
+        1: "500 маленьких стендов - сбор предметов",
+        2: "Needle Army - все 500 атакуют одновременно",
+        3: "Swarm Death - невозможно защититься от тысяч игл"
     },
     "Surface": {
         1: "Копирует внешность и движения хозяина",
-        2: "Независимые действия — копия атакует сама",
-        3: "Perfect Puppet — копия полностью заменяет оригинал"
+        2: "Независимые действия - копия атакует сама",
+        3: "Perfect Puppet - копия полностью заменяет оригинал"
     },
     "Pearl Jam": {
         1: "Лечение болезней через еду",
-        2: "Rapid Recovery — лечение за один укус",
-        3: "Miracle Cure — лечит любую рану включая смертельные"
+        2: "Rapid Recovery - лечение за один укус",
+        3: "Miracle Cure - лечит любую рану включая смертельные"
     },
     "Atom Heart Father": {
         1: "Ловушка внутри фотографий",
-        2: "Multiple Traps — несколько ловушек одновременно",
-        3: "Photo Prison — полностью запечатывает врага в фото"
+        2: "Multiple Traps - несколько ловушек одновременно",
+        3: "Photo Prison - полностью запечатывает врага в фото"
     },
     "Superfly": {
-        1: "Стальная башня — отражает атаки",
-        2: "Charged Reflection — отражённая атака усиливается вдвое",
-        3: "Inescapable Tower — башня преследует врага"
+        1: "Стальная башня - отражает атаки",
+        2: "Charged Reflection - отражённая атака усиливается вдвое",
+        3: "Inescapable Tower - башня преследует врага"
     },
     "Enigma": {
         1: "Запечатывает существа в бумагу",
-        2: "Origami Army — бумажные существа атакуют",
-        3: "Paper World — всё вокруг превращается в бумагу"
+        2: "Origami Army - бумажные существа атакуют",
+        3: "Paper World - всё вокруг превращается в бумагу"
     },
     "Gold Experience": {
-        1: "Life Giver — создание жизни, исцеление союзников",
-        2: "Enhanced Life — созданные существа сильнее и живут дольше",
-        3: "Life Overflow — исцеление распространяется на всех союзников"
+        1: "Life Giver - создание жизни, исцеление союзников",
+        2: "Enhanced Life - созданные существа сильнее и живут дольше",
+        3: "Life Overflow - исцеление распространяется на всех союзников"
     },
     "Sticky Fingers": {
-        1: "Молнии — создание молний на любой поверхности",
-        2: "Zipper Dimension — молния открывает пространственный карман",
-        3: "Body Split — разделяет врага на части через молнию"
+        1: "Молнии - создание молний на любой поверхности",
+        2: "Zipper Dimension - молния открывает пространственный карман",
+        3: "Body Split - разделяет врага на части через молнию"
     },
     "Spice Girl": {
         1: "Размягчение любых объектов",
-        2: "Elastic Armor — тело становится мягким и упругим",
-        3: "Rubber Inversion — размягчение на клеточном уровне"
+        2: "Elastic Armor - тело становится мягким и упругим",
+        3: "Rubber Inversion - размягчение на клеточном уровне"
     },
     "Moody Blues": {
         1: "Воспроизведение прошлых событий",
-        2: "Real-Time Replay — воспроизводит прошлое в реальном времени",
-        3: "Trap Replay — заставляет врага повторять прошлые действия"
+        2: "Real-Time Replay - воспроизводит прошлое в реальном времени",
+        3: "Trap Replay - заставляет врага повторять прошлые действия"
     },
     "Purple Haze": {
-        1: "Капсулы с вирусом — мгновенное разложение",
-        2: "Wider Spread — вирус распространяется в большем радиусе",
-        3: "Rage Mode — неконтролируемая ярость, вирус поражает всё"
+        1: "Капсулы с вирусом - мгновенное разложение",
+        2: "Wider Spread - вирус распространяется в большем радиусе",
+        3: "Rage Mode - неконтролируемая ярость, вирус поражает всё"
     },
     "Sex Pistols": {
-        1: "6 миниатюрных стендов — наводят пули",
-        2: "Armor Piercing — пули пробивают любую защиту",
-        3: "Bullet Hell — все 6 стендов стреляют одновременно"
+        1: "6 миниатюрных стендов - наводят пули",
+        2: "Armor Piercing - пули пробивают любую защиту",
+        3: "Bullet Hell - все 6 стендов стреляют одновременно"
     },
     "Aerosmith": {
-        1: "Миниатюрный самолёт — радар и атаки",
-        2: "Bomb Drop — авиабомбы с самолёта",
-        3: "Napalm Strike — выжигает всё в зоне поражения"
+        1: "Миниатюрный самолёт - радар и атаки",
+        2: "Bomb Drop - авиабомбы с самолёта",
+        3: "Napalm Strike - выжигает всё в зоне поражения"
     },
     "Beach Boy": {
-        1: "Удочка — проходит сквозь поверхности",
-        2: "Deep Hook — крюк пробивает любые барьеры",
-        3: "Soul Fisher — крюк захватывает душу врага"
+        1: "Удочка - проходит сквозь поверхности",
+        2: "Deep Hook - крюк пробивает любые барьеры",
+        3: "Soul Fisher - крюк захватывает душу врага"
     },
     "The Grateful Dead": {
         1: "Ускоренное старение живых существ",
-        2: "Rapid Decay — старение в 10 раз быстрее",
-        3: "Instant Death — мгновенное старение до праха"
+        2: "Rapid Decay - старение в 10 раз быстрее",
+        3: "Instant Death - мгновенное старение до праха"
     },
     "White Album": {
-        1: "Броня из льда — заморозка всего вокруг",
-        2: "Gently Weeps — лёд режет как бритва",
-        3: "Absolute Freeze — заморозка на молекулярном уровне"
+        1: "Броня из льда - заморозка всего вокруг",
+        2: "Gently Weeps - лёд режет как бритва",
+        3: "Absolute Freeze - заморозка на молекулярном уровне"
     },
     "Man in the Mirror": {
         1: "Затягивает в зеркальный мир",
-        2: "Mirror Trap — враг не может выйти из зеркала",
-        3: "Mirror Kill — убивает в зеркальном мире навсегда"
+        2: "Mirror Trap - враг не может выйти из зеркала",
+        3: "Mirror Kill - убивает в зеркальном мире навсегда"
     },
     "Notorious B.I.G": {
-        1: "Активируется после смерти — неуязвим",
-        2: "Growth Mode — поглощает энергию и растёт",
-        3: "Infinite Hunger — поглощает целые здания"
+        1: "Активируется после смерти - неуязвим",
+        2: "Growth Mode - поглощает энергию и растёт",
+        3: "Infinite Hunger - поглощает целые здания"
     },
     "Metallica": {
         1: "Управление железом в крови",
-        2: "Iron Storm — выпускает железо изо всех пор врага",
-        3: "Metal Overload — полная остановка кровообращения"
+        2: "Iron Storm - выпускает железо изо всех пор врага",
+        3: "Metal Overload - полная остановка кровообращения"
     },
     "King Crimson": {
         1: "Стирание времени + предвидение будущего",
-        2: "Extended Erase — стирает больший промежуток времени",
-        3: "Fate Override — стёртое время заменяется нужным исходом"
+        2: "Extended Erase - стирает больший промежуток времени",
+        3: "Fate Override - стёртое время заменяется нужным исходом"
     },
     "Epitaph": {
         1: "Предвидение будущего на 10 секунд",
-        2: "Extended Vision — предвидение на 30 секунд",
-        3: "Destiny Read — видит исход любого события"
+        2: "Extended Vision - предвидение на 30 секунд",
+        3: "Destiny Read - видит исход любого события"
     },
     "Stone Free": {
         1: "Превращение тела в нити",
-        2: "String Bind — нити опутывают и парализуют врага",
-        3: "Unbreakable Web — нити из стальной проволоки"
+        2: "String Bind - нити опутывают и парализуют врага",
+        3: "Unbreakable Web - нити из стальной проволоки"
     },
     "Kiss": {
-        1: "Наклейки — дублирование объектов",
-        2: "Explosive Split — дубликат взрывается при снятии",
-        3: "Infinite Clone — бесконечное дублирование"
+        1: "Наклейки - дублирование объектов",
+        2: "Explosive Split - дубликат взрывается при снятии",
+        3: "Infinite Clone - бесконечное дублирование"
     },
     "Foo Fighters": {
-        1: "Планктон — управление водой и телом",
-        2: "Body Repair — восстановление тела через воду",
-        3: "Plankton Storm — тысячи планктонов атакуют врага"
+        1: "Планктон - управление водой и телом",
+        2: "Body Repair - восстановление тела через воду",
+        3: "Plankton Storm - тысячи планктонов атакуют врага"
     },
     "Whitesnake": {
         1: "Кража дисков памяти и стендов",
-        2: "Disc Overwrite — перезаписывает воспоминания врага",
-        3: "Stand Steal — кражи стенда без ограничений"
+        2: "Disc Overwrite - перезаписывает воспоминания врага",
+        3: "Stand Steal - кражи стенда без ограничений"
     },
     "C-Moon": {
-        1: "Управление гравитацией — выворачивание наизнанку",
-        2: "Gravity Storm — меняет направление гравитации",
-        3: "Inside Out — выворачивает тело врага мгновенно"
+        1: "Управление гравитацией - выворачивание наизнанку",
+        2: "Gravity Storm - меняет направление гравитации",
+        3: "Inside Out - выворачивает тело врага мгновенно"
     },
     "Diver Down": {
-        1: "Проникновение в объекты — хранение и взрывы",
-        2: "Stored Power — накапливает силу внутри объекта",
-        3: "Structural Collapse — разрушает объект изнутри"
+        1: "Проникновение в объекты - хранение и взрывы",
+        2: "Stored Power - накапливает силу внутри объекта",
+        3: "Structural Collapse - разрушает объект изнутри"
     },
     "Weather Report": {
         1: "Управление погодой и атмосферой",
-        2: "Lightning Storm — призывает грозу по желанию",
-        3: "Climate Control — глобальное управление климатом"
+        2: "Lightning Storm - призывает грозу по желанию",
+        3: "Climate Control - глобальное управление климатом"
     },
     "Heavy Weather": {
         1: "Радуга превращает всё в улиток",
-        2: "Массовое превращение — охватывает больший радиус",
-        3: "Irreversible Change — превращение нельзя отменить"
+        2: "Массовое превращение - охватывает больший радиус",
+        3: "Irreversible Change - превращение нельзя отменить"
     },
     "Burning Down the House": {
         1: "Комната-призрак с предметами из прошлого",
-        2: "Weapon Storage — хранит любое оружие из прошлого",
-        3: "Ghost Arsenal — создаёт целый арсенал призрачного оружия"
+        2: "Weapon Storage - хранит любое оружие из прошлого",
+        3: "Ghost Arsenal - создаёт целый арсенал призрачного оружия"
     },
     "Jail House Lock": {
         1: "Жертва помнит только 3 вещи одновременно",
-        2: "Memory Overload — жертва помнит только 2 вещи",
-        3: "Total Amnesia — жертва не помнит ничего"
+        2: "Memory Overload - жертва помнит только 2 вещи",
+        3: "Total Amnesia - жертва не помнит ничего"
     },
     "Tusk Act 1": {
-        1: "Вращающиеся ногти — выстрелы",
-        2: "Rapid Fire — выстрелы учащаются вдвое",
-        3: "Piercing Nail — ноготь пробивает любую броню"
+        1: "Вращающиеся ногти - выстрелы",
+        2: "Rapid Fire - выстрелы учащаются вдвое",
+        3: "Piercing Nail - ноготь пробивает любую броню"
     },
     "Scary Monsters": {
         1: "Превращение в динозавра и других существ",
-        2: "Pack Hunt — контролирует нескольких динозавров",
-        3: "Dino Evolution — превращение в T-Rex с полным контролем"
+        2: "Pack Hunt - контролирует нескольких динозавров",
+        3: "Dino Evolution - превращение в T-Rex с полным контролем"
     },
     "Ball Breaker": {
-        1: "Бесконечное вращение — ускоренное старение",
-        2: "Deep Penetration — вращение проникает сквозь любую защиту",
-        3: "Gravity Rotation — вращение искажает само пространство"
+        1: "Бесконечное вращение - ускоренное старение",
+        2: "Deep Penetration - вращение проникает сквозь любую защиту",
+        3: "Gravity Rotation - вращение искажает само пространство"
     },
     "In a Silent Way": {
         1: "Стальные шары создают мёртвые зоны",
-        2: "Expanded Blind Spot — мёртвые зоны становятся больше",
-        3: "Total Blind — полная мёртвая зона вокруг врага"
+        2: "Expanded Blind Spot - мёртвые зоны становятся больше",
+        3: "Total Blind - полная мёртвая зона вокруг врага"
     },
     "Ticket to Ride": {
         1: "Лечение стоит жизни других",
-        2: "Efficient Heal — меньше жизней требуется для лечения",
-        3: "Mass Transfer — забирает жизни у всех вокруг"
+        2: "Efficient Heal - меньше жизней требуется для лечения",
+        3: "Mass Transfer - забирает жизни у всех вокруг"
     },
     "Catch the Rainbow": {
-        1: "Замораживание дождя — ходьба по дождю",
-        2: "Rain Blade — капли превращаются в режущие снаряды",
-        3: "Frozen Storm — замораживает всё пространство вокруг"
+        1: "Замораживание дождя - ходьба по дождю",
+        2: "Rain Blade - капли превращаются в режущие снаряды",
+        3: "Frozen Storm - замораживает всё пространство вокруг"
     },
     "Mandom": {
         1: "Откат времени на 6 секунд",
-        2: "Extended Rewind — откат на 12 секунд",
-        3: "Perfect Reset — откат на 30 секунд с памятью о будущем"
+        2: "Extended Rewind - откат на 12 секунд",
+        3: "Perfect Reset - откат на 30 секунд с памятью о будущем"
     },
     "Tubular Bells": {
         1: "Создание бомб из металлических предметов",
-        2: "Chain Reaction — взрыв цепляет соседние металлы",
-        3: "Metal Apocalypse — взрывает весь металл в радиусе"
+        2: "Chain Reaction - взрыв цепляет соседние металлы",
+        3: "Metal Apocalypse - взрывает весь металл в радиусе"
     },
     "Boku no Rhythm wo Kiitekure": {
         1: "Противник делает то что ты делаешь",
-        2: "Lag Copy — задержка копирования уменьшается",
-        3: "Mirror Control — враг делает то что ты хочешь"
+        2: "Lag Copy - задержка копирования уменьшается",
+        3: "Mirror Control - враг делает то что ты хочешь"
     },
     "Wired": {
         1: "Невидимые провода",
-        2: "Cutting Wire — провода режут как лезвия",
-        3: "Wire Cage — создаёт клетку из невидимых проводов"
+        2: "Cutting Wire - провода режут как лезвия",
+        3: "Wire Cage - создаёт клетку из невидимых проводов"
     },
     "D4C": {
-        1: "Dirty Deeds Done Dirt Cheap — перемещение между мирами",
-        2: "Parallel Clone — призывает версию себя из другого мира",
-        3: "Dimension Barrage — атакует сразу из нескольких миров"
+        1: "Dirty Deeds Done Dirt Cheap - перемещение между мирами",
+        2: "Parallel Clone - призывает версию себя из другого мира",
+        3: "Dimension Barrage - атакует сразу из нескольких миров"
     },
     "Soft & Wet": {
-        1: "Мыльные пузыри — кража свойств объектов",
-        2: "Precision Steal — крадёт конкретное свойство",
-        3: "Property Overload — накапливает свойства и взрывается"
+        1: "Мыльные пузыри - кража свойств объектов",
+        2: "Precision Steal - крадёт конкретное свойство",
+        3: "Property Overload - накапливает свойства и взрывается"
     },
     "Paisley Park": {
-        1: "Навигация — ведёт хозяина к цели",
-        2: "Network Hack — взламывает цифровые устройства",
-        3: "Fate Guide — направляет к лучшему исходу любой ситуации"
+        1: "Навигация - ведёт хозяина к цели",
+        2: "Network Hack - взламывает цифровые устройства",
+        3: "Fate Guide - направляет к лучшему исходу любой ситуации"
     },
     "Wonder of U": {
-        1: "Причинность — преследование карает преследующего",
-        2: "Calamity Boost — несчастья случаются быстрее",
-        3: "Inevitable Doom — жертва не может избежать катастрофы"
+        1: "Причинность - преследование карает преследующего",
+        2: "Calamity Boost - несчастья случаются быстрее",
+        3: "Inevitable Doom - жертва не может избежать катастрофы"
     },
     "Nut King Call": {
-        1: "Гайки и болты — разбирает предметы на части",
-        2: "Rapid Disassembly — разборка за доли секунды",
-        3: "Atomic Disassembly — разбирает на молекулы"
+        1: "Гайки и болты - разбирает предметы на части",
+        2: "Rapid Disassembly - разборка за доли секунды",
+        3: "Atomic Disassembly - разбирает на молекулы"
     },
     "King Nothing": {
-        1: "Следование запаху — ловушки",
-        2: "Scent Lock — жертва не может скрыть запах",
-        3: "Poison Trap — ловушки выделяют смертельный яд"
+        1: "Следование запаху - ловушки",
+        2: "Scent Lock - жертва не может скрыть запах",
+        3: "Poison Trap - ловушки выделяют смертельный яд"
     },
     "Speed King": {
-        1: "Нагрев прикосновением — разрушение изнутри",
-        2: "Thermal Explosion — нагрев вызывает взрыв изнутри",
-        3: "Meltdown — расплавляет любой материал"
+        1: "Нагрев прикосновением - разрушение изнутри",
+        2: "Thermal Explosion - нагрев вызывает взрыв изнутри",
+        3: "Meltdown - расплавляет любой материал"
     },
     "Vitamin C": {
         1: "Размягчение тела при касании отпечатков",
-        2: "Deep Softening — размягчение достигает костей",
-        3: "Liquefaction — полное растворение тела врага"
+        2: "Deep Softening - размягчение достигает костей",
+        3: "Liquefaction - полное растворение тела врага"
     },
     "Born This Way": {
-        1: "Мотоцикл — резкий ветер при открывании",
-        2: "Wind Blade — ветер режет как нож",
-        3: "Hurricane Force — ураганный ветер сносит всё"
+        1: "Мотоцикл - резкий ветер при открывании",
+        2: "Wind Blade - ветер режет как нож",
+        3: "Hurricane Force - ураганный ветер сносит всё"
     },
     "Doobie Wah": {
-        1: "Торнадо-вихрь — преследует дыхание",
-        2: "Stronger Vortex — вихрь затягивает сильнее",
-        3: "Breath Trap — жертва задыхается в своём же дыхании"
+        1: "Торнадо-вихрь - преследует дыхание",
+        2: "Stronger Vortex - вихрь затягивает сильнее",
+        3: "Breath Trap - жертва задыхается в своём же дыхании"
     },
     "Paper Moon King": {
-        1: "Оригами — всё выглядит одинаково",
-        2: "Mass Confusion — эффект на нескольких врагов",
-        3: "Reality Paper — сам мир выглядит как бумага"
+        1: "Оригами - всё выглядит одинаково",
+        2: "Mass Confusion - эффект на нескольких врагов",
+        3: "Reality Paper - сам мир выглядит как бумага"
     },
     "Awaking III Leaves": {
         1: "Рыболовный крючок через боль",
-        2: "Deep Hook — крюк достигает внутренних органов",
-        3: "Soul Catch — крюк захватывает сознание врага"
+        2: "Deep Hook - крюк достигает внутренних органов",
+        3: "Soul Catch - крюк захватывает сознание врага"
     },
     "I Am a Rock": {
         1: "Притяжение объектов к цели",
-        2: "Magnetic Pull — притяжение в 10 раз сильнее",
-        3: "Gravity Crush — объекты сдавливают врага со всех сторон"
+        2: "Magnetic Pull - притяжение в 10 раз сильнее",
+        3: "Gravity Crush - объекты сдавливают врага со всех сторон"
     },
     "Doggy Style": {
-        1: "Разматывание тела — верёвки из кожи",
-        2: "Binding Coil — верёвки сжимают врага",
-        3: "Skin Cage — полностью опутывает врага"
+        1: "Разматывание тела - верёвки из кожи",
+        2: "Binding Coil - верёвки сжимают врага",
+        3: "Skin Cage - полностью опутывает врага"
     },
     "Fun Fun Fun": {
         1: "Дистанционный контроль через раны на конечностях",
-        2: "Full Body Control — контроль всего тела",
-        3: "Puppet Master — полное подчинение воли врага"
+        2: "Full Body Control - контроль всего тела",
+        3: "Puppet Master - полное подчинение воли врага"
     },
     "Blue Hawaii": {
-        1: "Автоматическое преследование — зомби-контроль",
-        2: "Horde Control — контролирует несколько зомби",
-        3: "Undead Army — создаёт армию из всех поверженных врагов"
+        1: "Автоматическое преследование - зомби-контроль",
+        2: "Horde Control - контролирует несколько зомби",
+        3: "Undead Army - создаёт армию из всех поверженных врагов"
     },
     # Evolution-only stands
     "Star Platinum: The World": {
-        1: "Star Finger — дальнобойный удар",
-        2: "Star Finger Barrage — серия дальнобойных ударов",
-        3: "Za Warudo SPTW — остановка времени + Star Finger одновременно"
+        1: "Star Finger - дальнобойный удар",
+        2: "Star Finger Barrage - серия дальнобойных ударов",
+        3: "Za Warudo SPTW - остановка времени + Star Finger одновременно"
     },
     "The World Over Heaven": {
-        1: "Za Warudo Over Heaven — бесконечная остановка времени",
-        2: "Overwrite Barrage — переписывает реальность серией ударов",
-        3: "Heaven's Judgment — полная перезапись существования врага"
+        1: "Za Warudo Over Heaven - бесконечная остановка времени",
+        2: "Overwrite Barrage - переписывает реальность серией ударов",
+        3: "Heaven's Judgment - полная перезапись существования врага"
     },
     "Gold Experience Requiem": {
-        1: "Return to Zero — обнуление действий врага",
-        2: "Mass Return — обнуляет действия нескольких врагов",
-        3: "Absolute Zero Will — обнуляет само желание врага существовать"
+        1: "Return to Zero - обнуление действий врага",
+        2: "Mass Return - обнуляет действия нескольких врагов",
+        3: "Absolute Zero Will - обнуляет само желание врага существовать"
     },
     "Silver Chariot Requiem": {
-        1: "Shadow Control — контроль над душами всех в радиусе",
-        2: "Soul Army — управляет всеми душами в большем радиусе",
-        3: "Soul Dominion — абсолютный контроль над всеми душами"
+        1: "Shadow Control - контроль над душами всех в радиусе",
+        2: "Soul Army - управляет всеми душами в большем радиусе",
+        3: "Soul Dominion - абсолютный контроль над всеми душами"
     },
     "Killer Queen: Bites the Dust": {
-        1: "Sheer Heart Attack — автономная тепловая бомба",
-        2: "Multiple SHA — несколько тепловых бомб одновременно",
-        3: "Infinite Loop — петля времени не имеет конца"
+        1: "Sheer Heart Attack - автономная тепловая бомба",
+        2: "Multiple SHA - несколько тепловых бомб одновременно",
+        3: "Infinite Loop - петля времени не имеет конца"
     },
     "King Crimson Requiem": {
-        1: "Epitaph — предвидение на 10 секунд",
-        2: "Extended Erasure — стирает большие промежутки времени",
-        3: "Fate Erasure — стирает само предназначение врага"
+        1: "Epitaph - предвидение на 10 секунд",
+        2: "Extended Erasure - стирает большие промежутки времени",
+        3: "Fate Erasure - стирает само предназначение врага"
     },
     "D4C Love Train": {
-        1: "Dirty Deeds — перемещение между мирами",
-        2: "Love Train Boost — перенаправляет урон на слабейшего в мире",
-        3: "Infinite Barrier — Love Train непробиваем ни для чего"
+        1: "Dirty Deeds - перемещение между мирами",
+        2: "Love Train Boost - перенаправляет урон на слабейшего в мире",
+        3: "Infinite Barrier - Love Train непробиваем ни для чего"
     },
     "Tusk Act 4": {
-        1: "Infinite Rotation — бесконечное вращение",
-        2: "Rotation Spread — вращение заражает всё вокруг",
-        3: "Unstoppable Force — ничто не может остановить вращение"
+        1: "Infinite Rotation - бесконечное вращение",
+        2: "Rotation Spread - вращение заражает всё вокруг",
+        3: "Unstoppable Force - ничто не может остановить вращение"
     },
     "Soft & Wet Go Beyond": {
-        1: "Bubble Steal — кража свойств объектов",
-        2: "Beyond Expansion — пузыри достигают большего радиуса",
-        3: "Reality Bubble — пузырь существует вне законов физики"
+        1: "Bubble Steal - кража свойств объектов",
+        2: "Beyond Expansion - пузыри достигают большего радиуса",
+        3: "Reality Bubble - пузырь существует вне законов физики"
     },
     "Made in Heaven": {
-        1: "Time Acceleration — ускорение времени вселенной",
-        2: "Hyper Acceleration — время ускоряется в 100 раз",
-        3: "Universe Reset — мгновенный перезапуск вселенной"
+        1: "Time Acceleration - ускорение времени вселенной",
+        2: "Hyper Acceleration - время ускоряется в 100 раз",
+        3: "Universe Reset - мгновенный перезапуск вселенной"
     },
 }

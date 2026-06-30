@@ -63,10 +63,10 @@ JOBS = [
     ("работал на DIO",                            800, 1800, 35, "hard"),
 ]
 JOB_FAIL = [
-    "Тебя поймали — пришлось сбежать!", "Босс уволил тебя за лень...",
-    "Ты провалил задание!", "Не повезло — работу перехватил кто-то другой.",
+    "Тебя поймали - пришлось сбежать!", "Босс уволил тебя за лень...",
+    "Ты провалил задание!", "Не повезло - работу перехватил кто-то другой.",
     "Вражеский стенд помешал тебе!", "Клиент отказался платить!",
-    "Полиция разогнала всех — ты ничего не заработал.",
+    "Полиция разогнала всех - ты ничего не заработал.",
 ]
 JOBS_REQUIRED = 3
 
@@ -208,7 +208,7 @@ def stand_embed(stand_name, player=None, user_obj=None):
     if stand.get("ability2"):
         embed.add_field(name="Ability 2", value=stand["ability2"], inline=False)
     if player and player.get("is_vampire"):
-        embed.add_field(name="🧛 Vampire", value="Vampiric Freeze — замораживает врага при касании", inline=False)
+        embed.add_field(name="🧛 Vampire", value="Vampiric Freeze - замораживает врага при касании", inline=False)
     if player and player.get("sub_ability"):
         embed.add_field(name="🍈 Sub-Ability", value=player["sub_ability"], inline=False)
     if stand.get("evolves_to"):
@@ -274,7 +274,7 @@ async def on_ready():
 
 # ─── SLASH COMMANDS ───────────────────────────────────────────────
 
-@tree.command(name="job", description="Работа — зарабатывай деньги (кд: 30 мин)")
+@tree.command(name="job", description="Работа - зарабатывай деньги (кд: 30 мин)")
 async def job(interaction: discord.Interaction):
     db = load_db(); player = get_player(db, interaction.user.id)
     now = datetime.utcnow()
@@ -318,7 +318,7 @@ async def job(interaction: discord.Interaction):
         embed = discord.Embed(title="❌ Работа провалена!", color=0xe74c3c)
         embed.add_field(name=f"{de[diff]} {dt[diff]}", value=f"**{job_name}**\n{random.choice(JOB_FAIL)}", inline=False)
         embed.add_field(name="🔨 Jobs", value=f"**{player['jobs_done']}/{JOBS_REQUIRED}**", inline=True)
-        embed.set_footer(text="Провал не считается — попробуй через 30 мин")
+        embed.set_footer(text="Провал не считается - попробуй через 30 мин")
         await interaction.response.send_message(embed=embed, ephemeral=True)
 
 
@@ -403,7 +403,7 @@ async def arrow(interaction: discord.Interaction, arrow_type: str = "regular"):
                 await msg.edit(content=f"✅ Стенд {action}: **{stand_name}**!")
             except asyncio.TimeoutError:
                 save_db(db)
-                await msg.edit(content="❌ Время вышло — стенд не сменён.")
+                await msg.edit(content="❌ Время вышло - стенд не сменён.")
         else:
             new_embed.set_footer(text="У тебя уже есть стенд. Нажми ✅ чтобы сменить (storage полон)")
             await interaction.response.send_message(embed=new_embed, ephemeral=True)
@@ -504,9 +504,9 @@ async def inv(interaction: discord.Interaction, user: discord.Member = None):
 @tree.command(name="storage", description="Управление хранилищем стендов")
 @app_commands.describe(action="store/swap/drop", slot="Слот 1 или 2 (для swap)")
 @app_commands.choices(action=[
-    app_commands.Choice(name="store — положить активный стенд", value="store"),
-    app_commands.Choice(name="swap  — поменять с активным",     value="swap"),
-    app_commands.Choice(name="drop  — выбросить активный стенд", value="drop"),
+    app_commands.Choice(name="store - положить активный стенд", value="store"),
+    app_commands.Choice(name="swap  - поменять с активным",     value="swap"),
+    app_commands.Choice(name="drop  - выбросить активный стенд", value="drop"),
 ])
 async def storage(interaction: discord.Interaction, action: str, slot: int = 1):
     db = load_db(); player = get_player(db, interaction.user.id)
@@ -578,8 +578,8 @@ async def storage(interaction: discord.Interaction, action: str, slot: int = 1):
 @tree.command(name="evolve", description="Эволюция стенда")
 @app_commands.describe(evo_type="requiem (через Requiem Arrow) или vampire (через Stone Mask)")
 @app_commands.choices(evo_type=[
-    app_commands.Choice(name="requiem — эволюция через Requiem Arrow", value="requiem"),
-    app_commands.Choice(name="vampire — вампир через Stone Mask",       value="vampire"),
+    app_commands.Choice(name="requiem - эволюция через Requiem Arrow", value="requiem"),
+    app_commands.Choice(name="vampire - вампир через Stone Mask",       value="vampire"),
 ])
 async def evolve(interaction: discord.Interaction, evo_type: str = "requiem"):
     db = load_db(); player = get_player(db, interaction.user.id)
@@ -604,7 +604,7 @@ async def evolve(interaction: discord.Interaction, evo_type: str = "requiem"):
         embed = discord.Embed(title="🧛 Vampire Evolution!", description=f"**{stand_name}** пронзён Каменной Маской!", color=0x8e0000)
         stats_text = "\n".join([f"{k.replace('_',' ').title()}: **{base_stats[k]}** → **{new_stats[k]}**" for k in new_stats])
         embed.add_field(name="📊 Изменение статов", value=stats_text, inline=False)
-        embed.add_field(name="🧛 Новая способность", value="Vampiric Freeze — замораживает врага", inline=False)
+        embed.add_field(name="🧛 Новая способность", value="Vampiric Freeze - замораживает врага", inline=False)
         if all_z:
             embed.add_field(name="💀 GODLIKE", value="Все статы **Z**!", inline=False)
         await interaction.response.send_message(embed=embed, ephemeral=True)
@@ -667,7 +667,7 @@ async def upgrade(interaction: discord.Interaction):
             ephemeral=True
         ); return
 
-    embed = discord.Embed(title=f"⬆️ Апгрейд — {stand_name}", color=TIER_COLORS.get(STANDS[stand_name]["tier"], 0xffffff))
+    embed = discord.Embed(title=f"⬆️ Апгрейд - {stand_name}", color=TIER_COLORS.get(STANDS[stand_name]["tier"], 0xffffff))
     embed.add_field(name=f"{'⭐'*cur_tier} Сейчас", value=current_ability, inline=False)
     embed.add_field(name=f"{'⭐'*next_tier} После",  value=next_ability,   inline=False)
     embed.add_field(name="💰 Стоимость", value=f"💎 **{cost['crystals']}** + 💰 **${cost['money']:,}**", inline=False)
@@ -718,7 +718,7 @@ async def rokakaka(interaction: discord.Interaction, stand_name: str):
     chance         = 10.0 if is_evo else 40.0
     has_sub        = player.get("sub_ability") is not None
 
-    embed = discord.Embed(title="🍈 Rokakaka — Скрещивание", color=0x2ecc71)
+    embed = discord.Embed(title="🍈 Rokakaka - Скрещивание", color=0x2ecc71)
     embed.add_field(name="⚔️ Твой стенд", value=f"**{player['stand']}**",    inline=True)
     embed.add_field(name="🎯 Цель",        value=f"**{target_stand}**",        inline=True)
     embed.add_field(name="📊 Шанс",        value=f"**{chance}%**",             inline=True)
@@ -746,13 +746,13 @@ async def rokakaka(interaction: discord.Interaction, stand_name: str):
         await msg.edit(content=f"💔 Провал! Шанс был {chance}%. Фрукт потрачен. Осталось: **{player['fruits']}** 🍈")
 
 
-@tree.command(name="shop", description="Магазин — купить стрелы, кристаллы, кейсы")
+@tree.command(name="shop", description="Магазин - купить стрелы, кристаллы, кейсы")
 @app_commands.describe(item="Что купить: arrow, crystal, common, rare")
 @app_commands.choices(item=[
-    app_commands.Choice(name="🏹 Regular Arrow — $500",  value="arrow"),
-    app_commands.Choice(name="💎 Crystal — $800",        value="crystal"),
-    app_commands.Choice(name="📦 Common Crate — $1000",  value="common"),
-    app_commands.Choice(name="🟦 Rare Crate — $2500",   value="rare"),
+    app_commands.Choice(name="🏹 Regular Arrow - $500",  value="arrow"),
+    app_commands.Choice(name="💎 Crystal - $800",        value="crystal"),
+    app_commands.Choice(name="📦 Common Crate - $1000",  value="common"),
+    app_commands.Choice(name="🟦 Rare Crate - $2500",   value="rare"),
 ])
 async def shop(interaction: discord.Interaction, item: str = None):
     db = load_db(); player = get_player(db, interaction.user.id)
@@ -846,10 +846,10 @@ async def money(interaction: discord.Interaction):
 
 
 @tree.command(name="quest", description="Посмотреть квест или забрать награду")
-@app_commands.describe(action="claim — забрать награду")
+@app_commands.describe(action="claim - забрать награду")
 @app_commands.choices(action=[
-    app_commands.Choice(name="show  — посмотреть прогресс", value="show"),
-    app_commands.Choice(name="claim — забрать награду",     value="claim"),
+    app_commands.Choice(name="show  - посмотреть прогресс", value="show"),
+    app_commands.Choice(name="claim - забрать награду",     value="claim"),
 ])
 async def quest_cmd(interaction: discord.Interaction, action: str = "show"):
     db = load_db(); player = get_player(db, interaction.user.id)
@@ -878,12 +878,12 @@ async def quest_cmd(interaction: discord.Interaction, action: str = "show"):
         save_db(db)
         embed = discord.Embed(title=f"🎉 Квест выполнен: {quest_data['name']}!", color=0xf1c40f)
         embed.add_field(name="🎁 Награда",     value=quest_data["reward_text"],             inline=False)
-        embed.add_field(name="📋 Новый квест", value=f"**{new_quest['name']}** — {new_quest['desc']}", inline=False)
+        embed.add_field(name="📋 Новый квест", value=f"**{new_quest['name']}** - {new_quest['desc']}", inline=False)
         await interaction.response.send_message(embed=embed, ephemeral=True); return
 
     bar_filled = int((min(progress,goal)/goal)*10)
     bar    = "█"*bar_filled + "░"*(10-bar_filled)
-    status = "✅ ВЫПОЛНЕН — `/quest claim`!" if done else f"[{bar}] {min(progress,goal)}/{goal}"
+    status = "✅ ВЫПОЛНЕН - `/quest claim`!" if done else f"[{bar}] {min(progress,goal)}/{goal}"
     embed  = discord.Embed(title="📋 Текущий квест", color=0xf1c40f if done else 0x3498db)
     embed.add_field(name=f"🎯 {quest_data['name']}", value=quest_data["desc"],       inline=False)
     embed.add_field(name="📊 Прогресс",              value=status,                    inline=False)
@@ -893,7 +893,7 @@ async def quest_cmd(interaction: discord.Interaction, action: str = "show"):
 
 @tree.command(name="help", description="Список всех команд")
 async def help_cmd(interaction: discord.Interaction):
-    embed = discord.Embed(title="📖 JoJo Bot — Команды", color=0x9b59b6)
+    embed = discord.Embed(title="📖 JoJo Bot - Команды", color=0x9b59b6)
     embed.add_field(name="/job",              value="Работа (кд:30мин) 🟢🟡🔴", inline=False)
     embed.add_field(name="/search",           value=f"Найти кейс (нужно {JOBS_REQUIRED} работы)", inline=False)
     embed.add_field(name="/crate [тип]",      value="Открыть кейс", inline=False)

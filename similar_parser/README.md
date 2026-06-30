@@ -1,15 +1,15 @@
-# Similar Parser
+﻿# Similar Parser
 
 Парсер похожих Telegram каналов. Две версии на выбор.
 
 ## Версии
 
-### similar_parser.py — через Telethon API
+### similar_parser.py - через Telethon API
 - Нужны `api_id` и `api_hash` от my.telegram.org
 - Работает без Telegram Premium
 - Быстрее и стабильнее
 
-### similar_parser_web.py — через web.telegram.org + Playwright
+### similar_parser_web.py - через web.telegram.org + Playwright
 - Нужен Telegram Premium
 - Не нужны api_id/api_hash
 - Работает через браузер

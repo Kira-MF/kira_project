@@ -1,4 +1,4 @@
-import asyncio
+﻿import asyncio
 # -*- coding: utf-8 -*-
 import aiohttp
 import logging
@@ -143,7 +143,7 @@ def format_banner_message(banners: list) -> str:
         end_str = format_time(banner.get("end"))
 
         lines.append("━━━━━━━━━━━━━━━━")
-        lines.append(f"✦ *Фаза {i} — Версия {banner['version']}*")
+        lines.append(f"✦ *Фаза {i} - Версия {banner['version']}*")
         lines.append(f"🗓 До: {end_str}\n")
 
         if five_stars:
@@ -176,7 +176,7 @@ def format_lightcone_message(banners: list) -> str:
         end_str = format_time(banner.get("end"))
 
         lines.append("━━━━━━━━━━━━━━━━")
-        lines.append(f"✦ *Фаза {i} — Версия {banner['version']}*")
+        lines.append(f"✦ *Фаза {i} - Версия {banner['version']}*")
         lines.append(f"🗓 До: {end_str}\n")
 
         if five_stars:
