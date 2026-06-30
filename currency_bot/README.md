@@ -12,21 +12,22 @@ Telegram бот для отслеживания курсов валют и кр�
 
 ## Установка
 
-```
+```powershell
 py -m pip install -r requirements.txt
 ```
 
 ## Настройка
 
-Открой `currency_bot.py` и вставь:
-```python
-BOT_TOKEN = "твой токен от @BotFather"
-EXCHANGE_API_KEY = "ключ с exchangerate-api.com (бесплатный)"
+Создай `.env` рядом с `currency_bot.py`:
+
+```env
+BOT_TOKEN=твой_токен_от_BotFather
+EXCHANGE_API_KEY=ключ_с_exchangerate-api.com
 ```
 
 ## Запуск
 
-```
+```powershell
 py currency_bot.py
 ```
 

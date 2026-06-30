@@ -18,22 +18,25 @@ Telegram магазин бот для продажи цифровых товар
 
 ## Установка
 
-```
+```powershell
 py -m pip install -r requirements.txt
 ```
 
 ## Настройка
 
-Открой `shop_bot.py` и вставь:
-```python
-BOT_TOKEN = "твой токен от @BotFather"
-ADMIN_ID   = твой_Telegram_ID
-PROXY      = "socks5://user:password@ip:port"  # или убери строку если не нужен
+Создай `.env` рядом с `shop_bot.py`:
+
+```env
+BOT_TOKEN=твой_токен_от_BotFather
+ADMIN_ID=твой_Telegram_ID
+PROXY=
 ```
+
+Если прокси не нужен, оставь `PROXY` пустым.
 
 ## Запуск
 
-```
+```powershell
 py shop_bot.py
 ```
 

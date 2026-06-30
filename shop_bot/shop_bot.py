@@ -10,11 +10,20 @@ from aiogram.fsm.state import State, StatesGroup
 from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.client.session.aiohttp import AiohttpSession
+from dotenv import load_dotenv
 
-BOT_TOKEN = "ВСТАВЬ_ТОКЕН_СЮДА"
-PROXY = "socks5://user:password@ip:port"  # вставь свои данные прокси
-ADMIN_ID = 1256002590
+load_dotenv()
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+PROXY = os.getenv("PROXY") or None
+ADMIN_ID = int(os.getenv("ADMIN_ID", "0"))
 DB_FILE = "shop.json"
+
+if not BOT_TOKEN:
+    raise RuntimeError("BOT_TOKEN не задан в .env")
+
+if not ADMIN_ID:
+    raise RuntimeError("ADMIN_ID не задан в .env")
 
 logging.basicConfig(level=logging.INFO)
 
@@ -539,8 +548,8 @@ async def admin_stats(callback: types.CallbackQuery):
     )
 
 async def main():
-    session = AiohttpSession(proxy=PROXY)
-    bot = Bot(token=BOT_TOKEN, session=session)
+    session = AiohttpSession(proxy=PROXY) if PROXY else None
+    bot = Bot(token=BOT_TOKEN, session=session) if session else Bot(token=BOT_TOKEN)
     try:
         await dp.start_polling(bot)
     finally:

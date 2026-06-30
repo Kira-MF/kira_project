@@ -1,13 +1,23 @@
 # -*- coding: utf-8 -*-
 import asyncio
 import csv
+import os
+from dotenv import load_dotenv
 from telethon import TelegramClient
 from telethon.tl.functions.channels import GetChannelRecommendationsRequest
 
-API_ID = 12345678
-API_HASH = "your_api_hash_here"
+load_dotenv()
+
+API_ID = int(os.getenv("API_ID", "0"))
+API_HASH = os.getenv("API_HASH")
 
 DEPTH = 3
+
+if not API_ID:
+    raise RuntimeError("API_ID не задан в .env")
+
+if not API_HASH:
+    raise RuntimeError("API_HASH не задан в .env")
 
 async def get_similar(client, channel, depth, visited=None):
     if visited is None:

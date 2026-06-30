@@ -1,0 +1,9 @@
+{
+  "message_template": "Спасибо за покупку! Если будут вопросы - пиши.",
+  "check_interval": 60,
+  "sent_buyers": [],
+  "stats": {
+    "sent": 0,
+    "errors": 0
+  }
+}

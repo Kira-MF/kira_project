@@ -1,30 +1,37 @@
 # MuiKira Projects
 
-Мои проекты — боты и скрипты на Python.
+Сборник моих Python-проектов: Telegram/Discord боты, парсеры и небольшие API-интеграции.
+
+> Сейчас проекты лежат в одном репозитории как общий портфель. Для удобства просмотра каждый проект можно вынести в отдельный репозиторий без изменений логики.
 
 ## Проекты
 
-| Проект | Описание | Стек |
-|--------|----------|------|
-| [currency_bot](./currency_bot) | Telegram бот курсов валют и крипты | aiogram, ExchangeRate-API, CoinGecko |
-| [shop_bot](./shop_bot) | Telegram магазин бот с балансом и товарами | aiogram |
-| [similar_parser](./similar_parser) | Парсер похожих Telegram каналов | Telethon, Playwright |
-| [jojo_ds_bot](./Jojo_DS_BOT) | Discord JoJo бот со стендами и эволюциями | discord.py |
-| [lolz_notifier](./lolz_notifier) | Авто-уведомления покупателей на Lolz Market | aiogram, aiohttp, Lolz API |
-| [hsr_banner_bot](./hsr_banner_bot) | Telegram трекер баннеров Honkai: Star Rail | aiogram, aiohttp, aiosqlite |
+| Проект | Что делает | Стек |
+|---|---|---|
+| [currency_bot](./currency_bot) | Telegram-бот курсов валют и крипты | aiogram, requests |
+| [shop_bot](./shop_bot) | Telegram-магазин с балансом, каталогом и админкой | aiogram |
+| [similar_parser](./similar_parser) | Парсер похожих Telegram-каналов | Telethon, Playwright |
+| [Jojo_DS_BOT](./Jojo_DS_BOT) | Discord RPG-бот по JoJo | discord.py |
+| [lolz_notifier](./lolz_notifier) | Уведомления покупателям Lolz Market | aiogram, aiohttp |
+| [hsr_banner_bot](./hsr_banner_bot) | Трекер баннеров Honkai: Star Rail | aiogram, aiohttp, aiosqlite |
 
-## Стек
+## Общий запуск
 
-- Python 3.10+
-- aiogram 3.x
-- discord.py 2.x
-- Telethon / Playwright
-- aiohttp / aiosqlite
-- REST API интеграции
+```powershell
+cd project_folder
+py -m pip install -r requirements.txt
+copy .env.example .env
+py main.py
+```
 
-## Запуск любого проекта
+У некоторых проектов точка входа называется не `main.py`, а по имени проекта. Это указано в README внутри папки.
 
-1. Перейди в папку проекта
-2. Установи зависимости: `py -m pip install -r requirements.txt`
-3. Вставь токен в `.env` файл
-4. Запусти: `py main.py`
+## Что не хранится в репозитории
+
+- токены и ключи;
+- `.env`;
+- базы данных;
+- Telegram session-файлы;
+- `__pycache__` и `.pyc`.
+
+Для настройки есть `.env.example` и `config.example.json`.

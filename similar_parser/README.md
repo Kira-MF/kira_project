@@ -16,7 +16,7 @@
 
 ## Установка
 
-```
+```powershell
 py -m pip install -r requirements.txt
 py -m playwright install chromium
 ```
@@ -24,9 +24,11 @@ py -m playwright install chromium
 ## Настройка
 
 **similar_parser.py:**
-```python
-API_ID   = 12345678       # с my.telegram.org
-API_HASH = "твой_хэш"
+Создай `.env`:
+
+```env
+API_ID=12345678
+API_HASH=твой_хэш_с_my.telegram.org
 ```
 
 **similar_parser_web.py:**
@@ -34,11 +36,11 @@ API_HASH = "твой_хэш"
 
 ## Запуск
 
-```
+```powershell
 py similar_parser.py
 ```
 или
-```
+```powershell
 py similar_parser_web.py
 ```
 

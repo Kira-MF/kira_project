@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import logging
+import os
 import requests
 from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters import Command
@@ -8,10 +9,19 @@ from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.fsm.storage.memory import MemoryStorage
 import asyncio
+from dotenv import load_dotenv
 
 # ─── CONFIG ───────────────────────────────────────────────────────
-BOT_TOKEN = "ТВОЙ_ТОКЕН_СЮДА"
-EXCHANGE_API_KEY = "ТВОЙ_КЛЮЧ_С_EXCHANGERATE-API.COM"
+load_dotenv()
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+EXCHANGE_API_KEY = os.getenv("EXCHANGE_API_KEY")
+
+if not BOT_TOKEN:
+    raise RuntimeError("BOT_TOKEN не задан в .env")
+
+if not EXCHANGE_API_KEY:
+    raise RuntimeError("EXCHANGE_API_KEY не задан в .env")
 
 # ─── LOGGING ──────────────────────────────────────────────────────
 logging.basicConfig(level=logging.INFO)

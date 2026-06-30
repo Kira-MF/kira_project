@@ -17,21 +17,22 @@ Discord бот по вселенной JoJo's Bizarre Adventure.
 
 ## Установка
 
-```
+```powershell
 py -m pip install -r requirements.txt
 ```
 
 ## Настройка
 
-Открой `bot.py`:
-```python
-TOKEN    = "твой токен от Discord Developer Portal"
-GUILD_ID = ID_твоего_сервера  # для мгновенной синхронизации /команд
+Создай `.env`:
+
+```env
+TOKEN=твой_токен_от_Discord_Developer_Portal
+GUILD_ID=
 ```
 
 ## Запуск
 
-```
+```powershell
 py bot.py
 ```
 

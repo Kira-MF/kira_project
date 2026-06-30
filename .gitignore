@@ -1,9 +1,13 @@
 .env
-.venv/
+.env.*
+!.env.example
 
-# Databases
-players.json
-shop.json
+# local data
+*.db
+*.sqlite
+*.sqlite3
+*.json
+!config.example.json
 
 # Telegram sessions
 *.session
@@ -12,8 +16,10 @@ shop.json
 # Python
 __pycache__/
 *.py[cod]
+*$py.class
 venv/
 .venv/
 
-# VS Code
+# IDE
 .vscode/
+.idea/
