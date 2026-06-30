@@ -1,19 +1,19 @@
 # MuiKira Projects
 
-Сборник моих Python-проектов: Telegram/Discord боты, парсеры и небольшие API-интеграции.
+Навигация по моим Python-проектам: Telegram/Discord боты, парсеры и небольшие API-интеграции.
 
-> Сейчас проекты лежат в одном репозитории как общий портфель. Для удобства просмотра каждый проект можно вынести в отдельный репозиторий без изменений логики.
+Основные проекты вынесены в отдельные репозитории, чтобы их было проще смотреть по одному.
 
 ## Проекты
 
 | Проект | Что делает | Стек |
 |---|---|---|
-| [currency_bot](./currency_bot) | Telegram-бот курсов валют и крипты | aiogram, requests |
-| [shop_bot](./shop_bot) | Telegram-магазин с балансом, каталогом и админкой | aiogram |
-| [similar_parser](./similar_parser) | Парсер похожих Telegram-каналов | Telethon, Playwright |
-| [Jojo_DS_BOT](./Jojo_DS_BOT) | Discord RPG-бот по JoJo | discord.py |
-| [lolz_notifier](./lolz_notifier) | Уведомления покупателям Lolz Market | aiogram, aiohttp |
-| [hsr_banner_bot](./hsr_banner_bot) | Трекер баннеров Honkai: Star Rail | aiogram, aiohttp, aiosqlite |
+| [currency-bot](https://github.com/Kira-MF/currency-bot) | Telegram-бот курсов валют и крипты | aiogram, requests |
+| [shop-bot](https://github.com/Kira-MF/shop-bot) | Telegram-магазин с балансом, каталогом и админкой | aiogram |
+| [similar-parser](https://github.com/Kira-MF/similar-parser) | Парсер похожих Telegram-каналов | Telethon, Playwright |
+| [jojo-discord-bot](https://github.com/Kira-MF/jojo-discord-bot) | Discord RPG-бот по JoJo | discord.py |
+| [lolz-notifier](https://github.com/Kira-MF/lolz-notifier) | Уведомления покупателям Lolz Market | aiogram, aiohttp |
+| [hsr-banner-bot](https://github.com/Kira-MF/hsr-banner-bot) | Трекер баннеров Honkai: Star Rail | aiogram, aiohttp, aiosqlite |
 
 ## Общий запуск
 
